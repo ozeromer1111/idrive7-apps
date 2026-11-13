@@ -54,7 +54,9 @@ function t(value) {
             language === 'zh-CN' ? s.replace(/\bmin(?=\s+-?\d)/g, '最小').replace(/\bmax(?=\s+-?\d)/g, '最大')
             .replace(/\bAVG(?=\s+[+-]?\d)/g, '平均').replace(/\bACC\b/g, '加速') :
             language === 'ru' ? s.replace(/\bmin(?=\s+-?\d)/g, 'мин.').replace(/\bmax(?=\s+-?\d)/g, 'макс.')
-                .replace(/\bAVG(?=\s+[+-]?\d)/g, 'СРЕД.').replace(/\bACC\b/g, 'РАЗГОН') : s;
+                .replace(/\bAVG(?=\s+[+-]?\d)/g, 'СРЕД.').replace(/\bACC\b/g, 'РАЗГОН') :
+            language === 'tr' ? s.replace(/\bmin(?=\s+-?\d)/g, 'min.').replace(/\bmax(?=\s+-?\d)/g, 'maks.')
+                .replace(/\bAVG(?=\s+[+-]?\d)/g, 'ORT.').replace(/\bACC\b/g, 'İVME') : s;
         out = out.replace(pattern, (_, before, word) => before + (dict[word] || folded[word.toLowerCase()]));
     }
     if (cache.size >= 2048) cache.clear();
