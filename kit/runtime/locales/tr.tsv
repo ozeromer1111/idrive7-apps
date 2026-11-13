@@ -1,0 +1,1757 @@
+# English	Türkçe. Yalnız ekranda görünen metin; protokol alanları ve ayar değerleri değişmez.
+M Vitals	M Göstergeler
+Redline	Devir sınırı
+Virtual Dyno	Sanal Dyno
+Brake Test	Fren Testi
+Drag Timer	Drag Sayacı
+G-Force	G Kuvveti
+Warm-Up	Isınma
+Fault Scanner	Arıza Tarayıcı
+eDrive	eDrive
+Service	Servis
+Doom	Doom
+Settings	Ayarlar
+Version	Sürüm
+Next page	Sonraki sayfa
+Previous page	Önceki sayfa
+Next item	Sonraki öğe
+Details	Ayrıntılar
+Read now	Şimdi oku
+Scan now	Şimdi tara
+Scan again	Yeniden tara
+Clear all	Tümünü sil
+Reset max	Maks. sıfırla
+Reset run	Sürüşü sıfırla
+Cancel run	Sürüşü iptal et
+Yes, clear	Evet, sil
+Clear log	Kaydı sil
+Delete all	Tümünü sil
+Reset best	Rekoru sıfırla
+Current	Güncel
+Incl. history	Geçmiş dahil
+Start page	Başlangıç sayfası
+Engine	Motor
+Engine torque	Motor torku
+Chassis	Şasi
+Thermals	Sıcaklıklar
+Fuel & ignition	Yakıt ve ateşleme
+Colour theme	Renk teması
+M Red	M Red
+M Tricolour	M Tricolour
+Ice White	Ice White
+Night Amber	Night Amber
+Demo data	Demo veri
+Auto	Otomatik
+Always	Her zaman
+Never	Asla
+On	Açık
+Off	Kapalı
+Yes	Evet
+No	Hayır
+Show	Göster
+Hide	Gizle
+Auto (first that works)	Otomatik (ilk çalışan)
+Auto (learned)	Otomatik (öğrenilen)
+Hide (RWD)	Gizle (RWD)
+No (12 V only)	Hayır (yalnız 12 V)
+Speed unit	Hız birimi
+Speed display rate	Hız gösterim sıklığı
+Speed	Hız
+Power unit	Güç birimi
+Torque unit	Tork birimi
+Temperature unit	Sıcaklık birimi
+Pressure unit	Basınç birimi
+Boost gauge max	Turbo göstergesi maks.
+Distance unit	Mesafe birimi
+Temperature	Sıcaklık
+Celsius	Celsius
+Fahrenheit	Fahrenheit
+Units	Birimler
+metres	metre
+feet	fit
+miles	mil
+1/4 mile	1/4 mil
+1/8 mile	1/8 mil
+Renderer	Oluşturucu
+GPU 60 fps (default)	GPU 60 fps (varsayılan)
+Software	Yazılım
+Screen layout	Ekran düzeni
+Full screen	Tam ekran
+Standard	Standart
+Peak hold	Tepe tutma
+Peak hold (0 = until reset)	Tepe tutma (0 = sıfırlanana dek)
+Show peak markers	Tepe işaretlerini göster
+Max power (100% on sport display)	Maks. güç (spor ekranda 100%)
+Power from	Güç kaynağı
+Sport display	Spor ekran
+Torque x rpm	Tork x rpm
+Oil temp warning	Yağ sıc. uyarısı
+Boost	Turbo
+Boost from	Turbo kaynağı
+Engine unit (OBD)	Motor ünitesi (OBD)
+Gearbox oil temperature	Şanzıman yağ sıcaklığı
+Gearbox temperature (EGS)	Şanzıman sıcaklığı (EGS)
+Tyre card	Lastik kartı
+Tyre temperatures	Lastik sıcaklıkları
+xDrive card	xDrive kartı
+Intake air temperature	Emme havası sıcaklığı
+High pressure fuel	Yüksek basınç yakıt
+Low pressure fuel	Alçak basınç yakıt
+Ignition timing	Ateşleme avansı
+Misfire counter	Tekleme sayacı
+Cold rev limit	Soğuk devir sınırı
+Rev scale up to	Devir skalası üst sınırı
+Cold-engine rev guard	Soğuk motor devir koruması
+Oil warm at	Yağ ısınma eşiği
+Shift point before redline	Kırmızı bölge öncesi vites
+Blink and flash at shift point	Vites noktasında yanıp sön
+Shift light style	Vites ışığı stili
+M (green-yellow-red)	M (yeşil-sarı-kırmızı)
+Race (green-red-blue)	Race (yeşil-kırmızı-mavi)
+Theme colour	Tema rengi
+Weight with driver + fuel	Sürücü + yakıt dahil ağırlık
+Body shape (air drag)	Kasa tipi (hava direnci)
+Coupe / sedan	Coupe / sedan
+Touring / hatch	Touring / hatchback
+SUV	SUV
+Drivetrain loss	Aktarma kaybı
+Graph up to	Grafik üst sınırı
+Overlay ECU torque	ECU torkunu bindir
+Baseline	Referans
+Tests	Testler
+Distance split	Mesafe ara süresi
+One-foot rollout	1 fit rollout
+Circle size	Daire boyutu
+G-force display rate	G gösterim sıklığı
+Trail length	İz uzunluğu
+Swap left / right	Sol / sağ değiştir
+Counts as hard braking above	Sert fren eşiği
+Oil is warm at	Yağ ısınma eşiği
+Coolant is warm at	Soğutma suyu ısınma eşiği
+Rev limit when cold	Soğukta devir sınırı
+Turbo cool-down after hard driving	Sert sürüş sonrası turbo soğutma
+Hybrid system	Hibrit sistem
+Battery size when new (gross)	Yeni batarya kapasitesi (brüt)
+Electric range when full, 20 °C	Tam şarjda elektrikli menzil, 20 °C
+Engine starts at	Motor çalışma eşiği
+Electricity price	Elektrik fiyatı
+Read charge every	Şarj okuma aralığı
+Read battery health every	Batarya sağlığı okuma aralığı
+Diagnostics page	Teşhis sayfası
+Diagnostics page (UDS replies)	Teşhis sayfası (UDS yanıtları)
+Scan when opened	Açılışta tara
+Faults to read	Okunacak arızalar
+Also read info memory	Bilgi belleğini de oku
+Play	Oyna
+Continue	Devam
+New game	Yeni oyun
+Back up	Geri git
+Turn left	Sola dön
+Turn right	Sağa dön
+Walk left	Sola yürü
+Walk right	Sağa yürü
+Walk	Yürü
+Stand	Dur
+Weapon	Silah
+Move speed	Hareket hızı
+Slow walk (easiest to steer)	Yavaş yürüyüş (en kolay)
+Run	Koş
+Aim speed (controller turn)	Nişan hızı (kontrolcü dönüşü)
+Slow	Yavaş
+Normal	Normal
+Fast	Hızlı
+Aim direction	Nişan yönü
+Reversed	Ters
+Difficulty (new game)	Zorluk (yeni oyun)
+I'm too young to die	Ölmek için çok gencim
+Too young to die	Ölmek için çok genç
+Hey, not too rough	Hey, çok sert olma
+Not too rough	Çok sert değil
+Hurt me plenty	Bana çok acıt
+Ultra-Violence	Ultra Şiddet
+Nightmare!	Kâbus!
+Episode (new game)	Bölüm (yeni oyun)
+1: Outpost Outbreak	1: Outpost Outbreak
+2: Military Labs	2: Military Labs
+3: Event Horizon	3: Event Horizon
+4: Double Impact	4: Double Impact
+Render resolution	Çizim çözünürlüğü
+Full: 1920 x 504, every screen pixel	Tam: 1920 x 504, her ekran pikseli
+Medium: 1440 x 378	Orta: 1440 x 378
+Low: 960 x 252	Düşük: 960 x 252
+DEMO	DEMO
+EST.	TAH.
+OK	OK
+READY	HAZIR
+Ready	Hazır
+Oil	Yağ
+OIL	YAĞ
+Coolant	Soğutma suyu
+COOLANT	SOĞUTMA SUYU
+WATER	SU
+RPM	DEVİR
+SPEED	HIZ
+POWER	GÜÇ
+TORQUE	TORK
+PEAK	TEPE
+PEAK POWER	MAKS. GÜÇ
+PEAK TORQUE	MAKS. TORK
+PEAK DECEL	MAKS. YAVAŞLAMA
+DECEL g	YAVAŞLAMA g
+FROM	BAŞLANGIÇ
+WHEN	ZAMAN
+DATE	TARİH
+STATUS	DURUM
+VALUE	DEĞER
+READ	OKUNAN
+REPLY	YANIT
+DECODED	ÇÖZÜLEN
+TEMP	SIC.
+ADDED	EKLENEN
+COST	MALİYET
+LEARNED	ÖĞRENİLEN
+FULL	TAM
+RANGE	MENZİL
+ENERGY	ENERJİ
+ALL TIME	TÜM ZAMANLAR
+THIS MONTH	BU AY
+FROM - TO	BAŞL. - BİTİŞ
+WITH ENGINE	MOTORLA
+LAST CHARGE	SON ŞARJ
+IN THE BATTERY NOW	ŞU AN BATARYADA
+HV BATTERY	HV BATARYA
+OUTSIDE	DIŞ HAVA
+CHARGING	ŞARJ OLUYOR
+CLIMATE ON	KLİMA AÇIK
+CLIMATE & ON-BOARD	KLİMA VE ARAÇ İÇİ
+CLIMATE OFF · ON-BOARD	KLİMA KAPALI · ARAÇ İÇİ
+CLIMATE OFF  ·  ON-BOARD	KLİMA KAPALI  ·  ARAÇ İÇİ
+ENGINE ON  ·  battery	MOTOR AÇIK  ·  batarya
+CHARGING  (engine / DC-DC running)	ŞARJ  (motor / DC-DC çalışıyor)
+KWH PER DAY, 14 DAYS	GÜNLÜK KWH, 14 GÜN
+Engine oil	Motor yağı
+Engine speed	Motor devri
+Gearbox oil	Şanzıman yağı
+Gearbox (EGS)	Şanzıman (EGS)
+Ambient	Dış hava
+Intake air (IAT)	Emme havası (IAT)
+Intake air above outside	Emme - dış hava farkı
+Ignition timing (before TDC)	Ateşleme avansı (ÜÖN öncesi)
+Misfires	Teklemeler (silindir)
+Tyres	Lastikler
+Power	Güç
+Torque	Tork
+G-force	G kuvveti
+Front	Ön
+FRONT	ÖN
+Rear	Arka
+FL	ÖSL
+FR	ÖSĞ
+RL	ASL
+RR	ASĞ
+2WD	2WD
+4WD	4WD
+2WD mode	2WD modu
+4WD Sport	4WD Sport
+Sand	Kum
+DERATED / OFF	KISITLI / KAPALI
+Power (torque x rpm)	Güç (tork x rpm)
+last 5 min	son 5 dk
+this drive	bu sürüş
+engine temperatures	motor sıcaklıkları
+heat soak	ısı birikmesi
+needs IAT + outside temperature	IAT + dış sıcaklık gerekli
+not available on this car	bu araçta mevcut değil
+no data	veri yok
+no data from the car	araçtan veri yok
+no target	hedef yok
+no diagnostic link	teşhis bağlantısı yok
+no reading from the engine unit	motor ünitesinden okuma yok
+No data from the engine unit yet	Motor ünitesinden henüz veri yok
+Values show up here once the car answers. Settings: set one to Show to keep it on screen.	Araç yanıt verince değerler burada görünür. Ayarlar: ekranda tutmak için Göster seçin.
+diagnostic link down	teşhis bağlantısı koptu
+reading...	okunuyor...
+engine unit: reading...	motor ünitesi: okunuyor...
+not changing	değişmiyor
+no boost from the sport display	spor ekrandan turbo verisi yok
+all-wheel drive detected	dört çeker algılandı
+car sends no torque split	araç tork dağılımı göndermiyor
+transfer case	transfer kutusu
+transfer case, estimated	transfer kutusu, tahmini
+transfer case: clutch open	transfer kutusu: kavrama açık
+(transfer case)	(transfer kutusu)
+target	hedef
+max	maks.
+min	min
+engine off	motor kapalı
+Cyl	Sil.
+cylinders (counted)	silindir (sayılan)
+cylinders (engine unit list)	silindir (motor ünitesi listesi)
+car sends	araç gönderiyor
+sport display sends	spor ekran gönderiyor
+stuck at	takılı kaldı
+from	kaynak
+raw	ham
+front	ön
+Tach	Takometre
+Shift accuracy	Vites isabeti
+Shift log	Vites kaydı
+Recent upshifts	Son vites yükseltmeleri
+LAST SHIFT	SON VİTES
+SHIFT AT	VİTES DEVRİ
+SHIFT	VİTES
+EARLY	ERKEN
+LATE	GEÇ
+SPOT ON	TAM İSABET
+LIMITER	SINIRLAYICI
+COLD	SOĞUK
+COLD REV	SOĞUK DEVİR
+COLD  ·  LIMIT	SOĞUK  ·  SINIR
+OIL COLD  ·  GO EASY	YAĞ SOĞUK  ·  YAVAŞ SÜR
+AVG	ORT.
+No shifts yet - go and use the rev range.	Henüz vites yok - devir aralığını kullanın.
+rpm vs shift point	rpm / vites noktası
+Dyno sheet	Dyno grafiği
+Saved runs	Kayıtlı ölçümler
+No pull yet	Henüz ölçüm yok
+No runs yet.	Henüz ölçüm yok.
+Next run	Sonraki ölçüm
+Recording	Kaydediliyor
+NEW RUN RECORDED	YENİ ÖLÇÜM KAYDEDİLDİ
+BASELINE	REFERANS
+ECU TORQUE	ECU TORKU
+POWER NOW	ANLIK GÜÇ
+SETUP	AYAR
+SPEED RANGE	HIZ ARALIĞI
+Peak	Tepe
+estimate at the crank	krank milinde tahmin
+waiting for a pull	ölçüm bekleniyor
+keep it pinned...	tam gazda tutun...
+pull too short	ölçüm çok kısa
+Full throttle in 3rd gear from ~2000 rpm to the limiter, on a flat road	Düz yolda 3. viteste ~2000 rpm'den sınırlayıcıya kadar tam gaz
+Brake test	Fren testi
+All stops	Tüm duruşlar
+Brake fade	Fren yorulması
+History	Geçmiş
+Last stop	Son duruş
+Deceleration	Yavaşlama
+Stopping	Duruş
+STOPPING	DURUYOR
+STOPPED	DURDU
+BRAKE HARD	SERT FREN
+GET ABOVE	ŞU HIZI GEÇİN
+BEST	EN İYİ
+NEW BEST	YENİ REKOR
+CONSISTENT	TUTARLI
+FADING  +	YORULMA  +
+WARM  +	ISINMA  +
+No stops yet.	Henüz duruş yok.
+no stops yet	henüz duruş yok
+need 3 stops	3 duruş gerekli
+Brake hard from above	Şu hızın üstünden sert frenleyin
+Brake released - stop not counted	Fren bırakıldı - duruş sayılmadı
+stop	duruş
+vs best	en iyiye göre
+Drag timer	Drag sayacı
+Speed trace	Hız grafiği
+Splits	Ara süreler
+Best times	En iyi süreler
+Recent runs	Son denemeler
+Come to a stop to arm	Hazırlamak için durun
+Launch when ready	Hazır olunca kalkış
+STOP TO ARM	HAZIRLIK İÇİN DURUN
+READY - LAUNCH	HAZIR - KALKIŞ
+FINISHED	BİTTİ
+TIMING	ÖLÇÜLÜYOR
+ROLLOUT 1 FT	ROLLOUT 1 FT
+No runs yet - stop, launch, and they show up here.	Henüz deneme yok - durun, kalkış yapın, burada görünür.
+no best yet	henüz rekor yok
+live speed	anlık hız
+best	en iyi
+error	hata
+All-time records	Tüm zaman rekorları
+Records	Rekorlar
+Now	Şimdi
+Session peaks	Oturum tepeleri
+Hardest launch	En sert kalkış
+Hardest stop	En sert duruş
+Left-hander	Sol viraj
+Right-hander	Sağ viraj
+Top speed	Maks. hız
+Combined	Toplam
+COMBINED	TOPLAM
+LATERAL	YANAL
+LONGITUDINAL	BOYUNA
+LEFT	SOL
+RIGHT	SAĞ
+ACCEL	HIZLANMA
+BRAKE	FREN
+ACC	İVME
+BRK	FREN
+TOP	MAKS.
+MIN	MİN
+Warm-up	Isınma
+ENGINE OFF	MOTOR KAPALI
+NOT WARMING	ISINMIYOR
+electric driving	elektrikli sürüş
+drive to warm up	ısınmak için sürün
+NO OIL TEMP	YAĞ SIC. YOK
+OIL HOT - EASE OFF	YAĞ SICAK - YAVAŞLAYIN
+COOLED - OK TO SWITCH OFF	SOĞUDU - KAPATABİLİRSİNİZ
+TURBO COOL-DOWN	TURBO SOĞUTMA
+WARMING UP	ISINIYOR
+SAFE REV LIMIT	GÜVENLİ DEVİR
+COOL-DOWN LEFT	KALAN SOĞUTMA
+OIL READY IN	YAĞ HAZIRA KALAN
+COOLANT READY IN	SU HAZIRA KALAN
+Oil ready in ~	Yağ hazıra kalan ~
+Engine off - oil not warming	Motor kapalı - yağ ısınmıyor
+Oil not warming	Yağ ısınmıyor
+Oil warm	Yağ ısındı
+keep it gentle	sakin sürün
+paused - stay under	duraklatıldı - altında kalın
+Real electric range	Gerçek elektrikli menzil
+Range	Menzil
+Energy	Enerji
+Charge log	Şarj kaydı
+Diagnostics	Teşhis
+Signals	Sinyaller
+Car signals	Araç sinyalleri
+Battery diagnostics	Batarya teşhisi
+Battery health	Batarya sağlığı
+12 V battery	12 V batarya
+Driving	Sürüş
+Driving by speed	Hıza göre sürüş
+Climate (heating / A/C)	Klima (ısıtma / klima)
+On-board electrics	Araç içi tüketiciler
+Seat heating	Koltuk ısıtma
+Steering wheel	Direksiyon
+Outside	Dışarısı
+HV energy	HV enerji
+HV voltage	HV gerilim
+Charge	Şarj
+Charges	Şarjlar
+Totals	Toplamlar
+Where the power goes now	Gücün şu an gittiği yer
+Raw values as the car sends them - for checking the scalings (config.scaling in app.json).	Aracın gönderdiği ham değerler - ölçek kontrolü için (app.json içindeki config.scaling).
+A value n/a or wrong? Adjust config.battery in apps/edrive/app.json and rebuild.	Değer yok veya yanlış mı? apps/edrive/app.json içindeki config.battery'yi düzeltip yeniden derleyin.
+No hybrid system	Hibrit sistem yok
+Hybrid car? Settings > Hybrid system > Yes	Hibrit araç mı? Ayarlar > Hibrit sistem > Evet
+No high-voltage battery answered, so	Yüksek gerilim aküsü yanıt vermedi, bu yüzden
+eDrive shows the 12 V battery only.	eDrive yalnızca 12 V aküyü gösteriyor.
+No charges logged yet.	Henüz şarj kaydı yok.
+Every charge of	Her
+% or more shows up here,	% veya üzeri şarj burada görünür,
+also overnight charges.	gece şarjları da.
+Holds	Kapasite
+Full:	Dolu:
+no charge reading yet	henüz şarj okuması yok
+no reading yet	henüz okuma yok
+no reply	yanıt yok
+not read yet	henüz okunmadı
+not read	okunmadı
+not started	başlamadı
+not yet	henüz değil
+none yet	henüz yok
+now	şimdi
+today	bugün
+days ago	gün önce
+h ago	sa önce
+min ago	dk önce
+s ago	s önce
+learns as you drive electric	elektrikli sürdükçe öğrenir
+learns as you drive	sürdükçe öğrenir
+estimate - learns as you drive electric	tahmin - elektrikli sürdükçe öğrenir
+typical	tipik
+measured	ölçülen
+(est.)	(tahmini)
+(typical)	(tipik)
+your pace now	şu anki tempo
+your pace	temponuz
+typical pace	tipik tempo
+engine starts at	motor devreye girer:
+last hour  ·  healthy at rest: 12.4-12.8 V	son saat  ·  dururken normal: 12.4-12.8 V
+GOOD  (about 75 %)	İYİ  (yaklaşık 75 %)
+HALF  (about 50 %) - drive or charge soon	YARI  (yaklaşık 50 %) - yakında sürün veya şarj edin
+LOW - charge the battery	DÜŞÜK - aküyü şarj edin
+Main page: demo data until the link answers	Ana sayfa: bağlantı yanıtlayana dek demo veri
+CAR SHOWS  (no power distribution from the car yet)	ARAÇ GÖSTERİYOR  (araçtan henüz güç dağılımı yok)
+CAR SHOWS  drive	ARAÇ GÖSTERİYOR  sürüş
+with engine: + = charging the battery, - = still using it	motorla: + = akü şarj oluyor, - = hâlâ akü kullanılıyor
+screens, units, pumps	ekranlar, üniteler, pompalar
+battery temp	akü sıc.
+battery temperature	akü sıcaklığı
+climate control	klima kontrolü
+seat heating	koltuk ısıtma
+steering wheel	direksiyon
+rear L	arka sol
+rear R	arka sağ
+pass.	yolcu
+driver	sürücü
+link down	bağlantı yok
+link up	bağlantı var
+no hybrid battery unit: 12 V only	hibrit akü ünitesi yok: yalnız 12 V
+available	mevcut
+n/a	yok
+Control units	Kontrol üniteleri
+Faults	Arızalar
+Check Control	Tarama Sonucu
+CHECK CONTROL	TARAMA SONUCU
+Check Control messages	Tarama sonucu mesajları
+Control units that answered	Yanıt veren kontrol üniteleri
+Active now	Şu an aktif
+INFO MEMORY	BİLGİ HAFIZASI
+INFO:	BİLGİ:
+No faults stored	Kayıtlı arıza yok
+No active Check Control messages	Tarama sonucu: aktif mesaj yok
+No control unit answered	Hiçbir kontrol ünitesi yanıt vermedi
+No control unit answered - ignition on?	Hiçbir ünite yanıt vermedi - kontak açık mı?
+No answer	Yanıt yok
+no answer	yanıt yok
+answering...	yanıt bekleniyor...
+No faults	Arıza yok
+Nothing to clear	Silinecek bir şey yok
+Scan first	Önce tarayın
+Scan first, then clear	Önce tarayın, sonra silin
+Press "Scan now" (ignition on)	"Şimdi tara"ya basın (kontak açık)
+Scanning...	Taranıyor...
+Asking every control unit...	Tüm kontrol üniteleri taranıyor...
+Identifying control units...	Kontrol üniteleri tanımlanıyor...
+Reading info memory...	Bilgi hafızası okunuyor...
+Info memory not read this time (unit busy) - scan again for it	Bilgi hafızası okunamadı (ünite meşgul) - tekrar tarayın
+Last scan	Son tarama
+Scan failed:	Tarama başarısız:
+Clears	Silinecek
+Clearing	Siliniyor
+Cleared	Silindi
+control units,	kontrol ünitesi,
+faults	arıza
+fault	arıza
+info	bilgi
+more	daha
+possible texts (depends on unit type)	olası metin (ünite tipine bağlı)
+present right now	şu an mevcut
+stored	kayıtlı
+scanning again	yeniden taranıyor
+Message	Mesaj
+Head unit	Multimedya ünitesi
+DME engine	DME motor
+DME 2	DME 2
+EGS gearbox	EGS şanzıman
+BDC body	BDC gövde
+BDC gateway	BDC ağ geçidi
+ATM telematics	ATM telematik
+KOMBI cluster	KOMBI gösterge
+ACSM airbag	ACSM hava yastığı
+DSC brakes	DSC frenler
+DSC brake booster	DSC fren servosu
+EPS steering	EPS direksiyon
+EME e-motor	EME e-motor
+SME HV battery	SME HV akü
+OBC charger	OBC şarj cihazı
+IHKA climate	IHKA klima
+RAM audio	RAM ses
+ZBE controller	ZBE kontrolör
+GWS gear selector	GWS vites seçici
+VTG xDrive	VTG xDrive
+KAFAS camera	KAFAS kamera
+ICAM cameras	ICAM kameralar
+PDC parking	PDC park
+USS park sensors	USS park sensörleri
+SAS assist sensors	SAS asistan sensörleri
+FRR front radar	FRR ön radar
+SRR corner radar	SRR köşe radarı
+DCS driver camera	DCS sürücü kamerası
+FZD roof	FZD tavan
+FLM headlight	FLM far
+HKFM tailgate	HKFM bagaj kapağı
+SM seat module	SM koltuk modülü
+TFM fuel tank	TFM yakıt deposu
+VDP dampers	VDP amortisörler
+Telematics: Mobile network connection limited	Telematik: Mobil ağ bağlantısı sınırlı
+Assist sensors: Unexpected Ethernet communication/link	Asistan sensörleri: Beklenmeyen Ethernet iletişimi/bağlantısı
+Service requirements	Servis gereksinimleri
+Next service	Sonraki servis
+Service due	Servis zamanı
+Front brakes	Ön frenler
+Rear brakes	Arka frenler
+Brake fluid	Fren hidroliği
+Vehicle check	Araç kontrolü
+Statutory vehicle inspection	Yasal araç muayenesi
+DUE NOW	ZAMANI GELDİ
+DUE SOON	YAKINDA
+Due now	Zamanı geldi
+Due soon	Yakında
+Diagnostics - what the instrument cluster sends	Diyagnoz - gösterge panelinin gönderdikleri
+No details for this item	Bu öğe için ayrıntı yok
+Details not available (	Ayrıntı yok (
+Waiting for the service data from the instrument cluster (ignition on)...	Gösterge panelinden servis verisi bekleniyor (kontak açık)...
+Asking the car...	Araç taranıyor...
+waiting for the car	araç bekleniyor
+instrument cluster not reachable	gösterge paneline ulaşılamıyor
+connecting...	bağlanıyor...
+not available yet	henüz mevcut değil
+nothing received	hiçbir şey alınmadı
+item(s)	öğe
+items	öğe
+(demo)	(demo)
+Loading...	Yükleniyor...
+Doom stopped	Doom durdu
+Doom stopped:	Doom durdu:
+In the game, BACK returns here and saves	Oyunda BACK buraya döner ve kaydeder
+Saved game:	Kayıtlı oyun:
+Game:	Oyun:
+health	sağlık
+(default)	(varsayılan)
+LAST	SON
+answered	yanıt verdi
+messages	mesaj
+record	rekor
+ELECTRIC	ELEKTRİK
+over	üzeri
+battery	akü
+climate	klima
+blower	fan
+seats	koltuklar
+wheel	direksiyon
+cells	hücreler
+heating	ısıtma
+compressor	kompresör
+charging	şarj oluyor
+charge	şarj
+charges	şarj
+climate boost	klima takviyesi
+seat bars	koltuk seviyeleri
+no link	bağlantı yok
+use learning	öğrenmeyi kullan
+using	kullanılıyor
+with engine	motorla
+cold: less range, slower charging	soğuk: daha az menzil, daha yavaş şarj
+from your last	son
+lasts ~	yeter ~
+a typical	tipik bir
+there	orada
+at	de
+cell	hücre
+pace	tempo
+learned	öğrenildi
+in	içinde
+by	en geç
+or	veya
+of	/
+Scan	Tarama
+Reading	Okunuyor
+Fault	Arıza
+Info memory	Bilgi hafızası
+minimum	minimum
+maximum	maksimum
+ACTIVE	AKTİF
+WARNING LAMP	UYARI LAMBASI
+PENDING	BEKLEMEDE
+STORED	KAYITLI
+HISTORY	GEÇMİŞ
+general reject	genel ret
+service not supported	servis desteklenmiyor
+sub-function not supported	alt fonksiyon desteklenmiyor
+bad length	hatalı uzunluk
+busy	meşgul
+conditions not correct	koşullar uygun değil
+out of range	aralık dışı
+security access denied	güvenlik erişimi reddedildi
+programming failure	programlama hatası
+pending	beklemede
+not supported in session	oturumda desteklenmiyor
+Debug mode active (SSH open)	Hata ayıklama modu aktif (SSH açık)
+HU-H: Reset	HU-H: Sıfırlama
+Check engine oil level	Motor yağı seviyesini kontrol edin
+Drive system	Tahrik sistemi
+FA-CAN message missing: fuel tank level / range (0x373)	FA-CAN mesajı eksik: yakıt seviyesi / menzil (0x373)
+Message (driver assistance, comfort, safety) missing, receiver ACC/FRSF, transmitter DSC/SAS	Mesaj (sürüş asistanı, konfor, güvenlik) eksik, alıcı ACC/FRSF, verici DSC/SAS
+Message (chassis, acceleration data) missing, receiver ACC/FRSF, transmitter DSC/VIP	Mesaj (şasi, ivme verisi) eksik, alıcı ACC/FRSF, verici DSC/VIP
+ZGM: Test operation is active	ZGM: Test modu aktif
+ZGM: Ethernet: Communication ended unexpectedly	ZGM: Ethernet: İletişim beklenmedik şekilde kesildi
+Message (system time, 0x328) faulty, receiver ZGM, transmitter KOMBI	Mesaj (sistem saati, 0x328) hatalı, alıcı ZGM, verici KOMBI
+Power window regulator, driver's side: LIN slave not present	Sürücü tarafı cam kaldırıcı: LIN slave yok
+Power window regulator on passenger's side: LIN slave	Yolcu tarafı cam kaldırıcı: LIN slave
+Rear driver's side power window regulator: LIN slave missing	Arka sürücü tarafı cam kaldırıcı: LIN slave eksik
+Power window, passenger's side, rear: LIN slave missing	Arka yolcu tarafı cam kaldırıcı: LIN slave eksik
+Steering column switch cluster (SZL): LIN slave missing	Direksiyon kolonu anahtar grubu (SZL): LIN slave eksik
+Multifunction steering wheel: LIN slave absent	Çok fonksiyonlu direksiyon: LIN slave yok
+Steering wheel module: LIN slave missing	Direksiyon modülü: LIN slave eksik
+ELSV (LIN): LIN slave absent	ELSV (LIN): LIN slave yok
+Brake light switch (BLS): wire break or short circuit to battery voltage	Fren lambası anahtarı (BLS): kablo kopuk veya akü gerilimine kısa devre
+IBS wakeup: line disconnected or short circuit to battery voltage	IBS uyandırma: hat kopuk veya akü gerilimine kısa devre
+Centre lock rocker switch in the front passenger door: Line fault or malfunctioning	Ön yolcu kapısı merkezi kilit anahtarı: Hat arızası veya arızalı
+Central locking drive for tailgate or split door, right: line break or short circuit to battery voltage	Bagaj kapağı veya sağ ayrık kapı merkezi kilit motoru: hat kopuk veya akü gerilimine kısa devre
+Rocker switch of central locking system in driver's door: Wiring fault or defective	Sürücü kapısı merkezi kilit anahtarı: Kablo arızası veya arızalı
+Engine compartment lid contact switch: Line fault or defective	Motor kaputu kontak anahtarı: Hat arızası veya arızalı
+Front passenger door contact Wiring broken or defective	Ön yolcu kapısı kontağı: Kablo kopuk veya arızalı
+Front passenger door door contact, rear / bottom: Wiring broken or defective	Ön yolcu kapısı kontağı, arka / alt: Kablo kopuk veya arızalı
+Driver's door contact: Line break or faulty	Sürücü kapısı kontağı: Hat kopuk veya arızalı
+Door contact, driver's door rear / bottom: Line break or faulty	Sürücü kapısı kontağı, arka / alt: Hat kopuk veya arızalı
+Headlight beam throw adjustment (LWR): System failure	Far yükseklik ayarı (LWR): Sistem arızası
+Rain-light-solar-condensation sensor: Implausible signal from rain sensor or driving light sensor	Yağmur-ışık-güneş-buğu sensörü: Yağmur veya ışık sensöründen geçersiz sinyal
+Washer jet heating: Wiring break or short circuit to B+	Yıkama memesi ısıtma: Kablo kopuk veya B+ kısa devre
+Auxiliary coolant pump: Short circuit to positive terminal or open line	Ek soğutma suyu pompası: Artıya kısa devre veya açık hat
+compressor clutch: Open line or short circuit to B+	kompresör kavraması: Açık hat veya B+ kısa devre
+control valve : Short circuit to positive terminal or circuit open	kontrol valfi : Artıya kısa devre veya devre açık
+Automatic air recirculation control (AUC) sensor: short circuit, interruption or defective pulse-width modulated signal	Otomatik hava sirkülasyonu (AUC) sensörü: kısa devre, kopukluk veya hatalı PWM sinyali
+Fanfare: B+ short circuit or line break or relay stuck	Korna: B+ kısa devre, hat kopuk veya röle takılı
+Shifting paddles: B+ short circuit or cable break	Vites kulakçıkları: B+ kısa devre veya kablo kopuk
+Light sources on the LIN bus system for interior light: Incorrect number of light sources	İç aydınlatma LIN bus ışık kaynakları: Hatalı ışık kaynağı sayısı
+LIN master FAT-LIN: Communication absent	LIN master FAT-LIN: İletişim yok
+LIN master K-LIN_1: Communication not present	LIN master K-LIN_1: İletişim yok
+LIN master K-LIN_16: Communication not present	LIN master K-LIN_16: İletişim yok
+LIN master K-LIN_21: Communication not present	LIN master K-LIN_21: İletişim yok
+LIN master K-LIN_15: Communication not present	LIN master K-LIN_15: İletişim yok
+LIN master BFT-LIN: Communication absent	LIN master BFT-LIN: İletişim yok
+LIN master FI-LIN: Communication not present	LIN master FI-LIN: İletişim yok
+LIN master SV-LIN: Communication not present	LIN master SV-LIN: İletişim yok
+LIN master SV-LIN: Faulty communication	LIN master SV-LIN: Hatalı iletişim
+Door switch centre operating facility (SZT), (LIN): No LIN slave present	Kapı anahtarı orta kumanda (SZT), (LIN): LIN slave yok
+Exterior mirror, left (LIN): No LIN slave present	Sol dış ayna (LIN): LIN slave yok
+Exterior mirror, right (LIN): No LIN slave present	Sağ dış ayna (LIN): LIN slave yok
+Evaluation electronics, non-contact tailgate opening (LIN): LIN components absent or communication not possible	Temassız bagaj açma elektroniği (LIN): LIN bileşenleri yok veya iletişim kurulamıyor
+Windscreen wiper (LIN): No LIN-slave present	Ön cam sileceği (LIN): LIN slave yok
+Drivers side rear seat-heating electronics (LIN): LIN components missing or communication not possible	Sürücü tarafı arka koltuk ısıtma elektroniği (LIN): LIN bileşenleri yok veya iletişim kurulamıyor
+Passengers side rear seat-heating electronics (LIN): LIN components missing or communication not possible	Yolcu tarafı arka koltuk ısıtma elektroniği (LIN): LIN bileşenleri yok veya iletişim kurulamıyor
+Switch block, seat functions driver's door (LIN): LIN components missing or communication not possible	Sürücü kapısı koltuk tuş bloğu (LIN): LIN bileşenleri yok veya iletişim kurulamıyor
+Switch block, seat functions front passenger door (LIN): LIN components missing or communication not possible	Ön yolcu kapısı koltuk tuş bloğu (LIN): LIN bileşenleri yok veya iletişim kurulamıyor
+Centre console control panel: LIN slave missing	Orta konsol kumanda paneli: LIN slave eksik
+LIN power distribution box: LIN slave absent	LIN güç dağıtım kutusu: LIN slave yok
+Message not received (torque crankshaft 1, 0xA5), receiver BDC, transmitter DME/DDE	Mesaj alınmadı (krank mili torku 1, 0xA5), alıcı BDC, verici DME/DDE
+Message missing (status of DSC stabilisation, 0x173), recipient BDC, sender DSC	Mesaj eksik (DSC stabilizasyon durumu, 0x173), alıcı BDC, verici DSC
+Missing message (centre of gravity longitudinal acceleration, 0x199), BDC is receiver, DSC is transmitter	Mesaj eksik (ağırlık merkezi boyuna ivme, 0x199), alıcı BDC, verici DSC
+Message not received (vehicle yaw rate, 0x19F), recipient BDC, sender DSC	Mesaj alınmadı (araç sapma hızı, 0x19F), alıcı BDC, verici DSC
+Missing message (vehicle speed, 0x1A1), BDC is receiver, DSC is transmitter	Mesaj eksik (araç hızı, 0x1A1), alıcı BDC, verici DSC
+Message missing (status, assistance system display, 0x1C0), BDC receiver, KOMBI transmitter	Mesaj eksik (durum, asistan sistemi göstergesi, 0x1C0), alıcı BDC, verici KOMBI
+Message missing (vehicle electrical system voltage value, 0x281), BDC receiver, DME/DDE transmitter	Mesaj eksik (araç elektrik sistemi gerilimi, 0x281), alıcı BDC, verici DME/DDE
+Message not received (Seat occupancy seat belt buckle contact status, 0x297), receiver is BDC, transmitter is ACSM	Mesaj alınmadı (koltuk doluluk, emniyet kemeri tokası durumu, 0x297), alıcı BDC, verici ACSM
+Message absent (actual driver steering angle, 0x301), receiver BDC, transmitter DSC	Mesaj yok (gerçek sürücü direksiyon açısı, 0x301), alıcı BDC, verici DSC
+Missing message (steering angle, front axle, effective, 0x302), BDC receiver, DSC transmitter	Mesaj eksik (ön aks direksiyon açısı, efektif, 0x302), alıcı BDC, verici DSC
+Message absent (relative time, 0x328), BDC receiver, KOMBI transmitter	Mesaj yok (göreli zaman, 0x328), alıcı BDC, verici KOMBI
+Message absent (data, drive train 2, 0x3F9), receiver is BDC, transmitter is DME/DDE	Mesaj yok (veri, aktarma organları 2, 0x3F9), alıcı BDC, verici DME/DDE
+Missing message (vehicle ride height, 0x83) receiver BDC, transmitter VDP	Mesaj eksik (araç sürüş yüksekliği, 0x83) alıcı BDC, verici VDP
+Message not received (control, water valves, 0x2BF), receiver BDC, transmitter IHKA	Mesaj alınmadı (kontrol, su valfleri, 0x2BF), alıcı BDC, verici IHKA
+Missing message (exterior lighting front electronics 1 left status, 0x1E0), BDC is receiver, FLEL is transmitter	Mesaj eksik (dış aydınlatma ön elektronik 1 sol durum, 0x1E0), alıcı BDC, verici FLEL
+Absent message (exterior light front electronics 1 right status, 0x1E6), BDC is receiver, FLER is transmitter	Mesaj yok (dış aydınlatma ön elektronik 1 sağ durum, 0x1E6), alıcı BDC, verici FLER
+Missing message (exterior lighting front electronics 2 left status, 0x1FB), BDC is receiver, FLEL is transmitter	Mesaj eksik (dış aydınlatma ön elektronik 2 sol durum, 0x1FB), alıcı BDC, verici FLEL
+Absent message (exterior light front electronics 2 right status, 0x1FD), BDC is receiver, FLER is transmitter	Mesaj yok (dış aydınlatma ön elektronik 2 sağ durum, 0x1FD), alıcı BDC, verici FLER
+Message absent (target display, vibration, lane change warning, 0x1FC), receiver SAS, sender SWW	Mesaj yok (hedef gösterim, titreşim, şerit değiştirme uyarısı, 0x1FC), alıcı SAS, verici SWW
+Message absent (nominal haptics warning, lane departure, 0x23F), BDC receiver, KAFAS transmitter	Mesaj yok (nominal dokunsal uyarı, şerit terk, 0x23F), alıcı BDC, verici KAFAS
+Message absent (target answer-back warning of lateral control assistance, 0x240), receiver BDC, sender SAS	Mesaj yok (yanal kontrol asistanı hedef geri bildirim uyarısı, 0x240), alıcı BDC, verici SAS
+Missing message (front climate control panel status, 0x246), receiver BDC, transmitter IHKA	Mesaj eksik (ön klima paneli durumu, 0x246), alıcı BDC, verici IHKA
+Message absent (data, drive train 2, 230.0.2), receiver is BDC, transmitter is DME/DDE	Mesaj yok (veri, aktarma organları 2, 230.0.2), alıcı BDC, verici DME/DDE
+FM/AM aerial: Line open between aerial amplifier and control unit	FM/AM anteni: Anten amplifikatörü ile kontrol ünitesi arasında hat kopuk
+FM2 aerial: Disconnection of line between aerial amplifier and control unit	FM2 anteni: Anten amplifikatörü ile kontrol ünitesi arasında hat kopuk
+RAM: Microphone 1: Wire break	RAM: Mikrofon 1: Kablo kopuk
+RAM: Microphone 2. Wire break in line	RAM: Mikrofon 2. Hatta kablo kopuk
+RAM, K-CAN4: Fault in line	RAM, K-CAN4: Hat arızası
+HU-H: Fault in secure ethernet communication occurred	HU-H: Güvenli Ethernet iletişiminde hata oluştu
+Bluetooth aerial: Disconnected line	Bluetooth anteni: Hat kopuk
+WLAN aerial: Disconnected line	WLAN anteni: Hat kopuk
+HU-H: Theft-proofing initialisation was not started	HU-H: Hırsızlık koruması başlatma yapılmadı
+FAULTS	ARIZALAR
+CHARGES	ŞARJLAR
+Hot film air mass meter: Intake air temp too high	Sıcak film hava kütle ölçer: Emme havası sıcaklığı çok yüksek
+Intake air temperature sensor: Short to B+	Emme havası sıcaklık sensörü: B+ kısa devre
+BDC: LED GEN2: Headlight temperature too high	BDC: LED GEN2: Far sıcaklığı çok yüksek
+Head unit: Bluetooth/Wi-Fi aerial 1: Disconnected line	Multimedya ünitesi: Bluetooth/Wi-Fi anteni 1: Hat kopuk
+KAFAS: camera calibration missing	KAFAS: kamera kalibrasyonu eksik
+EDrive	eDrive
+Battery power now	Akü gücü şu an
+Battery unit	Akü ünitesi
+Battery unit (UDS)	Akü ünitesi (UDS)
+Battery (SME 0x07)	Akü (SME 0x07)
+Battery unit (SME)	Akü ünitesi (SME)
+Climate, heater, A/C (IHKA 0x78)	Klima, ısıtıcı, A/C (IHKA 0x78)
+Diagnostics pages (UDS replies, scan, raw signals)	Diyagnoz sayfaları (UDS yanıtları, tarama, ham sinyaller)
+Home-screen widget: redraw per second	Ana ekran widget'ı: saniyedeki yenileme
+Power gauge up to (until the car reports its limits)	Güç göstergesi üst sınırı (araç limitlerini bildirene dek)
+Read cells, temperatures, limits every	Hücre, sıcaklık, limitleri okuma aralığı
+Read power every (0.1 = as fast as the car answers)	Gücü okuma aralığı (0.1 = araç yanıtladıkça)
+Reset drive totals	Sürüş toplamlarını sıfırla
+Scan page: control unit	Tarama sayfası: kontrol ünitesi
+CELLS	HÜCRELER
+Cells	Hücreler
+Drive	Sürüş
+THIS DRIVE	BU SÜRÜŞ
+This drive	Bu sürüş
+CHARGE	ŞARJ
+DRIVING	SÜRÜŞ
+DRAWING	ÇEKİŞ
+REGEN	REJEN
+IDLE	BOŞTA
+ENGINE ON	MOTOR AÇIK
+ENGINE RUNNING	MOTOR ÇALIŞIYOR
+READING	OKUNUYOR
+NO DIAGNOSTIC LINK	DİYAGNOZ BAĞLANTISI YOK
+NO REPLY	YANIT YOK
+NO REPLY - SEE DIAGNOSTICS	YANIT YOK - DİYAGNOZA BAKIN
+BATTERY MAX	AKÜ MAKS.
+REGEN MAX	REJEN MAKS.
+NET	NET
+USED	HARCANAN
+CAR SHOWS	ARAÇ GÖSTERİYOR
+CHANGED SINCE RESET	SIFIRLAMADAN BERİ DEĞİŞEN
+CLIMATE	KLİMA
+CLIMATE OFF	KLİMA KAPALI
+ON-BOARD	ARAÇ İÇİ
+HYBRID	HİBRİT
+HIGHEST	EN YÜKSEK
+LOWEST	EN DÜŞÜK
+SPREAD	FARK
+TEMPERATURE	SICAKLIK
+SCANNING	TARANIYOR
+DONE	TAMAM
+ALL THAT ANSWER (identifier: bytes)	YANIT VERENLERİN TÜMÜ (tanımlayıcı: bayt)
+LIVE COMPARISON: starts when the scan is done	CANLI KIYAS: tarama bitince başlar
+LOOK LIKE CELL VOLTAGES (V)	HÜCRE GERİLİMİNE BENZİYOR (V)
+LOOK LIKE PACK VOLTAGE (V)	PAKET GERİLİMİNE BENZİYOR (V)
+ENGINE ON: charges = the engine fills the battery, uses = the battery still helps	MOTOR AÇIK: şarj = motor aküyü doldurur, harcama = akü hâlâ destekler
+Climate OFF, press Reset drive totals, then set HI (heater) or LO with A/C: the values that follow it show up here.	Klimayı KAPATIN, Sürüş toplamlarını sıfırla'ya basın, sonra HI (ısıtma) veya A/C ile LO seçin: değişen değerler burada görünür.
+the engine charges the battery	motor aküyü şarj ediyor
+the battery still helps	akü hâlâ destekliyor
+from the battery	aküden
+battery unit (SME)	akü ünitesi (SME)
+climate unit (IHKA)	klima ünitesi (IHKA)
+cell core (battery unit)	hücre çekirdeği (akü ünitesi)
+the car's battery temperature	aracın akü sıcaklığı
+no reading - see Diagnostics	okuma yok - Diyagnoz'a bakın
+no diagnostic link yet	henüz diyagnoz bağlantısı yok
+well balanced	dengeli
+out of balance	dengesiz
+high (normal under load)	yüksek (yük altında normal)
+just now	az önce
+current pace	anlık tempo
+range at 20 °C	20 °C'de menzil
+range when full, 20 °C	doluyken menzil, 20 °C
+last measured	son ölçülen
+measured before	önceden ölçülen
+per km	km başına
+learning what the battery does meanwhile	bu arada akünün davranışı öğreniliyor
+(unit not answering)	(ünite yanıt vermiyor)
+on (est.)	açık (tahmini)
+electric	elektrik
+charged	şarj edildi
+uses	harcama
+peak	tepe
+ambient	dış ortam
+power distribution	güç dağılımı
+s (cell core), else the car	s (hücre çekirdeği), yoksa araç
+Engine Config	Motor Ayarı
+Transmission Config	Şanzıman Ayarı
+Open	Aç
+Close	Kapat
+OEM	OEM
+Exhaust Flap	Egzoz Klapesi
+Disarmed — simulated (safe)	Devre dışı — simülasyon (güvenli)
+Armed — actuates the real valve	Etkin — gerçek valfi çalıştırır
+Tuning software	Tuning yazılımı
+Off — nothing is sent to the car (safe)	Kapalı — araca hiçbir şey gönderilmez (güvenli)
+BM3 — engine map, burbles, ASD	BM3 — yazılım seçimi, pop & bang, ASD
+MHD — engine map, Max Cooling	MHD — yazılım seçimi, Maks. Soğutma
+View / refresh	Görüntüle / yenile
+EGS variant	EGS varyantı
+Verified only (0F25D0)	Yalnız doğrulanmış (0F25D0)
+Try any (unverified)	Hepsini dene (doğrulanmamış)
+Refresh while visible	Görünürken yenile
+Live refresh interval	Canlı yenileme aralığı
+Shift map family	Vites harita ailesi
+Cold KF1	Soğuk KF1
+Cold KF2	Soğuk KF2
+Shift table	Vites tablosu
+Upshifts	Vites yükseltme
+Downshifts	Vites düşürme
+Skip downshifts	Atlamalı düşürme
+GPU 60 fps	GPU 60 fps
+Boost target vs actual	Turbo hedef / gerçek
+Air charge req. vs actual	Hava dolumu istenen / gerçek
+Power gauge up to	Güç göstergesi maks.
+Live battery usage	Anlık batarya kullanımı
+Learns while driving	Sürüşte öğrenir
+Low battery: electric up to	Düşük batarya: elektrikle maks.
+RANGE AT THIS RATE	BU TÜKETİMLE MENZİL
+IN BATTERY	BATARYADA
+IN IT NOW	ŞU AN İÇİNDE
+HOLDS	KAPASİTE
+TOTAL	TOPLAM
+Reset	Sıfırla
+Scan:	Tarama:
+% per	% /
+- see Diagnostics page	- Teşhis sayfasına bakın
+Battery	Batarya
+Diagnostic	Teşhis
+battery held at 5-	batarya şurada tutulur: 5-
+battery helps -	batarya destekliyor -
+charge read	şarj okuma
+charging +	şarj +
+climate unit	klima ünitesi
+engine started while driving at	sürüşte motor çalıştı, hız:
+hybrid battery unit answers	hibrit batarya ünitesi yanıt veriyor
+identifiers answer	tanımlayıcı yanıt veriyor
+identifiers known for this car	tanımlayıcı bu araç için biliniyor
+Reset = new baseline	Sıfırla = yeni referans
+learned from	öğrenme kaynağı:
+live, at	canlı,
+ms avg /	ms ort. /
+ms each	ms her biri
+ms each, queued	ms her biri, sırada
+ms max, poll	ms maks., sorgu
+pack --	batarya --
+power reads:	güç okuma:
+scan done:	tarama bitti:
+scan: no replies, stopped	tarama: yanıt yok, durdu
+SEATS	KOLTUKLAR
+baseline	referans
+missed	kaçırıldı
+power missed	güç kaçırıldı
+power read	güç okuma
+power sign	güç işareti
+Air charge: requested vs actual	Hava dolumu: istenen / gerçek
+Boost: target vs actual	Turbo: hedef / gerçek
+REQUESTED	İSTENEN
+TARGET	HEDEF
+FES boost	FES turbo basıncı
+FES g [lat, long]	FES g [yanal, boyuna]
+gear programme	vites programı
+gear selection	vites seçimi
+gearbox oil	şanzıman yağı
+lateral acceleration	yanal ivme
+longitudinal acceleration	boyuna ivme
+on target	hedefte
+over target	hedefin üstünde
+under target	hedefin altında
+target only: the actual value does not answer	yalnız hedef: gerçek değer yanıt vermiyor
+target tyre pressure	hedef lastik basıncı
+tyre pressure	lastik basıncı
+tyre temperature	lastik sıcaklığı
+temperature	sıcaklık
+- not a real value	- gerçek değer değil
+- waiting for it to change	- değişmesi bekleniyor
+Accepted	Kabul edildi
+Active Sound	Aktif Ses
+Active Sound Design — the last setting the DME accepted	Active Sound Design — DME'nin kabul ettiği son ayar
+Active map — read from the DME	Aktif yazılım — DME'den okundu
+Aggression	Agresiflik
+Aggression 0.0 – 12.0	Agresiflik 0.0 – 12.0
+Apply	Uygula
+BM3 ROM not identified	BM3 ROM tanınmadı
+BM3 flap control is not armed	BM3 klape kontrolü etkin değil
+BM3 — exhaust flap	BM3 — egzoz klapesi
+Bosch MG1 — electric flap	Bosch MG1 — elektrikli klape
+Burbles	POP & BANG
+CLOSED	KAPALI
+DME (unvalidated)	DME (doğrulanmamış)
+DME accepted	DME kabul etti
+DME detected but not supported	DME bulundu ama desteklenmiyor
+DME took it	DME aldı
+DME took it (read back)	DME aldı (geri okundu)
+ERROR	HATA
+Engine Map	Yazılım Seç
+Engine off — needs over	Motor kapalı — gerekli: en az
+Engine running —	Motor çalışıyor —
+Engine speed unknown	Motor devri bilinmiyor
+MAP	YAZILIM
+MAP –	YAZILIM –
+MG1 flap control is confirmed but not armed (needs bench validation + authorisation)	MG1 klape kontrolü doğrulandı ama etkin değil (tezgah doğrulaması + yetki gerekli)
+MHD flap control is not armed	MHD klape kontrolü etkin değil
+MHD — exhaust flap	MHD — egzoz klapesi
+Map	Harita
+Max Cooling	Maks. Soğutma
+NONE	YOK
+No answer from the DME	DME'den yanıt yok
+Not available for this tune	Bu tuning için mevcut değil
+Not available on this car	Bu araçta mevcut değil
+Now on the DME:	DME'de şu an:
+OFF	KAPALI
+OPEN	AÇIK
+Pick a map	Yazılım seçin
+SIM	SİM
+Selected map — accepted by the DME	Seçili yazılım — DME kabul etti
+Sending	Gönderiliyor
+Simulated	Simüle
+Start the engine first — Max Cooling needs over	Önce motoru çalıştırın — Maks. Soğutma için gerekli: en az
+The engine light may flash while the map changes — that is normal	Yazılım değiştirirken motor lambası yanıp sönebilir — bu normaldir
+UNKNOWN	BİLİNMİYOR
+Unavailable	Mevcut değil
+Waiting for the diagnostic link	Teşhis bağlantısı bekleniyor
+burbles off	pop & bang kapalı
+custom value	özel değer
+exhaust control not available on this car	bu araçta egzoz kontrolü mevcut değil
+no BM3 flash	BM3 yazılımı yok
+no DME detected	DME bulunamadı
+no MHD flash	MHD yazılımı yok
+no MHD or BM3 flash	MHD veya BM3 yazılımı yok
+no read	okuma yok
+no read-back on BM3	BM3'te geri okuma yok
+no read-back on MHD	MHD'de geri okuma yok
+no state read for this DME	bu DME için durum okunmadı
+not sent:	gönderilmedi:
+real control blocked:	gerçek kontrol engellendi:
+real flap control is not validated/authorised on this build	bu sürümde gerçek klape kontrolü doğrulanmamış/yetkisiz
+selected — press Apply to send	seçildi — göndermek için Uygula'ya basın
+simulated (safe) mode	simülasyon (güvenli) modu
+unexpected reply	beklenmeyen yanıt
+accepted by the DME	DME kabul etti
+confirmed by the DME	DME onayladı
+- control blocked (not armed)	- kontrol engellendi (etkin değil)
+8HP hybrid	8HP hybrid
+A / B: brakes. C / D / E: clutches.	A / B: frenler. C / D / E: kavramalar.
+Actual gear	Mevcut vites
+Adapt. count	Adapt. sayısı
+Adaptation count	Adaptasyon sayısı
+Additional measured data	Ek ölçüm verileri
+Age	Veri yaşı
+All available diagnostic records	Tüm mevcut teşhis kayıtları
+Cell indices do not reveal RPM/torque limits.	Hücre indeksleri devir/tork sınırlarını göstermez.
+Clutch fill adaptation / A - E	Kavrama dolum adaptasyonu / A - E
+Clutches	Kavramalar
+Cold / warm	Soğuk / sıcak
+Cold KF	Soğuk KF
+Cold correction (raw units)	Soğuk düzeltme (ham birim)
+Cold evaluations	Soğuk değerlendirmeler
+Cold maps contain single upshifts only	Soğuk haritalarda yalnız tekli yükseltme var
+Cold shift counter	Soğuk vites sayacı
+Controller on this car:	Bu araçtaki kontrol ünitesi:
+Converter / learning / service data	Konvertör / öğrenme / servis verisi
+Converter clutch	Konvertör kavraması
+Counts belong to adaptation learning. Map statistics are learned pressure offsets; they are not shift durations.	Sayımlar adaptasyon öğrenmesine aittir. Harita istatistikleri öğrenilmiş basınç ofsetleridir; vites süreleri değildir.
+Data source: BMW/ZF GSZFBCE rev. 15.000.	Veri kaynağı: BMW/ZF GSZFBCE rev. 15.000.
+EGS chip 1	EGS çipi 1
+EGS chip 2	EGS çipi 2
+EGS electronics	EGS elektroniği
+EGS fault memory	EGS arıza hafızası
+EGS identification	EGS kimliği
+EGS oil-service RPM window	EGS yağ servisi devir aralığı
+EGS oil-service temperature window	EGS yağ servisi sıcaklık aralığı
+EGS operating time (without standby)	EGS çalışma süresi (bekleme hariç)
+EXPERIMENTAL	DENEYSEL
+Engagement evaluations	Kavrama değerlendirmeleri
+Engagement offset D1 / D2 / R	Kavrama ofseti D1 / D2 / R
+Expected applied elements / reference	Beklenen devrede elemanlar / referans
+Fast fill ms	Hızlı dolum ms
+Fill pressure and time: learned corrections.	Dolum basıncı ve süresi: öğrenilmiş düzeltmeler.
+Gear	Vites
+IDENTIFYING	TANIMLANIYOR
+KF1 / KF2 keep separate adaptation maps.	KF1 / KF2 ayrı adaptasyon haritaları tutar.
+LINK STALE	VERİ ESKİ
+LIVE	CANLI
+LIVE — UNVERIFIED	CANLI — DOĞRULANMADI
+LOCKED HIGH	KİLİTLİ YÜKSEK
+LOCKED LOW	KİLİTLİ DÜŞÜK
+Learned offsets	Öğrenilmiş ofsetler
+Learned pressure offset / mbar	Öğrenilmiş basınç ofseti / mbar
+Live	Canlı
+Max mbar	Maks. mbar
+Maximum	Maksimum
+Mean	Ortalama
+Mean mbar	Ort. mbar
+Measured at the transmission	Şanzımanda ölçüldü
+Mechatronics / converter	Mekatronik / konvertör
+Min mbar	Min. mbar
+Minimum	Minimum
+NO LINK	BAĞLANTI YOK
+Next item: change plotted temperature.	Sonraki öğe: grafik sıcaklığını değiştir.
+Next item: next details view	Sonraki öğe: sonraki ayrıntı görünümü
+Next item: next records / View: return to summary	Sonraki öğe: sonraki kayıtlar / Görünüm: özete dön
+Next item: oil / electronics. Historical time counters read from EGS; these are not recommended temperature limits.	Sonraki öğe: yağ / elektronik. Geçmiş zaman sayaçları EGS'den okunur; bunlar önerilen sıcaklık sınırları değildir.
+Next item: shift   /   View: map family	Sonraki öğe: vites   /   Görünüm: harita ailesi
+No matching positive response	Eşleşen olumlu yanıt yok
+No pending or confirmed EGS faults returned	Bekleyen veya onaylı EGS arızası yok
+No response	Yanıt yok
+Not an allowed read identifier	İzin verilen okuma tanımlayıcısı değil
+Not on this EGS (	Bu EGS'de yok (
+Not read yet	Henüz okunmadı
+OPENING	AÇILIYOR
+OTHER EGS	DİĞER EGS
+Output shaft	Çıkış mili
+Pack	Paket
+Pending and confirmed faults / read only	Bekleyen ve onaylı arızalar / salt okunur
+Per-shift map summary /	Vites bazında harita özeti /
+Positive / negative offsets are both possible.	Pozitif / negatif ofsetlerin ikisi de mümkün.
+Pressure and fast-fill time are corrections to base calibration. Next item: select pack.	Basınç ve hızlı dolum süresi temel kalibrasyona düzeltmedir. Sonraki öğe: paket seç.
+Pressure eval.	Basınç değ.
+Pressure mbar	Basınç mbar
+REGULATED HIGH	REGÜLE YÜKSEK
+REGULATED LOW	REGÜLE DÜŞÜK
+Raw-only records are saved without a guessed decoder. Snapshot keeps raw payloads and decoded values.	Yalnız ham kayıtlar tahmini çözücü olmadan kaydedilir. Anlık görüntü ham veriyi ve çözülmüş değerleri tutar.
+ReadDTCByStatusMask 0x0C / no erase command.	ReadDTCByStatusMask 0x0C / silme komutu yok.
+Record	Kayıt
+Reference	Referans
+Reference matrix: ZF external transmission training, 8HP power flow. Applied-element diagram, not a pressure measurement.	Referans matrisi: ZF harici şanzıman eğitimi, 8HP güç akışı. Devredeki eleman şeması, basınç ölçümü değil.
+Refresh requested	Yenileme istendi
+Release evaluations	Bırakma değerlendirmeleri
+Release offset D1 / D2 / R	Bırakma ofseti D1 / D2 / R
+Reported oil-service window	Bildirilen yağ servisi aralığı
+Rows and columns are storage-cell indices. Physical RPM/torque breakpoints are not supplied by this record.	Satır ve sütunlar bellek hücresi indeksleridir. Fiziksel devir/tork noktaları bu kayıtta yok.
+Rows: turbine-speed support-point index. Columns: torque support-point index; physical breakpoints not supplied.	Satırlar: türbin devri destek noktası indeksi. Sütunlar: tork destek noktası indeksi; fiziksel noktalar verilmez.
+Settings: EGS variant, Try any (unverified) reads it anyway; values that don't fit show as errors	Ayarlar: EGS varyantı, Hepsini dene (doğrulanmamış) yine de okur; uymayan değerler hata olarak görünür
+Shift	Vites
+Shift adaptation /	Vites adaptasyonu /
+Shifts	Geçişler
+Snapshot saved in the app data folder	Anlık görüntü uygulama veri klasörüne kaydedildi
+Start evaluations	Kalkış değerlendirmeleri
+Stationary adaptation counter	Duruşta adaptasyon sayacı
+TCC base-point adaptation	TCC temel nokta adaptasyonu
+TCC base-point evaluation counter	TCC temel nokta değerlendirme sayacı
+TCC fast-fill correction	TCC hızlı dolum düzeltmesi
+TCC fast-fill evaluation counter	TCC hızlı dolum değerlendirme sayacı
+TO LOCKED HIGH	KİLİTLİ YÜKSEĞE
+TO LOCKED LOW	KİLİTLİ DÜŞÜĞE
+TO REGULATED HIGH	REGÜLE YÜKSEĞE
+TO REGULATED LOW	REGÜLE DÜŞÜĞE
+Temperature bands	Sıcaklık bantları
+Temperature tables show accumulated time.	Sıcaklık tabloları birikmiş süreyi gösterir.
+Thermal	Termal
+This EGS variant is not supported by the verified decoder	Bu EGS varyantı doğrulanmış çözücüde desteklenmiyor
+This map family has no selected shift group	Bu harita ailesinde seçili vites grubu yok
+This map family has no such shift	Bu harita ailesinde böyle bir vites yok
+Three elements transmit each forward ratio.	Her ileri oranı üç eleman iletir.
+Time eval.	Süre değ.
+Total recorded	Toplam kayıt
+Transmission oil	Şanzıman yağı
+Turbine / input	Türbin / giriş
+Understanding the data	Verileri anlamak
+Unexpected length:	Beklenmeyen uzunluk:
+Unsupported EGS variant:	Desteklenmeyen EGS varyantı:
+Updated	Güncellendi
+Upper temperature bands	Üst sıcaklık bantları
+View / refresh: open selected map	Görüntüle / yenile: seçili haritayı aç
+View / refresh: save snapshot.	Görüntüle / yenile: anlık görüntü kaydet.
+Waiting for an EGS fault-memory response	EGS arıza hafızası yanıtı bekleniyor
+Waiting for fresh temperature samples	Yeni sıcaklık örnekleri bekleniyor
+Waiting for the selected map	Seçili harita bekleniyor
+ZF 8HP / shift-element reference	ZF 8HP / vites elemanı referansı
+bytes / raw	bayt / ham
+last good	son geçerli
+min recorded	min kayıt
+not identified yet	henüz tanımlanmadı
+read error	okuma hatası
+status 0x	durum 0x
+synthetic demo	sentetik demo
+waiting for EGS	EGS bekleniyor
+saved	kaydedildi
+current session	mevcut oturum
+cold adaptation	soğuk adaptasyon
+map summary	harita özeti
+lifetime temperature distribution	ömür boyu sıcaklık dağılımı
+Map 1	Yazılım 1
+Map 2	Yazılım 2
+Map 3	Yazılım 3
+Map 4	Yazılım 4
+Disarmed · simulated (safe)	Devre dışı · simülasyon (güvenli)
+Armed · actuates the real valve	Etkin · gerçek valfi çalıştırır
+Off · nothing is sent to the car (safe)	Kapalı · araca hiçbir şey gönderilmez (güvenli)
+BM3 · engine map, burbles, ASD	BM3 · yazılım seçimi, pop & bang, ASD
+MHD · engine map, Max Cooling	MHD · yazılım seçimi, Maks. Soğutma
+Active Sound Design · the last setting the DME accepted	Active Sound Design · DME'nin kabul ettiği son ayar
+Active map · read from the DME	Aktif yazılım · DME'den okundu
+BM3 · exhaust flap	BM3 · egzoz klapesi
+Bosch MG1 · electric flap	Bosch MG1 · elektrikli klape
+Engine off · needs over	Motor kapalı · gerekli: en az
+MHD · exhaust flap	MHD · egzoz klapesi
+Selected map · accepted by the DME	Seçili yazılım · DME kabul etti
+Start the engine first · Max Cooling needs over	Önce motoru çalıştırın · Maks. Soğutma için gerekli: en az
+The engine light may flash while the map changes · that is normal	Yazılım değiştirirken motor lambası yanıp sönebilir · bu normaldir
+selected · press Apply to send	seçildi · göndermek için Uygula'ya basın
+LIVE · UNVERIFIED	CANLI · DOĞRULANMADI
+60-0 / 100-0 mph	60-0 / 100-0 mph
+Parked only (pauses while driving)	Yalnız parkta (sürüşte duraklar)
+Reset service	Servisi sıfırla
+Service reset (brake fluid, vehicle check)	Servis sıfırlama (fren hidroliği, araç kontrolü)
+24 cells	24 hücre
+64 cells	64 hücre
+down	aşağı
+skip	atlamalı
+ago	önce
+Max Cooling ON	Maks. Soğutma AÇIK
+Max Cooling OFF	Maks. Soğutma KAPALI
+up	yukarı
+m ago	dk önce
+Language	Dil
+Per-shift map summary	Vites bazında harita özeti
+Next item: next pack	Sonraki öğe: sonraki paket
+Next item: next temperature	Sonraki öğe: sonraki sıcaklık
+Next item: oil / electronics	Sonraki öğe: yağ / elektronik
+Gear engagement / release	Vites kavrama / bırakma
+EGS / oil service	EGS / yağ servisi
+Fast-fill correction	Hızlı dolum düzeltmesi
+Fast-fill evaluations	Hızlı dolum değerlendirmeleri
+Base-point adaptation	Temel nokta adaptasyonu
+Base-point evaluations	Temel nokta değerlendirmeleri
+Engage, mbar	Kavrama, mbar
+Engage evaluations	Kavrama değerlendirmeleri
+Release, mbar	Bırakma, mbar
+Operating time (no standby)	Çalışma süresi (bekleme hariç)
+Stationary adaptations	Duruşta adaptasyonlar
+Oil-service temperature	Yağ servisi sıcaklığı
+Oil-service speed	Yağ servisi devri
+Up	Yukarı
+Down	Aşağı
+Skip	Atla
+Summary	Özet
+Read again	Tekrar oku
+Electronics	Elektronik
+DUE BY	SON TARİH
+TIME LEFT	KALAN SÜRE
+DISTANCE LEFT	KALAN MESAFE
+month	ay
+months	ay
+January	Ocak
+February	Şubat
+March	Mart
+April	Nisan
+May	Mayıs
+June	Haziran
+July	Temmuz
+August	Ağustos
+September	Eylül
+October	Ekim
+November	Kasım
+December	Aralık
+xDrive (experimental)	xDrive (deneysel)
+Off · nothing is sent (safe)	Kapalı · hiçbir şey gönderilmez (güvenli)
+On · xDrive tab, xDrive off until ignition off	Açık · xDrive sekmesi, kontak kapanana dek xDrive kapalı
+RWD REQUESTED	ARKA İTİŞ İSTENDİ
+xDrive active · read from the DSC	xDrive etkin · DSC'den okundu
+xDrive off · read from the DSC · back after an ignition cycle	xDrive kapalı · DSC'den okundu · kontak döngüsünden sonra döner
+Start the engine without switching the ignition off	Kontağı kapatmadan motoru çalıştırın
+This DSC does not offer LMV_FUNKTION	Bu DSC LMV_FUNKTION sunmuyor
+The DSC reports the mode with the engine running	DSC modu motor çalışırken bildirir
+Live car data	Canlı araç verisi
+Stationary	Duruyor
+Selector in P	Vites kolu P'de
+Parking brake on	Park freni çekili
+tested variant	test edilmiş varyant
+untested variant	test edilmemiş varyant
+DSC variant unknown	DSC varyantı bilinmiyor
+Experimental	Deneysel
+xDrive returns when the ignition is switched off	Kontak kapanınca xDrive geri döner
+Front axle torque · the transfer case does not report it	Ön aks torku · transfer kutusu bildirmiyor
+Front axle	Ön aks
+actual	gerçek
+peak requested while moving	sürüşte istenen tepe değer
+Front axle torque shows with the engine running	Ön aks torku motor çalışırken görünür
+Confirm xDrive off	xDrive kapatmayı onayla
+xDrive off	xDrive'ı kapat
+Switch on xDrive (experimental) in Settings	Ayarlar'da xDrive'ı (deneysel) açın
+Busy	Meşgul
+DSC not answering yet	DSC henüz yanıt vermiyor
+No live car data	Canlı araç verisi yok
+Press again to switch xDrive off until the ignition is switched off	Kontak kapanana dek xDrive'ı kapatmak için tekrar basın
+Sending to the DSC…	DSC'ye gönderiliyor…
+Accepted by the DSC · start the engine without switching the ignition off	DSC kabul etti · kontağı kapatmadan motoru çalıştırın
+No answer from the DSC	DSC'den yanıt yok
+conditions not met · ignition on, engine off, P, parking brake on, car stationary	koşullar sağlanmadı · kontak açık, motor kapalı, P, park freni çekili, araç duruyor
+not supported by this DSC	bu DSC desteklemiyor
+refused (security access) · switch drive readiness off: engine off, not READY (ignition on only)	reddedildi (güvenlik erişimi) · sürüş hazırlığını kapatın: motor kapalı, READY değil (yalnız kontak açık)
+not allowed even in the extended diagnostic session	genişletilmiş teşhis oturumunda bile izin yok
+overdue	süresi geçti
+Live Data	Canlı Veri
+Gauges	Göstergeler
+Gauge	Gösterge
+New screen	Yeni ekran
+Trips	Yolculuklar
+Layout	Düzen
+Browse	Göz at
+Stop browsing	Göz atmayı bitir
+Dial + 2 numbers	Kadran + 2 sayı
+Dial + 3 numbers	Kadran + 3 sayı
+2 dials	2 kadran
+3 dials	3 kadran
+2 bars	2 çubuk
+Bar + 3 numbers	Çubuk + 3 sayı
+4 numbers	4 sayı
+Fuel consumption (car signal)	Yakıt tüketimi (araç sinyali)
+Consumption, this trip	Tüketim, bu yolculuk
+Distance, this trip	Mesafe, bu yolculuk
+Cost, this trip	Maliyet, bu yolculuk
+no trip yet	henüz yolculuk yok
+Trip computer	Yol bilgisayarı
+The first trip starts with the engine: every drive is counted, also while this screen is closed	İlk yolculuk motorla başlar: ekran kapalıyken de her sürüş sayılır
+The trip computer is off (Settings)	Yol bilgisayarı kapalı (Ayarlar)
+Last 5 trips	Son 5 yolculuk
+Started	Başlangıç
+Time	Süre
+Distance	Mesafe
+Fuel	Yakıt
+Cost	Maliyet
+max speed	maks. hız
+Tank	Depo
+No completed trip yet	Henüz biten yolculuk yok
+This trip	Bu yolculuk
+Last 7 days	Son 7 gün
+Last 30 days	Son 30 gün
+All recorded	Tüm kayıtlar
+Fuel price	Yakıt fiyatı
+Set the fuel price	Yakıt fiyatını ayarla
+not set	ayarlanmadı
+a litre	litre başına
+Change	Değiştir
+Change it with the knob or the buttons.	Kumanda düğmesi veya tuşlarla değiştirin.
+The Fuel price button, then the knob.	Yakıt fiyatı tuşu, sonra kumanda düğmesi.
+This trip, and trips that had no price, follow it; the others keep theirs.	Bu yolculuk ve fiyatsız yolculuklar bunu kullanır; diğerleri kendi fiyatını korur.
+Fuel: the car's own fuel signal	Yakıt: aracın kendi yakıt sinyali
+A trip runs from the engine start until the engine has been off for 10 minutes. Currency: Settings.	Yolculuk motor çalışınca başlar, motor 10 dakika kapalı kalınca biter. Para birimi: Ayarlar.
+Unit pages show	Ünite sayfalarında göster
+What the unit may have	Ünitede olabilecekler
+Only what answered	Yalnız yanıt verenler
+Everything it lists	Listelediği her şey
+Names	Adlar
+English	İngilizce
+German (BMW)	Almanca (BMW)
+BMW identifiers	BMW tanımlayıcıları
+Scan units when opened	Açılınca üniteleri tara
+Home-screen widget shows	Ana ekran widget'ı gösterir
+Gauges 1	Göstergeler 1
+Gauges 2	Göstergeler 2
+Gauges 3	Göstergeler 3
+Gauges 4	Göstergeler 4
+Gauges 5	Göstergeler 5
+Gauges 6	Göstergeler 6
+Home-screen widget: picture	Ana ekran widget'ı: resim
+Small, clear of the edges	Küçük, kenarlardan uzak
+Medium	Orta
+Fill the widget	Widget'ı doldur
+Trip computer (counts every drive)	Yol bilgisayarı (her sürüşü sayar)
+Currency	Para birimi
+Show sources and unverified values	Kaynakları ve doğrulanmamış değerleri göster
+Scan units	Üniteleri tara
+Read all	Tümünü oku
+Stop reading	Okumayı durdur
+Engine power (torque x speed)	Motor gücü (tork x devir)
+Power, % of maximum (sport display)	Güç, maksimumun %'si (spor ekran)
+Torque, % of maximum (sport display)	Tork, maksimumun %'si (spor ekran)
+Maximum power (sport display)	Maks. güç (spor ekran)
+Maximum torque (sport display)	Maks. tork (spor ekran)
+Boost peak (sport display)	Maks. turbo basıncı (spor ekran)
+Accelerator pedal	Gaz pedalı
+Engine oil (fuel signal)	Motor yağı (yakıt sinyali)
+running	çalışıyor
+starting	çalıştırılıyor
+on	açık
+Auto start-stop	Otomatik Start-Stop
+Fuel in the tank	Depodaki yakıt
+Fuel tank, left half	Yakıt deposu, sol yarı
+Fuel tank, right half	Yakıt deposu, sağ yarı
+Odometer	Kilometre sayacı
+Fuel consumption per 100 km	100 km'de yakıt tüketimi
+Fuel injection signal (raw)	Enjeksiyon sinyali (ham)
+Average consumption, trip 1	Ort. tüketim, yolculuk 1
+Average speed, trip 1	Ort. hız, yolculuk 1
+Average consumption, trip 2	Ort. tüketim, yolculuk 2
+Average speed, trip 2	Ort. hız, yolculuk 2
+Driving time	Sürüş süresi
+Distance driven	Kat edilen mesafe
+Fuel used, this trip	Kullanılan yakıt, bu yolculuk
+Cost of this trip	Bu yolculuğun maliyeti
+Time, this trip	Süre, bu yolculuk
+Driving mode	Sürüş modu
+Acceleration, forward	İvme, boyuna
+Acceleration, sideways	İvme, yanal
+Yaw rate	Savrulma hızı
+Roll rate	Yalpa hızı
+Pitch rate	Yunuslama hızı
+Steering wheel angle	Direksiyon açısı
+Parking brake	El freni
+Outside temperature	Dış sıcaklık
+12 V battery charge	12 V akü şarjı
+Engine oil level	Motor yağı seviyesi
+Tyre pressure, front left	Lastik basıncı, sol ön
+Tyre pressure, front right	Lastik basıncı, sağ ön
+Tyre pressure, rear left	Lastik basıncı, sol arka
+Tyre pressure, rear right	Lastik basıncı, sağ arka
+Tyre temperature, front left	Lastik sıcaklığı, sol ön
+Tyre temperature, front right	Lastik sıcaklığı, sağ ön
+Tyre temperature, rear left	Lastik sıcaklığı, sol arka
+Tyre temperature, rear right	Lastik sıcaklığı, sağ arka
+Tyre pressure target, front left	Hedef lastik basıncı, sol ön
+Tyre pressure target, front right	Hedef lastik basıncı, sağ ön
+Tyre pressure target, rear left	Hedef lastik basıncı, sol arka
+Tyre pressure target, rear right	Hedef lastik basıncı, sağ arka
+Chassis (raw numbers)	Şasi (ham değerler)
+Wheel speed, front left	Tekerlek hızı, sol ön
+Wheel speed, front right	Tekerlek hızı, sağ ön
+Wheel speed, rear left	Tekerlek hızı, sol arka
+Wheel speed, rear right	Tekerlek hızı, sağ arka
+Road gradient, along	Yol eğimi, boyuna
+Road gradient, across	Yol eğimi, enine
+Vehicle mass	Araç kütlesi
+ABS status	ABS durumu
+Traction control (ASC) status	Patinaj kontrolü (ASC) durumu
+Stability control (DSC) status	Denge kontrolü (DSC) durumu
+Driver braking	Sürücü frenlemesi
+Fuel and trip	Yakıt ve yolculuk
+No finished trip yet	Henüz biten yolculuk yok
+Last trip	Son yolculuk
+Last trips	Son yolculuklar
+Fuel used	Kullanılan yakıt
+Consumption	Tüketim
+Average speed	Ortalama hız
+Fuel: from the car's own fuel signal	Yakıt: aracın kendi yakıt sinyalinden
+Fuel: from the engine unit until the car's fuel signal has learned its scaling	Yakıt: araç sinyali ölçeğini öğrenene dek motor ünitesinden
+A trip runs from the engine start until the engine has been off for 10 minutes.  Currency: Settings.	Yolculuk motor çalışınca başlar, motor 10 dakika kapalı kalınca biter.  Para birimi: Ayarlar.
+Tap or press here to choose its value	Değerini seçmek için dokunun veya basın
+page	sayfa
+with a value	değer içeren
+Engine load	Motor yükü
+Throttle	Gaz kelebeği
+Engine power (engine unit)	Motor gücü (motor ünitesi)
+Vehicle speed	Araç hızı
+Time since engine start	Motor çalıştırmadan beri süre
+Temperatures	Sıcaklıklar
+Coolant, radiator outlet	Soğutma suyu, radyatör çıkışı
+Engine oil (after filter)	Motor yağı (filtre sonrası)
+Engine oil in the sump	Karterdeki motor yağı
+Intake air	Emme havası
+Charge air before throttle	Gaz kelebeği öncesi şarj havası
+Gearbox	Şanzıman
+Engine unit	Motor ünitesi
+Exhaust after catalyst (model)	Katalizör sonrası egzoz (model)
+Particulate filter	Partikül filtresi
+Catalyst, bank 1 sensor 1	Katalizör, sıra 1 sensör 1
+Oil pressure	Yağ basıncı
+Oil pressure (absolute)	Yağ basıncı (mutlak)
+Oil level above minimum	Minimumun üstündeki yağ seviyesi
+Oil level	Yağ seviyesi
+Oil life left (by engine hours)	Kalan yağ ömrü (motor saatine göre)
+Oil life left (by fuel used)	Kalan yağ ömrü (yakıta göre)
+Engine hours on this oil	Bu yağla motor saati
+Distance on this oil	Bu yağla mesafe
+Fuel in the oil	Yağdaki yakıt
+Oil pump duty cycle	Yağ pompası görev döngüsü
+Fuel tank level	Yakıt deposu seviyesi
+Time since refuelling	Yakıt alımından beri süre
+High pressure fuel (rail)	Yüksek basınçlı yakıt (rail)
+High pressure fuel target	Yüksek basınç yakıt hedefi
+Fuel consumption	Yakıt tüketimi
+Fuel mass flow	Yakıt kütle debisi
+Ethanol in the fuel	Yakıttaki etanol
+Fuel quality (adapted)	Yakıt kalitesi (adapte)
+Boost and air	Turbo ve hava
+Charge pressure (absolute)	Turbo basıncı (mutlak)
+Boost target (absolute)	Turbo hedefi (mutlak)
+Boost control deviation	Turbo kontrol sapması
+Intake manifold pressure	Emme manifoldu basıncı
+Ambient pressure	Ortam basıncı
+Air mass flow	Hava kütle debisi
+Air charge (relative)	Hava dolgusu (bağıl)
+Wastegate position (0 = closed)	Wastegate konumu (0 = kapalı)
+Wastegate actuator duty cycle	Wastegate aktüatörü görev döngüsü
+Ignition and knock	Ateşleme ve vuruntu
+Ignition angle	Ateşleme açısı
+Knock detected	Vuruntu algılandı
+Knock control retard (mean)	Vuruntu kontrol geciktirmesi (ort.)
+Knock control adaptation	Vuruntu kontrol adaptasyonu
+VANOS and Valvetronic	VANOS ve Valvetronic
+Intake camshaft (VANOS)	Emme eksantrik mili (VANOS)
+Intake camshaft target	Emme eksantrik mili hedefi
+Exhaust camshaft (VANOS)	Egzoz eksantrik mili (VANOS)
+Exhaust camshaft target	Egzoz eksantrik mili hedefi
+Intake valve lift (Valvetronic)	Emme supap stroku (Valvetronic)
+Intake valve lift target	Emme supap stroku hedefi
+Mixture and injectors	Karışım ve enjektörler
+Lambda	Lambda
+Lambda target	Lambda hedefi
+Short term fuel trim	Kısa süreli yakıt düzeltmesi
+Long term fuel trim	Uzun süreli yakıt düzeltmesi
+Mixture adaptation (factor)	Karışım adaptasyonu (faktör)
+Injector flow adaptation (mean)	Enjektör debi adaptasyonu (ort.)
+Battery and charging	Akü ve şarj
+Battery voltage	Akü voltajı
+Battery current	Akü akımı
+Battery temperature	Akü sıcaklığı
+Battery charge	Akü şarjı
+Alternator current	Alternatör akımı
+Wear and service	Aşınma ve servis
+Spark plugs: remaining distance	Bujiler: kalan mesafe
+Spark plugs: distance driven	Bujiler: kat edilen mesafe
+Spark plug wear (normalised)	Buji aşınması (normalize)
+Particulate filter: soot	Partikül filtresi: is
+Particulate filter: load (adapted)	Partikül filtresi: yük (adapte)
+Particulate filter: ash (adapted)	Partikül filtresi: kül (adapte)
+Catalyst oxygen storage	Katalizör oksijen depolama
+Engine operating hours	Motor çalışma saati
+Check engine lamp (MIL) on	Motor arıza lambası (MIL) yanıyor
+Stored emission faults	Kayıtlı emisyon arızaları
+The engine unit isn't answering (ignition on?)	Motor ünitesi yanıt vermiyor (kontak açık mı?)
+The engine unit has no values to show	Motor ünitesinde gösterilecek değer yok
+values read	değer okundu
+Applied elements	Uygulanan öğeler
+Controller	Kontrol ünitesi
+Scan units to see the car's control units (ignition on)	Aracın kontrol ünitelerini görmek için üniteleri tarayın (kontak açık)
+Only reads: identification and live values, nothing is written or changed in the car.	Yalnızca okur: kimlik ve canlı değerler; araçta hiçbir şey yazılmaz veya değiştirilmez.
+Reading the DME - press again in a moment	DME okunuyor - birazdan tekrar basın
+Take a photo when it says DONE. Settings > Scan unit picks the unit. Replies are saved in the app's data folder (scan_07.json).	TAMAM yazınca fotoğraf çekin. Ayarlar > Ünite tara üniteyi seçer. Yanıtlar uygulamanın veri klasörüne kaydedilir (scan_07.json).
+fault|faults	arıza
+charge|charges	şarj
+messages|messages	mesaj
+items|items	öğe
+month|months	ay
+shifts|shifts	vites değişimi
+cells|cells	hücre
+records|records	kayıt
+control unit(s) - press again within 5 s|control unit(s) - press again within 5 s	kontrol ünitesi - 5 s içinde tekrar basın
+control unit(s) - scanning again|control unit(s) - scanning again	kontrol ünitesi - yeniden taranıyor
+control units answered|control units answered	kontrol ünitesi yanıt verdi
+answered|answered	yanıt verdi
+identifiers known for this car|identifiers known for this car	bu araç için bilinen tanımlayıcı
+possible texts (depends on unit type)|possible texts (depends on unit type)	olası metin (ünite tipine bağlı)
+Accelerator pedal (relative)	Gaz pedalı (bağıl)
+Accelerator pedal angle (normalised)	Gaz pedalı açısı (normalize)
+Accelerator pedal position D	Gaz pedalı konumu D
+Accelerator pedal position E	Gaz pedalı konumu E
+Active diagnostic session	Aktif teşhis oturumu
+Adapted fuel quality factor (0 = RON 98, 1 = RON 91)	Adapte yakıt kalite faktörü (0 = RON 98, 1 = RON 91)
+Air mass flow (filtered)	Hava kütle debisi (filtreli)
+Air mass flow taking part in combustion	Yanmaya katılan hava kütle debisi
+Air mass flow through throttle, bank 1	Gaz kelebeğinden hava debisi, sıra 1
+Air mass meter flow (16 bit)	Hava kütle ölçer debisi (16 bit)
+Alcohol in the fuel	Yakıttaki alkol
+Ash mass in particulate filter (adapted)	Partikül filtresindeki kül kütlesi (adapte)
+BMW coding	BMW kodlaması
+Barometric pressure	Barometrik basınç
+Battery sensor (IBS) battery current	Akü sensörü (IBS) akü akımı
+Battery sensor (IBS) battery temperature	Akü sensörü (IBS) akü sıcaklığı
+Battery sensor (IBS) battery voltage	Akü sensörü (IBS) akü voltajı
+Battery state of charge now	Akünün anlık şarj durumu
+Boost actuator output duty cycle	Turbo aktüatörü çıkış görev döngüsü
+Boost pressure control deviation, bank 1	Turbo basıncı kontrol sapması, sıra 1
+Boost pressure target	Turbo basıncı hedefi
+Catalyst 1 oxygen storage capacity, bank 1	Katalizör 1 oksijen depolama kapasitesi, sıra 1
+Catalyst temperature, bank 1 sensor 1	Katalizör sıcaklığı, sıra 1 sensör 1
+Catalyst temperature, bank 1 sensor 2	Katalizör sıcaklığı, sıra 1 sensör 2
+Catalyst temperature, bank 2 sensor 1	Katalizör sıcaklığı, sıra 2 sensör 1
+Catalyst temperature, bank 2 sensor 2	Katalizör sıcaklığı, sıra 2 sensör 2
+Closed loop	Kapalı döngü
+Closed loop (sensor fault)	Kapalı döngü (sensör arızası)
+Clutch engine torque actual	Kavrama motor torku, gerçek
+Control module voltage	Kontrol modülü voltajı
+Current gear, internal (incl. neutral and reverse)	Mevcut vites, dahili (N ve R dahil)
+Default	Varsayılan
+Diesel	Dizel
+Dipstick fault	Yağ seviye sensörü arızası
+Distance since faults cleared	Arızalar silindikten sonra mesafe
+Distance with check engine lamp on	Arıza lambası yanarken mesafe
+Effective engine power	Efektif motor gücü
+Electric wastegate actual position (0 = closed, 100 = open)	Elektrikli wastegate gerçek konumu (0 = kapalı, 100 = açık)
+Engine friction torque	Motor sürtünme torku
+Engine load (absolute)	Motor yükü (mutlak)
+Engine load (calculated)	Motor yükü (hesaplanan)
+Engine oil level above minimum (cl)	Minimumun üstündeki motor yağı seviyesi (cl)
+Engine torque without anti-jerk (clutch torque)	Sarsıntı önlemesiz motor torku (kavrama torku)
+Ethanol	Etanol
+Evaporative purge (commanded)	Kanister temizleme (komut)
+Exhaust VANOS spread actual	Egzoz VANOS açılımı, gerçek
+Exhaust VANOS spread target	Egzoz VANOS açılımı, hedef
+Exhaust temperature after catalyst (model)	Katalizör sonrası egzoz sıcaklığı (model)
+Exhaust temperature after main catalyst (model)	Ana katalizör sonrası egzoz sıcaklığı (model)
+Extended	Genişletilmiş
+Fuel level, left tank half	Yakıt seviyesi, depo sol yarısı
+Fuel level, right tank half	Yakıt seviyesi, depo sağ yarısı
+Fuel rail pressure	Yakıt rail basıncı
+Fuel rail pressure (to manifold)	Yakıt rail basıncı (manifolda göre)
+Fuel rate	Yakıt debisi
+Fuel system	Yakıt sistemi
+Fuel type	Yakıt tipi
+Fuel volume flow (ml/s)	Yakıt hacim debisi (ml/s)
+Generator output current	Jeneratör çıkış akımı
+Hardware number	Donanım numarası
+Hybrid diesel	Hibrit dizel
+Hybrid petrol	Hibrit benzin
+Ignition angle, cylinder 1	Ateşleme açısı, silindir 1
+Ignition angle, cylinder 2	Ateşleme açısı, silindir 2
+Ignition angle, cylinder 3	Ateşleme açısı, silindir 3
+Ignition angle, cylinder 4	Ateşleme açısı, silindir 4
+Ignition angle, cylinder 5	Ateşleme açısı, silindir 5
+Ignition angle, cylinder 6	Ateşleme açısı, silindir 6
+Ignition timing advance	Ateşleme avansı
+Injector flow adaptation, mean of all cylinders	Enjektör debi adaptasyonu, tüm silindirler ort.
+Injector flow correction (limited), cylinder 1	Enjektör debi düzeltmesi (sınırlı), silindir 1
+Injector flow correction (limited), cylinder 2	Enjektör debi düzeltmesi (sınırlı), silindir 2
+Injector flow correction (limited), cylinder 3	Enjektör debi düzeltmesi (sınırlı), silindir 3
+Injector flow correction (limited), cylinder 4	Enjektör debi düzeltmesi (sınırlı), silindir 4
+Injector flow correction (limited), cylinder 5	Enjektör debi düzeltmesi (sınırlı), silindir 5
+Injector flow correction (limited), cylinder 6	Enjektör debi düzeltmesi (sınırlı), silindir 6
+Intake VANOS spread actual	Emme VANOS açılımı, gerçek
+Intake VANOS spread target	Emme VANOS açılımı, hedef
+Intake air temperature before throttle (measured)	Gaz kelebeği öncesi emme havası sıc. (ölçülen)
+Intake manifold absolute pressure (measured)	Emme manifoldu mutlak basıncı (ölçülen)
+Intake valve lift (Valvetronic, with adaptation and prediction)	Emme supap stroku (Valvetronic, adaptasyon ve tahminle)
+Intake valve lift target (filtered)	Emme supap stroku hedefi (filtreli)
+Lambda (commanded)	Lambda (komut)
+Lambda actual (from sensor)	Lambda gerçek (sensörden)
+Lambda sensor current, bank 1 sensor 1	Lambda sensörü akımı, sıra 1 sensör 1
+Lambda target at the lambda sensor	Lambda sensöründe lambda hedefi
+Lambda, bank 1 sensor 1	Lambda, sıra 1 sensör 1
+Lambda, bank 2 sensor 1	Lambda, sıra 2 sensör 1
+Long term fuel trim, bank 1	Uzun süreli yakıt düzeltmesi, sıra 1
+Long term fuel trim, bank 2	Uzun süreli yakıt düzeltmesi, sıra 2
+Low fuel pressure raw value (unfiltered)	Düşük yakıt basıncı ham değeri (filtresiz)
+Low pressure fuel sensor: fuel pressure raw value	Alçak basınç yakıt sensörü: basınç ham değeri
+Manufacturing date	Üretim tarihi
+Mass flow at the intake valve (without correction factor)	Emme supabında kütle debisi (düzeltme faktörsüz)
+Mean ignition retard by knock control (all cylinders)	Vuruntu kontrolüyle ort. ateşleme geciktirmesi (tüm silindirler)
+Methanol	Metanol
+Misfire counter, cylinder 1	Tekleme sayacı, silindir 1
+Misfire counter, cylinder 2	Tekleme sayacı, silindir 2
+Misfire counter, cylinder 3	Tekleme sayacı, silindir 3
+Misfire counter, cylinder 4	Tekleme sayacı, silindir 4
+Misfire counter, cylinder 5	Tekleme sayacı, silindir 5
+Misfire counter, cylinder 6	Tekleme sayacı, silindir 6
+Mixture adaptation multiplicative correction	Karışım adaptasyonu, çarpımsal düzeltme
+Oil availability from fuel used	Kullanılan yakıta göre yağ ömrü
+Oil availability from operating hours	Çalışma saatine göre yağ ömrü
+Oil level (unfiltered) in mm	Yağ seviyesi (filtresiz), mm
+Oil operating hours	Yağ çalışma saati
+Oil pressure PWM duty cycle	Yağ basıncı PWM görev döngüsü
+Oil pressure actual (absolute)	Yağ basıncı gerçek (mutlak)
+Oil remaining distance (dipstick)	Yağın kalan mesafesi (seviye sensörü)
+Oil temperature	Yağ sıcaklığı
+Oil temperature (unfiltered)	Yağ sıcaklığı (filtresiz)
+Oil temperature after filter	Filtre sonrası yağ sıcaklığı
+Oil temperature in the sump	Karterdeki yağ sıcaklığı
+Oil wear function	Yağ aşınma fonksiyonu
+Open loop (cold)	Açık döngü (soğuk)
+Open loop (fault)	Açık döngü (arıza)
+Open loop (load)	Açık döngü (yük)
+Operating hours counter	Çalışma saati sayacı
+Outside air temperature	Dış hava sıcaklığı
+Particulate filter temperature, bank 1	Partikül filtresi sıcaklığı, sıra 1
+Particulate filter total load (adapted)	Partikül filtresi toplam yükü (adapte)
+Petrol	Benzin
+Petrol + alcohol in the oil (total mass)	Yağdaki benzin + alkol (toplam kütle)
+Pressure before throttle (0...5120 hPa)	Gaz kelebeği öncesi basınç (0...5120 hPa)
+Programming	Programlama
+Radiator outlet coolant temperature	Radyatör çıkışı soğutma suyu sıcaklığı
+Rail pressure actual (filtered, absolute)	Rail basıncı gerçek (filtreli, mutlak)
+Rail pressure control target	Rail basıncı kontrol hedefi
+Relative air charge	Bağıl hava dolgusu
+Rough running, cylinder 1	Düzensiz çalışma, silindir 1
+Rough running, cylinder 2	Düzensiz çalışma, silindir 2
+Rough running, cylinder 3	Düzensiz çalışma, silindir 3
+Rough running, cylinder 4	Düzensiz çalışma, silindir 4
+Rough running, cylinder 5	Düzensiz çalışma, silindir 5
+Rough running, cylinder 6	Düzensiz çalışma, silindir 6
+SGBD index (control unit type)	SGBD indeksi (kontrol ünitesi tipi)
+Serial number	Seri numarası
+Short term fuel trim, bank 1	Kısa süreli yakıt düzeltmesi, sıra 1
+Short term fuel trim, bank 2	Kısa süreli yakıt düzeltmesi, sıra 2
+Soot mass in particulate filter, bank 1	Partikül filtresindeki is kütlesi, sıra 1
+Soot mass in the particulate filter	Partikül filtresindeki is kütlesi
+Spare part number	Yedek parça numarası
+Spark plug distance	Buji mesafesi
+Spark plug wear model, current values	Buji aşınma modeli, güncel değerler
+Spark plug wear, current set (accumulated, normalised)	Buji aşınması, mevcut set (birikimli, normalize)
+Spark plugs: estimated remaining distance	Bujiler: tahmini kalan mesafe
+State of health	Sağlık durumu
+Supplier software version	Tedarikçi yazılım sürümü
+System name	Sistem adı
+System supplier	Sistem tedarikçisi
+Throttle actuator (commanded)	Gaz kelebeği aktüatörü (komut)
+Throttle angle above lower stop	Alt dayanaktan gaz kelebeği açısı
+Throttle position	Gaz kelebeği konumu
+Throttle position (relative)	Gaz kelebeği konumu (bağıl)
+Throttle position B	Gaz kelebeği konumu B
+Time since faults cleared	Arızalar silindikten sonra süre
+Time since last refuelling	Son yakıt alımından beri süre
+Time with check engine lamp on	Arıza lambası yanarken süre
+Torque demanded by the driver	Sürücünün istediği tork
+Vehicle identification number (VIN)	Araç kimlik numarası (VIN)
+Warm-ups since faults cleared	Arızalar silindikten sonra ısınma
+CLOSE	KAPAT
+ON	AÇIK
+RECORDS	KAYITLAR
+ELECTRONICS	ELEKTRONİK
+ALL UNITS	TÜM ÜNİTELER
+Back	Geri
+Done	Tamam
+Engine off	Motor kapalı
+None (an empty gauge)	Yok (boş gösterge)
+Boost (sport display)	Turbo basıncı (spor ekran)
+All	Tümü
+days	gün
+dial	kadran
+number	sayı
+gauge	gösterge
+read	okundu
+battery held at	akü şurada tutuluyor:
+speed	hız
+off	kapalı
+Engine off, not READY	Motor kapalı, READY değil
+Needs: engine off, not READY	Gerekli: motor kapalı, READY değil
+Needs: stationary	Gerekli: araç duruyor
+Needs: selector in p	Gerekli: vites seçici P'de
+Needs: parking brake on	Gerekli: el freni çekili
+DSC refused the extended diagnostic session	DSC genişletilmiş teşhis oturumunu reddetti
+shifts)	vites değişimi)
+control unit(s) - press again within 5 s	kontrol ünitesi - 5 s içinde tekrar basın
+control unit(s) - scanning again	kontrol ünitesi - yeniden taranıyor
+Auto (from the car)	Otomatik (araçtan)
+G-force circle: swap accel / brake (brake on top)	G-kuvveti dairesi: hızlanma / fren yer değiştir (fren üstte)
+Swap accel / brake (brake on top)	Hızlanma / fren yer değiştir (fren üstte)
+Torque gauge max (kgm only)	Tork göstergesi maks. (yalnız kgm)
+Apply changes	Değişiklikleri uygula
+Map zoom	Harita yakınlaştırma
+Turn card	Dönüş kartı
+AA Cluster Companion App	AA Gösterge Haritası
+AA Cluster Companion	AA Gösterge Haritası
+@title Redline	Devir Saati
+MAP 1	YAZILIM 1
+Map 1 · confirmed by the DME	Yazılım 1 · DME onayladı
+Map 1 · accepted by the DME	Yazılım 1 · DME kabul etti
+MAP 2	YAZILIM 2
+Map 2 · confirmed by the DME	Yazılım 2 · DME onayladı
+Map 2 · accepted by the DME	Yazılım 2 · DME kabul etti
+MAP 3	YAZILIM 3
+Map 3 · confirmed by the DME	Yazılım 3 · DME onayladı
+Map 3 · accepted by the DME	Yazılım 3 · DME kabul etti
+MAP 4	YAZILIM 4
+Map 4 · confirmed by the DME	Yazılım 4 · DME onayladı
+Map 4 · accepted by the DME	Yazılım 4 · DME kabul etti
+Synthetic engine sound from the cabin speakers · the exhaust is not affected	Kabin hoparlörlerinden gelen yapay motor sesi · egzoz sesini etkilemez
+read from the DME	DME'den okundu
+Shown	Görünür
+Hidden	Gizli
+Hidden: the card is cropped off the top of the map,	Gizli: kart haritanın üstünden kırpılır,
+and Maps shows its trip bar (time, distance, arrival).	Haritalar yolculuk çubuğunu gösterir (süre, mesafe, varış).
+Small text	Küçük yazılar
+Medium text	Orta yazılar
+Large text	Büyük yazılar
+Custom	Özel
+the slot's own size	ekranın kendi boyutu
+More map	Daha çok harita
+Larger text	Daha büyük yazı
+Asking aa-on-cluster...	aa-on-cluster'a soruluyor...
+Android Auto on cluster not installed	Göstergede Android Auto kurulu değil
+Install it (0.5 or newer) from the Store.	Store'dan kurun (0.5 veya daha yeni).
+Until then this is a demo.	O zamana kadar bu bir demo.
+Unknown firmware	Bilinmeyen yazılım sürümü
+Android Auto map is off	Android Auto haritası kapalı
+aa-on-cluster does not know this firmware	aa-on-cluster bu yazılım sürümünü tanımıyor
+and changes nothing.	ve hiçbir şeyi değiştirmiyor.
+aa-on-cluster put stock aapd back	aa-on-cluster fabrika aapd'yi geri koydu
+(removed, or after a crash). Reinstall it.	(kaldırıldı ya da çöktü). Yeniden kurun.
+On the cluster now	Şu an göstergede
+Not running yet: restart once after installing	Henüz çalışmıyor: kurduktan sonra bir kez yeniden başlatın
+card hidden	kart gizli
+card shown	kart görünür
+Selected	Seçilen
+Next start	Sonraki açılış
+Restart failed	Yeniden başlatma başarısız
+Nothing to apply	Uygulanacak değişiklik yok
+Not reachable	Ulaşılamıyor
+Applying...	Uygulanıyor...
+Not applied	Uygulanmadı
+Asking for a restart...	Yeniden başlatma isteniyor...
+Restart refused	Yeniden başlatma reddedildi
+Restarting the head unit...	Multimedya yeniden başlatılıyor...
+Restart head unit to apply changes	Uygulamak için multimedyayı yeniden başlat
+High pressure fuel: target vs actual	Yüksek basınç: hedef / gerçek
+AFR: target vs actual	AFR: hedef / gerçek
+Interior	İç ortam
+ETHANOL	ETANOL
+FUEL	YAKIT
+Air charge: target vs actual	Hava dolumu: hedef / gerçek
+Air charge target vs actual	Hava dolumu hedef / gerçek

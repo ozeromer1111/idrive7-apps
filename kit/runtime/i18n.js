@@ -72,7 +72,9 @@ function t(value) {
                 .replace(/\bAVG(?=\s+[+-]?\d)/g, 'MED.').replace(/\bACC\b/g, 'ACEL.')
                 // "2 of 3" -> "2 de 3"; "5 min ago" (or a number before a translated "min atrás") -> "hace 5 min"
                 .replace(/(\d) of (?=[~\d])/g, '$1 de ')
-                .replace(/(\d+) ?(s|m|min|h|days|días) (?:ago|atrás)\b/g, (_, n, u) => 'hace ' + n + ' ' + ({ m: 'min', days: 'días' }[u] || u)) : s;
+                .replace(/(\d+) ?(s|m|min|h|days|días) (?:ago|atrás)\b/g, (_, n, u) => 'hace ' + n + ' ' + ({ m: 'min', days: 'días' }[u] || u)) :
+            language === 'tr' ? s.replace(/\bmin(?=\s+-?\d)/g, 'min.').replace(/\bmax(?=\s+-?\d)/g, 'maks.')
+                .replace(/\bAVG(?=\s+[+-]?\d)/g, 'ORT.').replace(/\bACC\b/g, 'İVME') : s;
         out = out.replace(pattern, (_, before, word) => before + (dict[word] || caseLike(word, folded[word.toLowerCase()])));
     }
     if (cache.size >= 2048) cache.clear();

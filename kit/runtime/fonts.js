@@ -30,6 +30,7 @@ function get(name, size, text) {
     if (text && /[\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\uac00-\ud7ff]/.test(text)) name = 'korean';
     else if (text && /[\u3000-\u9fff\uff00-\uffef]/.test(text)) name = 'cjk';
     else if (text && /[\u0400-\u04ff]/.test(text)) name = 'cyrillic';
+    else if (text && /[\u00e7\u00c7\u011f\u011e\u0131\u0130\u00f6\u00d6\u015f\u015e\u00fc\u00dc\u00e2\u00c2\u00ee\u00ce\u00fb\u00db]/.test(text) && family('turkish')) name = 'turkish';
     const fam = family(name) || family('label');
     if (!fam) return null;
     let best = null;

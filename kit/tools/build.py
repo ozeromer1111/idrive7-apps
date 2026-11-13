@@ -719,6 +719,9 @@ def build(app_id, language='en', preview_only=False):
         if app_id == 'dtc_scanner':
             shutil.copy(os.path.join(KIT, 'localization', 'fonts', 'diagnostic-zh-CN.json'),
                         os.path.join(src, 'javascript', 'kit', 'fonts', 'cjk.json'))
+    if language == 'tr':
+        shutil.copy(os.path.join(KIT, 'localization', 'fonts', 'latin-tr.json'),
+                    os.path.join(src, 'javascript', 'kit', 'fonts', 'turkish.json'))
     if credit(language):
         # The translation credit in the installed entry code, as plain comments.
         entry = os.path.join(src, 'javascript', 'app.js')
