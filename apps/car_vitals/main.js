@@ -28,6 +28,8 @@ const { GearGuess, selectionOf } = require('./kit/car');
 const { Diag } = require('./kit/diag');
 const { DidReader } = require('./kit/dids');
 const TwinDme = require('./kit/twin_dme');
+let carImage = null; try { carImage = require('./kit/carimage'); } catch (e) { /* atlas yoksa çizilen kabuğa düşer */ }
+const TYRE_SIZE = '275/30 R20';   // aracın lastiği (G16 840i)
 
 const W = 1600, H = 520;
 const PAGES = ['engine', 'thermal', 'fuel', 'chassis'];
@@ -1063,15 +1065,25 @@ mgu.run({
             const temps = shown('tyreTemp');
             const p = G.panel(cv, t, x, y, w, h, 'Tyres');
             const unitP = pU(), dec = pressU()[4];
-            const cx = x + w / 2, top = y + 70, bh = h - 100 + G.toMargin(p.h - h, 26), bw = 150;     // rear tyres: G.MARGIN over the panel's real bottom
-            // body: rounded shell, windscreen + rear window, FRONT marker
-            cv.roundRect(cx - bw / 2, top, bw, bh, 52, withAlpha(t.track, 0.9));
-            cv.strokeRoundRect(cx - bw / 2, top, bw, bh, 52, 3, t.tick);
-            cv.roundRect(cx - bw / 2 + 18, top + bh * 0.24, bw - 36, 34, 12, withAlpha(t.tick, 0.45));
-            cv.roundRect(cx - bw / 2 + 22, top + bh * 0.70, bw - 44, 26, 10, withAlpha(t.tick, 0.35));
-            cv.text('FRONT', cx, top + 36, 20, t.dim, { align: 'center', font: 'bold', spacing: 1 });
+            cv.text(TYRE_SIZE, x + w - 18, y + 42, 22, t.dim, { align: 'right', font: 'bold', spacing: 1 });
+            const cx = x + w / 2, top = y + 70, bh = h - 100 + G.toMargin(p.h - h, 26);     // rear tyres: G.MARGIN over the panel's real bottom
             const tyw = 34, tyh = 84, big = w > 900;
-            const corners = [['FL', -1, top + 30], ['FR', 1, top + 30], ['RL', -1, top + bh - 30 - tyh], ['RR', 1, top + bh - 30 - tyh]];
+            // the car: the top-down photo (kit/runtime/fonts/car.json, BMW 8-series, front up), else a drawn shell
+            const photo = carImage && carImage.size(bh);
+            let bw = 150, corners;
+            if (photo) {
+                carImage.drawCar(cv, cx, top, bh);
+                bw = photo[0] * 0.84;   // the body without the mirrors; the tyres sit just outside it, on the axles
+                const fy = top + bh * 0.20 - tyh / 2, ry = top + bh * 0.80 - tyh / 2;
+                corners = [['FL', -1, fy], ['FR', 1, fy], ['RL', -1, ry], ['RR', 1, ry]];
+            } else {
+                cv.roundRect(cx - bw / 2, top, bw, bh, 52, withAlpha(t.track, 0.9));
+                cv.strokeRoundRect(cx - bw / 2, top, bw, bh, 52, 3, t.tick);
+                cv.roundRect(cx - bw / 2 + 18, top + bh * 0.24, bw - 36, 34, 12, withAlpha(t.tick, 0.45));
+                cv.roundRect(cx - bw / 2 + 22, top + bh * 0.70, bw - 44, 26, 10, withAlpha(t.tick, 0.35));
+                cv.text('FRONT', cx, top + 36, 20, t.dim, { align: 'center', font: 'bold', spacing: 1 });
+                corners = [['FL', -1, top + 30], ['FR', 1, top + 30], ['RL', -1, top + bh - 30 - tyh], ['RR', 1, top + bh - 30 - tyh]];
+            }
             for (const [k, side, ty] of corners) {
                 const temp = d['t' + k], pr = Pt(d['p' + k]), tgt = Pt(d['pt' + k]);
                 // pressure: big, coloured against the target
@@ -1080,8 +1092,13 @@ mgu.run({
                 // tyre colour: temperature, or the pressure state when temperatures are hidden
                 const tc = !temps ? (G.isNum(pr) ? pc : t.tick) : !G.isNum(temp) ? t.tick : temp < 20 ? t.cold : temp > 105 ? t.crit : temp > 90 ? t.warn : t.accent;
                 const tx0 = side < 0 ? cx - bw / 2 - tyw - 8 : cx + bw / 2 + 8;
-                cv.roundRect(tx0, ty, tyw, tyh, 10, tc);
-                for (let i = 1; i < 4; i++) cv.fillRect(tx0 + 6, ty + i * tyh / 4, tyw - 12, 2, withAlpha(t.bg, 0.35));
+                // the tyre: the real tread seen from above (kit/runtime/fonts/tyre.json), its colour as a ring around it
+                if (carImage && carImage.drawTyre(cv, tx0, ty, tyh, side < 0)) {
+                    cv.strokeRoundRect(tx0 - 2, ty - 2, tyw + 4, tyh + 4, 11, 2, G.isNum(pr) ? pc : t.tick);   // ring = pressure state
+                } else {
+                    cv.roundRect(tx0, ty, tyw, tyh, 10, tc);
+                    for (let i = 1; i < 4; i++) cv.fillRect(tx0 + 6, ty + i * tyh / 4, tyw - 12, 2, withAlpha(t.bg, 0.35));
+                }
                 const al = side < 0 ? 'right' : 'left', lx = side < 0 ? tx0 - 26 : tx0 + tyw + 26;
                 const ps = G.fmt(pr, dec), size = (big ? 72 : 56) + (temps ? 0 : 16), py = ty + (temps ? 52 : 62);
                 const pw = cv.text(ps, lx + (side < 0 ? -cv.textWidth(' ' + unitP, 24) : 0), py, size, pc, { align: al, font: 'num' });
