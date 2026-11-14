@@ -13,7 +13,7 @@
    powershell -ExecutionPolicy Bypass -File .\push-to-car.ps1 check -Key ...
 #>
 param(
-    [Parameter(Position = 0)][ValidateSet('check', 'install', 'status', 'restore')][string]$Cmd = 'check',
+    [Parameter(Position = 0)][ValidateSet('check', 'install', 'status', 'restore', 'renderd')][string]$Cmd = 'check',
     [Parameter(Mandatory = $true)][string]$Key,
     [string]$Ip = '169.254.36.47',
     [string]$Kit = ''
@@ -54,5 +54,12 @@ if ($p.ExitCode -ne 0) { throw "copying the kit failed (ssh exit $($p.ExitCode))
 
 # restore asks you to type YES, so it needs a terminal
 $t = @(); if ($Cmd -eq 'restore') { $t = @('-t') }
-& ssh @t @opts "cd $dest && sh deploy-car.sh $Cmd"
+# 'renderd': install only the GPU/HUD renderer (mgu-renderd --persist), then show status.
+# deploy-car.sh install already installs it with the apps; this is the renderer on its own.
+if ($Cmd -eq 'renderd') {
+    $remote = "cd $dest && sh mgu-app-install.sh renderd --persist && echo '--- durum ---' && sh deploy-car.sh status"
+} else {
+    $remote = "cd $dest && sh deploy-car.sh $Cmd"
+}
+& ssh @t @opts $remote
 exit $LASTEXITCODE
