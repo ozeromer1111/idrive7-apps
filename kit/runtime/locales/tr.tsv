@@ -2589,3 +2589,70 @@ xDrive is back · the transfer case reports it on	xDrive geri döndü · transfe
 xDrive on brings it back	xDrive açık onu geri getirir
 Injector correction	Enjektör düzeltmesi
 Invalid	Geçersiz
+Hazard red	Dörtlü kırmızısı
+Turn glow	Sinyal parıltısı
+Door red	Kapı kırmızısı
+Flash length (tap to change)	Flaş süresi (değiştirmek için dokun)
+Looking for the headlights' lamp control...	Farların lamba kontrolü aranıyor...
+Flashing headlights on public roads is illegal and dangerous	Farları açık yolda çakmak yasa dışı ve tehlikelidir
+to other drivers.	diğer sürücüler için.
+Every outside light flashes in turn for 15 s: high beam,	Tüm dış lambalar sırayla 15 sn yanıp söner: uzun far,
+cornering, fog, indicators, brake, reverse and more.	viraj, sis, sinyal, fren, geri ve dahası.
+The headlights flash fully on and dark, left and right in	Farlar tam yanıp söner, sırayla sol ve sağ,
+turn, for 15 s.	15 sn boyunca.
+Every lamp output flashes for 15 s, run by the body controller	Her lamba çıkışı 15 sn yanıp söner, gövde kontrolcüsünün
+itself (BDC_G11 and BDC_G05).	kendisi çalıştırır (BDC_G11 ve BDC_G05).
+FLM01 headlights	FLM01 farlar
+Learn: no high beam seen (was it on already?)	Öğrenme: uzun far görülmedi (zaten açık mıydı?)
+Learn: no channel reading from the headlight	Öğrenme: farlardan kanal okuması yok
+Air conditioning restricted	Klima kısıtlandı
+Brake system	Fren sistemi
+Charging not possible	Şarj mümkün değil
+High-voltage system	Yüksek gerilim sistemi
+Low washer fluid	Cam suyu az
+Steering malfunction	Direksiyon arızası
+Not cleared -	Silinmedi -
+Choose a 4-digit PIN	4 haneli bir PIN belirleyin
+Enter the new PIN again	Yeni PIN'i tekrar girin
+Enter the PIN on the touchscreen	PIN'i dokunmatik ekrana girin
+Enter the PIN to turn the lock off	Kilidi kapatmak için PIN'i girin
+The two PINs didn't match · choose again	İki PIN eşleşmedi · tekrar belirleyin
+Wrong PIN ·	Yanlış PIN ·
+Too many wrong PINs · try again in	Çok fazla yanlış PIN · şu süre sonra deneyin
+DME did not answer	DME yanıt vermedi
+DME rejected	DME reddetti
+DME ident:	DME kimlik:
+Ignition on	Kontak açık
+MGU diagnostic transport unavailable	MGU teşhis bağlantısı yok
+BM3 CustomROM marker absent	BM3 CustomROM işareti yok
+BM3 ROM key not uniquely matched in marker	BM3 ROM anahtarı işarette tekil eşleşmedi
+BM3 ROM key not uniquely matched in binary marker	BM3 ROM anahtarı ikili işarette tekil eşleşmedi
+PIN for Engine Map and Burbles	Yazılım Seç ve POP & BANG için PIN
+Engine Map and Burbles PIN	Yazılım Seç ve POP & BANG PIN
+Refuellings, high quality	Yakıt alımları, yüksek kalite
+Refuellings, medium quality	Yakıt alımları, orta kalite
+Refuellings, low quality	Yakıt alımları, düşük kalite
+Dial (E60 M5)	Kadran (E60 M5)
+HUD: test pattern	HUD: test deseni
+Example Road	Örnek Yol
+Changes here only affect	Buradaki değişiklikler yalnızca
+its size and place too.	boyutunu ve yerini de etkiler.
+From	Başlangıç
+Water	Su
+12 V battery charge (%)	12 V akü şarjı (%)
+12 V battery voltage	12 V akü gerilimi
+UDS candidate decoding: not certified for this car. Native HMI date/distance take precedence.	UDS aday çözümleme: bu araç için sertifikalı değil. Yerleşik HMI tarih/mesafe önceliklidir.
+Any colour on the ambient light, animations, and a look for each driving mode	Ambiyans ışığında her renk, animasyonlar ve her sürüş modu için bir görünüm
+100-0 and 200-0 braking distance, peak decel and brake-fade tracking	100-0 ve 200-0 fren mesafesi, tepe yavaşlama ve fren yorulması takibi
+Live engine, thermal, intake / fuel / ignition, tyre and chassis gauges	Canlı motor, ısı, emme / yakıt / ateşleme, lastik ve şasi göstergeleri
+0-100, 100-200 and 1/4 mile timer with best times	0-100, 100-200 ve 1/4 mil sayacı, en iyi derecelerle
+Read and clear fault memory of every control unit, plus active Check Control messages	Her ünitenin arıza belleğini oku ve sil, ayrıca aktif Tarama Sonucu mesajları
+Power and torque curves from a full-throttle pull, saved and compared	Tam gaz çekişten güç ve tork eğrileri, kaydedilir ve karşılaştırılır
+Friction circle with grip envelope, peak g per direction and session records	Tutuş zarflı sürtünme dairesi, yöne göre tepe g ve oturum rekorları
+Real electric range, live battery power, cells and climate power, HV battery health (SOH) and energy, last charge, charge log, the 12 V battery (charge, voltage, what it does, regen, history) and a home-screen widget; on a 48 V mild hybrid its 48 V battery and DC/DC converter	Gerçek elektrik menzili, canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi
+Read-only live values from the car and its control units, a trip computer with fuel cost, and gauge screens of your own, one of them as the home-screen widget	Araçtan ve ünitelerinden salt okunur canlı değerler, yakıt maliyetli yol bilgisayarı ve kendi gösterge ekranların, biri ana ekran widget'ı olarak
+Full-screen rev tach with shift lights, gear, shift scoring and cold-engine rev guard; HUD by @biscotit	Vites ışıkları, vites, vites puanı ve soğuk motor devir koruması olan tam ekran devir göstergesi; HUD @biscotit tarafından
+Service requirements from the instrument cluster: oil, brakes, brake fluid, vehicle check, inspection - distance, date, details; brake fluid and vehicle check reset	Gösterge panelinden servis gereksinimleri: yağ, frenler, fren hidroliği, araç kontrolü, muayene - mesafe, tarih, ayrıntılar; fren hidroliği ve araç kontrolü sıfırlama
+Oil and coolant warm-up calculator (time to ready), safe rev limit and turbo cool-down	Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı ve turbo soğutma
+Transmission Config, experimental ZF 8HP monitor: live data, clutch fill adaptations, shift maps and temperature history	Şanzıman Ayarı, deneysel ZF 8HP izleme: canlı veri, kavrama dolum adaptasyonları, vites haritaları ve sıcaklık geçmişi
+Engine Config for BMW MGU ID7. Exhaust Flap: OEM, OPEN and CLOSE over the car's own diagnostic link, or following the driving mode (Sport open, Eco Pro closed); held against the DME's timeout, Close handed back above a set engine speed. With BM3 or MHD picked in Settings: engine map switching, burbles, ASD and Max Cooling. Experimental: xDrive off until the ignition cycle (DSC LMV_FUNKTION), behind its own setting	BMW MGU ID7 için Motor Ayarı. Egzoz Klapesi: OEM, AÇ ve KAPAT aracın kendi teşhis bağlantısıyla ya da sürüş moduna göre (Sport açık, Eco Pro kapalı); DME zaman aşımına karşı tutulur, Kapat belirli devir üstünde geri verilir. Ayarlar'da BM3 veya MHD seçilince: yazılım seçimi, POP & BANG, ASD ve Maks. Soğutma. Deneysel: kontak çevrimine kadar xDrive kapalı (DSC LMV_FUNKTION), kendi ayarının arkasında
