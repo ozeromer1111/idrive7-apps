@@ -34,6 +34,9 @@ case $(tar --version 2>/dev/null) in *bsdtar*) TAR+=(--no-xattrs --no-mac-metada
 COPYFILE_DISABLE=1 "${TAR[@]}" -C "$KIT" . | "${SSH[@]}" "export LC_ALL=C; mkdir -p '$DEST' && rm -rf '$DEST/apps' && tar xzf - -C '$DEST' && cd '$DEST' && md5sum -c KIT_SUMS >/dev/null && echo 'kit copied + verified'"
 if [ "$CMD" = restore ]; then
     "${SSH[@]}" -t "export LC_ALL=C; cd '$DEST' && sh deploy-car.sh restore"     # asks to type YES
+elif [ "$CMD" = renderd ]; then
+    # only the GPU/HUD renderer (mgu-renderd --persist), then status
+    "${SSH[@]}" "export LC_ALL=C; cd '$DEST' && sh mgu-app-install.sh renderd --persist && echo '--- durum ---' && sh deploy-car.sh status"
 else
     "${SSH[@]}" "export LC_ALL=C; cd '$DEST' && sh deploy-car.sh $CMD"
 fi
