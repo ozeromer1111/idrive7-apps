@@ -119,7 +119,7 @@ mgu.run({
             const d = {
                 tank: Math.round(size * 0.6), tankL: Math.round(size * 0.29), tankR: Math.round(size * 0.31), range: 452,
                 speed: 40 + pull * 120, flow: 1.2 + pull * 46, ethanol: 9.4, ron: 96.4, fuelTemp: 31 + 4 * Math.sin(s / 60),
-                hpfp: 60 + pull * 280, hpfpTarget: 62 + pull * 285 + (pull > 0.9 ? 30 : 0), avg: 9.8, avgUnit: 'l/100 km', lpfp: 5.6 - pull * 0.8, sinceFill: 26.5,
+                hpfp: 60 + pull * 280, hpfpTarget: 62 + pull * 285 + (pull > 0.9 ? 30 : 0), avg: 9.8, avgUnit: 'l/100 km', lpfp: 5.6 - pull * 0.8, sinceFill: 26.5 + 24 * 8,
             };
             Object.keys(demoHist).forEach((k) => { const h = demoHist[k]; if (!h.length || Date.now() - h[h.length - 1][0] >= 2000) h.push([Date.now(), d[k]]); if (h.length > 150) h.shift(); });
             return d;
@@ -185,6 +185,17 @@ mgu.run({
             cv.text(sub, x + 18, yb - G.MARGIN, 22, off ? col : t.dim, { spacing: 0.5 });
         }
 
+        /** Hours since the refuelling as the tile shows them: hours up to a day, then days, weeks, months. */
+        function since(hrs) {
+            if (!G.isNum(hrs)) return { value: null, unit: 'h' };
+            const days = hrs / 24, whole = Math.floor(days), rest = Math.round(hrs - whole * 24);
+            if (hrs < 24) return { value: hrs, unit: 'h', sub: "engine unit's counter" };
+            const detail = whole + ' days' + (rest ? ' ' + rest + ' hours' : '');
+            if (days < 7) return { value: days, unit: 'days', sub: detail };
+            if (days < 30) return { value: days / 7, unit: 'weeks', sub: detail };
+            return { value: days / 30, unit: 'months', sub: detail };
+        }
+
         /** Eight tiles, four a row. */
         function grid(n) {
             const per = 4, rows = Math.ceil(n / per), gap = 16, out = [];
@@ -232,8 +243,7 @@ mgu.run({
                 { label: 'Low pressure fuel', value: P(d.lpfp), unit: pU(), decimals: PSI() ? 0 : 1, history: trace(h.lpfp, P),
                     zones: [{ from: -99, to: P(3), color: 'crit' }, { from: P(3), to: P(4), color: 'warn' }],
                     sub: G.isNum(d.lpfp) ? mm(h.lpfp, P, PSI() ? 0 : 1) : none('lpfp') },
-                { label: 'Since refuelling', value: d.sinceFill, unit: 'h', decimals: 1,
-                    sub: G.isNum(d.sinceFill) ? "engine unit's counter" : none('sinceFill') },
+                Object.assign({ label: 'Since refuelling', decimals: 1 }, since(d.sinceFill), G.isNum(d.sinceFill) ? {} : { sub: none('sinceFill') }),
             ];
             grid(tiles.length).forEach((b, i) => (tiles[i].draw ? tiles[i].draw(cv, t, b.x, b.y, b.w, b.h) : G.stat(cv, t, b.x, b.y, b.w, b.h, Object.assign({ size: 72 }, tiles[i]))));
             G.frame(cv, t, ['Fuel'], 0, [demo && { text: 'DEMO' }]);
