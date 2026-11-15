@@ -32,9 +32,10 @@ const TYRE_SIZE = '275/30 R20';   // aracın lastiği (G16 840i)
 
 const W = 1600, H = 520;
 const PAGES = ['engine', 'thermal', 'fuel', 'chassis'];
-const FUEL = ['iat', 'hpfp', 'lpfp', 'timing', 'boostCtl', 'load'];   // engine unit values read fast on the Fuel & ignition page
+const FUEL = ['iat', 'timing', 'boostCtl', 'load', 'afr'];   // engine unit values read fast on the Fuel & ignition page
 /** Target-vs-actual pairs on the Fuel & ignition page: read together, [target, actual] keys of config.dme. */
-const PAIR = { boostCtl: ['boostTarget', 'boostActual'], load: ['loadTarget', 'loadActual'] };
+const PAIR = { boostCtl: ['boostTarget', 'boostActual'], load: ['loadTarget', 'loadActual'], afr: ['afrTarget', 'afrActual'] };
+const STOICH = 14.7;   // benzin: AFR = lambda * 14.7
 const HIST_SEC = 300;
 /*
  * Plausible ranges (deg C / bar). A value outside is the car's "no data" marker or a field this
@@ -43,7 +44,7 @@ const HIST_SEC = 300;
 const TYRE_T = [-40, 150], TYRE_P = [0.5, 6], TYRE_PT = [1, 6];
 const RANGE = {
     rpm: [0, 12000], coolant: [-40, 160], oil: [-40, 170], gearbox: [-40, 160], egs: [-40, 160], ambient: [-50, 60], timing: [-64, 64],
-    boostFes: [-1, 4], boostDme: [-1, 4], boost2: [-1, 4], boostTarget: [-1, 4], boostActual: [-1, 4], loadTarget: [0, 250], loadActual: [0, 250], tFL: TYRE_T, tFR: TYRE_T, tRL: TYRE_T, tRR: TYRE_T,
+    boostFes: [-1, 4], boostDme: [-1, 4], boost2: [-1, 4], boostTarget: [-1, 4], boostActual: [-1, 4], loadTarget: [0, 250], loadActual: [0, 250], afrTarget: [7, 25], afrActual: [7, 25], tFL: TYRE_T, tFR: TYRE_T, tRL: TYRE_T, tRR: TYRE_T,
     pFL: TYRE_P, pFR: TYRE_P, pRL: TYRE_P, pRR: TYRE_P, ptFL: TYRE_PT, ptFR: TYRE_PT, ptRL: TYRE_PT, ptRR: TYRE_PT,
 };
 /*
@@ -63,14 +64,14 @@ const MOVE = { gearbox: 1, egs: 1, boostFes: 0.03, boostDme: 0.03 };
 /** Remembered per car: which groups sent real data (the "Auto" setting shows only those). */
 const GROUP = { gearbox: 'gearbox', boostFes: 'boost', boostDme: 'boost', tFL: 'tyreTemp', tFR: 'tyreTemp', tRL: 'tyreTemp', tRR: 'tyreTemp',
     pFL: 'tyres', pFR: 'tyres', pRL: 'tyres', pRR: 'tyres', iat: 'iat', hpfp: 'hpfp', lpfp: 'lpfp', timing: 'timing', egs: 'egs',
-    boostTarget: 'boostCtl', boostActual: 'boostCtl', loadTarget: 'load', loadActual: 'load' };
+    boostTarget: 'boostCtl', boostActual: 'boostCtl', loadTarget: 'load', loadActual: 'load', afrTarget: 'afr', afrActual: 'afr' };
 /**
  * "Auto / Show / Hide" setting of each group. Auto: shown once the car / engine unit has sent real
  * data for it (remembered), so values a car doesn't have never take space.
  */
 const SHOW = { boost: 'showBoost', gearbox: 'showGearbox', tyres: 'showTyres', tyreTemp: 'showTyreTemp',
     iat: 'showIat', hpfp: 'showHpfp', lpfp: 'showLpfp', timing: 'showTiming', misfire: 'showMisfire', egs: 'showEgs',
-    boostCtl: 'showBoostCtl', load: 'showLoad' };
+    boostCtl: 'showBoostCtl', load: 'showLoad', afr: 'showAfr' };   // showAfr: ayarı yok, motor beyni cevap verince görünür
 const TYRES = ['FL', 'FR', 'RL', 'RR'];
 // gearbox enum: names or wire numbers (G1 = 3 ... G10 = 12, R = 1, N_OR_P = 2), as in kit/car.js
 const GEARS = { G1: 1, G2: 2, G3: 3, G4: 4, G5: 5, G6: 6, G7: 7, G8: 8, G9: 9, G10: 10, R: -1, N_OR_P: 0 };
@@ -160,7 +161,7 @@ mgu.run({
 
         /* ---------- live data ---------- */
         const live = {}, peak = {}, demoPeak = {}, hist = { coolant: [], oil: [], gearbox: [], egs: [], ambient: [], iat: [], hpfp: [], lpfp: [], iatRise: [], timing: [],
-            boostTarget: [], boostActual: [], loadTarget: [], loadActual: [] };
+            boostTarget: [], boostActual: [], loadTarget: [], loadActual: [], afrTarget: [], afrActual: [] };
         /*
          * Peak hold: a peak follows new highs, and "peakHold" s after it was last raised it drops back
          * to the current value (0 = until "Reset peaks"). Called per sample and per frame, so it also
@@ -624,6 +625,10 @@ mgu.run({
                 await freshBaro();
                 target = (target - baro) / 100;
                 actual = actual === null ? null : (actual - baro) / 100;
+            } else if (k === 'afr') {
+                // the engine unit gives lambda; shown as the air-fuel ratio of petrol
+                target *= STOICH;
+                actual = actual === null ? null : actual * STOICH;
             }
             return { target, actual };
         }
@@ -994,18 +999,17 @@ mgu.run({
             const iatRise = G.isNum(val('iat')) && G.isNum(d.ambient) ? d.iat - d.ambient : null;
             const off = running ? '' : '  ·  engine off';
             drawTiles(cv, t, [
-                shown('iat') && { label: 'Intake air (IAT)', value: T(val('iat')), unit: tU(), decimals: 0, history: hist.iat.map(T),
-                    zones: [{ from: T(50), to: T(65), color: 'warn' }, { from: T(65), to: 999, color: 'crit' }],
-                    sub: G.isNum(val('iat')) ? mm(hist.iat, T, 0) : fuelWhy('iat') },
-                shown('hpfp') && { label: 'High pressure fuel', value: P(val('hpfp')), unit: pu, decimals: 0, history: hist.hpfp.map(P),
-                    zones: running ? [{ from: -99, to: P(20), color: 'crit' }] : [],
-                    sub: G.isNum(val('hpfp')) ? mm(hist.hpfp, P, 0) + off : fuelWhy('hpfp') },
-                shown('lpfp') && { label: 'Low pressure fuel', value: P(val('lpfp')), unit: pu, decimals: pd[3], history: hist.lpfp.map(P),
-                    zones: running ? [{ from: -99, to: P(3), color: 'crit' }, { from: P(3), to: P(4), color: 'warn' }] : [],
-                    sub: G.isNum(val('lpfp')) ? mm(hist.lpfp, P, pu === 'kPa' ? 0 : 1) + off : fuelWhy('lpfp') },
-                shown('iat') && { label: 'Intake air above outside', value: dT(iatRise), unit: tU(), decimals: 0, history: hist.iatRise.map(dT),
-                    zones: [{ from: dT(25), to: dT(40), color: 'warn' }, { from: dT(40), to: 999, color: 'crit' }],
-                    sub: G.isNum(iatRise) ? mm(hist.iatRise, dT, 0, 'heat soak') : 'needs IAT + outside temperature' },
+                // intake air, with how far it is above the outside air beside it (the two say the same thing: heat soak)
+                shown('iat') && { draw: (c, th, x, y, w, h) => {
+                    G.stat(c, th, x, y, w, h, { size: h > 200 ? 100 : 64, label: 'Intake air (IAT)', value: T(val('iat')), unit: tU(), decimals: 0, history: hist.iat.map(T),
+                        zones: [{ from: T(50), to: T(65), color: 'warn' }, { from: T(65), to: 999, color: 'crit' }],
+                        sub: G.isNum(val('iat')) ? mm(hist.iat, T, 0) : fuelWhy('iat') });
+                    const r = x + w - 18, dv = dT(iatRise), big = h > 200;
+                    const dc = !G.isNum(dv) ? th.dim : iatRise >= 40 ? th.crit : iatRise >= 25 ? th.warn : th.text;
+                    c.text('ABOVE OUTSIDE', r, y + 76, 18, th.dim, { font: 'bold', spacing: 1.5, align: 'right' });
+                    c.text(G.isNum(dv) ? (dv >= 0 ? '+' : '') + G.fmt(dv, 0) + ' ' + tU() : '--', r, y + 76 + (big ? 46 : 36), big ? 40 : 30, dc, { font: 'num', align: 'right' });
+                } },
+                // ECUHARD: yüksek / alçak basınç yakıt karoları bu sayfadan kaldırıldı (Yakıt Analizi uygulamasında)
                 shown('timing') && { label: 'Ignition timing (before TDC)', value: val('timing'), unit: '°', decimals: 1, history: hist.timing,
                     sub: G.isNum(val('timing')) ? mm(hist.timing, (x) => x, 1) : fuelWhy('timing') },
                 shown('boostCtl') && { draw: (c, th, x, y, w, h) => pairTile(c, th, x, y, w, h, {
@@ -1016,6 +1020,10 @@ mgu.run({
                     label: 'Air charge: requested vs actual', targetLabel: 'REQUESTED', actual: val('loadActual'), target: val('loadTarget'),
                     unit: '%', decimals: 0, tol: 10, idle: 40, why: fuelWhy('load'),
                     histA: hist.loadActual, histT: hist.loadTarget }) },
+                shown('afr') && { draw: (c, th, x, y, w, h) => pairTile(c, th, x, y, w, h, {
+                    label: 'AFR: target vs actual', targetLabel: 'TARGET', actual: val('afrActual'), target: val('afrTarget'),
+                    unit: 'AFR', decimals: 1, tol: 0.5, idle: 0, why: fuelWhy('afr'),
+                    histA: hist.afrActual, histT: hist.afrTarget }) },
                 shown('misfire') && { draw: (c, th, x, y, w, h) => misfireTile(c, th, x, y, w, h, usingDemo() ? d.misfire : fuelT.misfire && Date.now() - fuelT.misfire < 30000 ? live.misfire : null) },
             ].filter(Boolean));
         }
