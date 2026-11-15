@@ -36,4 +36,4 @@
   <circle r="8.5" fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
   <circle cx="0" cy="-15" r="4.2" fill="#ffffff"/>
 </g>
-<path d="M22 40 Q22 30 32 30 H108 Q118 30 118 40 V52 Q70 42 22 58 Z" fill="url(#a-glass)"/>
+
