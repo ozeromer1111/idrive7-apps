@@ -2656,3 +2656,15 @@ Service requirements from the instrument cluster: oil, brakes, brake fluid, vehi
 Oil and coolant warm-up calculator (time to ready), safe rev limit and turbo cool-down	Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı ve turbo soğutma
 Transmission Config, experimental ZF 8HP monitor: live data, clutch fill adaptations, shift maps and temperature history	Şanzıman Ayarı, deneysel ZF 8HP izleme: canlı veri, kavrama dolum adaptasyonları, vites haritaları ve sıcaklık geçmişi
 Engine Config for BMW MGU ID7. Exhaust Flap: OEM, OPEN and CLOSE over the car's own diagnostic link, or following the driving mode (Sport open, Eco Pro closed); held against the DME's timeout, Close handed back above a set engine speed. With BM3 or MHD picked in Settings: engine map switching, burbles, ASD and Max Cooling. Experimental: xDrive off until the ignition cycle (DSC LMV_FUNKTION), behind its own setting	BMW MGU ID7 için Motor Ayarı. Egzoz Klapesi: OEM, AÇ ve KAPAT aracın kendi teşhis bağlantısıyla ya da sürüş moduna göre (Sport açık, Eco Pro kapalı); DME zaman aşımına karşı tutulur, Kapat belirli devir üstünde geri verilir. Ayarlar'da BM3 veya MHD seçilince: yazılım seçimi, POP & BANG, ASD ve Maks. Soğutma. Deneysel: kontak çevrimine kadar xDrive kapalı (DSC LMV_FUNKTION), kendi ayarının arkasında
+Fuel Analysis	Yakıt Analizi
+Fuel in the tank, consumption now, ethanol, octane, fuel temperature and fuel pressures	Depodaki yakıt, anlık tüketim, etanol, oktan, yakıt sıcaklığı ve yakıt basınçları
+Tank size	Depo hacmi
+Consumption now	Anlık tüketim
+Octane (adapted)	Oktan (motorun algıladığı)
+Fuel temperature	Yakıt sıcaklığı
+Since refuelling	Son dolumdan beri
+engine running time	motor çalışma süresi
+engine's knock adaptation, 91-98	motorun vuruntu uyarlaması, 91-98
+standing	duruyor
+not available from this engine unit	bu motor beyninden alınamıyor
+E85 / flex fuel	E85 / esnek yakıt
