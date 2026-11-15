@@ -2,7 +2,7 @@
   "id": "fuel_analysis",
   "title": "Fuel Analysis",
   "description": "Fuel in the tank, consumption now, ethanol, octane, fuel temperature and fuel pressures",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "vendor": "custom",
   "loggingId": "OAA6",
   "iconGlyph": "fuel",
@@ -11,7 +11,8 @@
   "signals": {
     "de.bmw.infotainment.KombiIF": {
       "_optional": "fuel in the tank and range; the engine unit is asked when the car sends none",
-      "statusRangeTankStatus": "rs"
+      "statusRangeTankStatus": "rs",
+      "statusBordcomputerAverage": "rs"
     },
     "de.bmw.infotainment.vehicle.Vehicle2": {
       "statusCarSpeed2": "rs"
