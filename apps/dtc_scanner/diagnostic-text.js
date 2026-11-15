@@ -13,6 +13,8 @@ function diagnosticText(value) {
         return n + ' ' + plural(n, 'possible texts (depends on unit type)', 'possible texts (depends on unit type)');
     }
     if ((language === 'zh-CN' || language === 'ru') && !db) db = require('./kit/pack').open(path.join(__dirname, 'diagnostic_i18n'));
-    return !db ? source : db.get(language + '.json', source) || dict[source] || source;
+    // tr: no fault text pack yet; the hand-translated ones (CheckControl messages, common faults) come from the dictionary
+    if (!db) return language === 'tr' ? dict[source] || source : source;
+    return db.get(language + '.json', source) || dict[source] || source;
 }
 module.exports = { diagnosticText };
