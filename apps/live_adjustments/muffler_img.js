@@ -22,6 +22,7 @@ const { OP } = require('./kit/record');
 
 const LW = 1000, LH = 290, DW = 1164, DH = 338, K = 1.164;
 const NF = 10082, NT = 6121;
+const MIRROR = true;                    // klape solda
 const BORES = {"left": {"c": [55.2, 252.8], "a": 45.8, "b": 26.4, "rot": 8}, "right": {"c": [944.8, 252.8], "a": 45.8, "b": 26.4, "rot": -8}};
 // deflated: flat cells (x, y, w, h u16) x NF, their RGBA x NF; shaded cells (x, y, w, h u16) x NT, diagonal u8 x NT
 // (0: corner 00-11, 1: corner 10-01), corner colours RGBA (00, 10, 01, 11) x NT
@@ -35,8 +36,19 @@ function load() {
     const u16 = (n) => { const a = new Uint16Array(n); for (let i = 0; i < n; i++) a[i] = b.readUInt16LE(o + i * 2); o += n * 2; return a; };
     const u32c = (n) => { const a = new Uint32Array(n); for (let i = 0; i < n; i++) a[i] = b.readUInt32BE(o + i * 4); o += n * 4; return a; };
     const fg = u16(NF * 4), fc = u32c(NF), tg = u16(NT * 4);
-    const td = b.slice(o, o + NT); o += NT;
+    const td = Buffer.from(b.slice(o, o + NT)); o += NT;
     const tc = u32c(NT * 4);
+    // ECUHARD: klape aktüatörü SOL egzozda (G16 840i). Resim yatay aynalanır: hücre x'leri ters çevrilir,
+    // gölgeli hücrelerde köşe renkleri sol-sağ yer değiştirir ve köşegen yönü döner.
+    if (MIRROR) {
+        for (let i = 0; i < NF; i++) fg[i * 4] = DW - fg[i * 4] - fg[i * 4 + 2];
+        for (let i = 0; i < NT; i++) {
+            tg[i * 4] = DW - tg[i * 4] - tg[i * 4 + 2];
+            const c00 = tc[i * 4], c10 = tc[i * 4 + 1], c01 = tc[i * 4 + 2], c11 = tc[i * 4 + 3];
+            tc[i * 4] = c10; tc[i * 4 + 1] = c00; tc[i * 4 + 2] = c11; tc[i * 4 + 3] = c01;
+            td[i] = td[i] ? 0 : 1;
+        }
+    }
     return (cells = { fg, fc, tg, td, tc });
 }
 
@@ -120,4 +132,4 @@ function soft(cv) {
     return cv;
 }
 
-module.exports = { LW, LH, DW, DH, K, BORES, draw, soft };
+module.exports = { LW, LH, DW, DH, K, BORES, MIRROR, draw, soft };
