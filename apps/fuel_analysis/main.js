@@ -233,7 +233,7 @@ mgu.run({
                     zones: [{ from: -99, to: P(3), color: 'crit' }, { from: P(3), to: P(4), color: 'warn' }],
                     sub: G.isNum(d.lpfp) ? mm(h.lpfp, P, PSI() ? 0 : 1) : none('lpfp') },
                 { label: 'Since refuelling', value: d.sinceFill, unit: 'h', decimals: 1,
-                    sub: G.isNum(d.sinceFill) ? 'engine running time' : none('sinceFill') },
+                    sub: G.isNum(d.sinceFill) ? "engine unit's counter" : none('sinceFill') },
             ];
             grid(tiles.length).forEach((b, i) => (tiles[i].draw ? tiles[i].draw(cv, t, b.x, b.y, b.w, b.h) : G.stat(cv, t, b.x, b.y, b.w, b.h, Object.assign({ size: 72 }, tiles[i]))));
             G.frame(cv, t, ['Fuel'], 0, [demo && { text: 'DEMO' }]);
