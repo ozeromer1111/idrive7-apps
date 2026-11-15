@@ -204,20 +204,20 @@ mgu.run({
             const id = (x) => x;
 
             // tank: litres, the halves and the range below
-            const halves = G.isNum(d.tankL) && G.isNum(d.tankR) ? 'left ' + G.fmt(d.tankL, 0) + ' l  ·  right ' + G.fmt(d.tankR, 0) + ' l' : '';
+            const halves = G.isNum(d.tankL) && G.isNum(d.tankR) ? 'left ' + G.fmt(d.tankL, 0) + '  ·  right ' + G.fmt(d.tankR, 0) : '';
             const range = G.isNum(d.range) ? G.fmt(d.range, 0) + ' km' : '';
             // consumption per 100 km only while moving
             const per100 = G.isNum(d.flow) && G.isNum(d.speed) ? (d.speed < 5 ? 'standing' : G.fmt(d.flow / d.speed * 100, 1) + ' l/100 km') : '';
             const eth = d.ethanol;
             const ethName = !G.isNum(eth) ? '' : eth < 2.5 ? 'E0' : eth < 7.5 ? 'E5' : eth < 15 ? 'E10' : eth < 50 ? 'E' + Math.round(eth / 5) * 5 : 'E85 / flex fuel';
             const tiles = [
-                { label: 'Fuel in the tank', value: d.tank, unit: 'l', decimals: 0,
+                { label: 'Fuel in the tank', value: d.tank, unit: '/ ' + size + ' l', decimals: 0,
                     zones: [{ from: -1, to: size * 0.1, color: 'crit' }, { from: size * 0.1, to: size * 0.2, color: 'warn' }],
-                    sub: G.isNum(d.tank) ? ([halves, range].filter(id).join('  ·  ') || G.fmt(d.tank / size * 100, 0) + ' %') : none('tank') },
+                    sub: G.isNum(d.tank) ? [G.fmt(Math.min(100, d.tank / size * 100), 0) + ' %', halves, range].filter(id).join('  ·  ') : none('tank') },
                 { label: 'Consumption now', value: d.flow, unit: 'l/h', decimals: 1, history: trace(h.flow, id),
                     sub: G.isNum(d.flow) ? [per100, G.isNum(d.avg) ? 'AVG ' + G.fmt(d.avg, 1) + (per100 && d.avgUnit === 'l/100 km' ? '' : ' ' + d.avgUnit) : ''].filter(id).join('  ·  ') || mm(h.flow, id, 1)
                         : G.isNum(d.avg) ? 'AVG ' + G.fmt(d.avg, 1) + ' ' + d.avgUnit : none('flow') },
-                { label: 'Ethanol in the fuel', value: eth, unit: '%', decimals: 0,
+                { label: 'Ethanol in the fuel', value: eth, unit: '%', decimals: 1,
                     sub: G.isNum(eth) ? ethName : none('ethanol') },
                 { label: 'Octane (adapted)', value: d.ron, unit: 'RON', decimals: 1, valueColor: G.isNum(d.ron) && d.ron >= 97 ? GO : null,
                     zones: [{ from: 0, to: 93, color: 'crit' }, { from: 93, to: 95, color: 'warn' }],
