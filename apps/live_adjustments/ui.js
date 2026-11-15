@@ -369,10 +369,17 @@ function drawMuffler(cv, G, t, x, y, w, h, v) {
     cv.blit(pic, ix, iy);
     const L = IMG.BORES.left, R = IMG.BORES.right;
     const rx = ix + R.c[0], ry = iy + R.c[1], lx = ix + L.c[0], ly = iy + L.c[1];
-    flapPlate(cv, G, rx, ry, R.a, R.b, R.rot, open);
     const ts = Date.now() / 1000;
-    smoke(cv, G, lx, ly, -1, 1, ts, 0.0);
-    smoke(cv, G, rx, ry, 1, open, ts, 0.37);
+    if (IMG.MIRROR) {
+        // ECUHARD: klape sol egzozda; sağdan her zaman, soldan klape açıldıkça duman
+        flapPlate(cv, G, lx, ly, L.a, L.b, L.rot, open);
+        smoke(cv, G, rx, ry, 1, 1, ts, 0.0);
+        smoke(cv, G, lx, ly, -1, open, ts, 0.37);
+    } else {
+        flapPlate(cv, G, rx, ry, R.a, R.b, R.rot, open);
+        smoke(cv, G, lx, ly, -1, 1, ts, 0.0);
+        smoke(cv, G, rx, ry, 1, open, ts, 0.37);
+    }
 }
 
 /** The butterfly in an elliptic bore (centre cx, cy; semi-axes a along, b across; tilt rot deg): shut it fills the
