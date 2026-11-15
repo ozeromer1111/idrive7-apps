@@ -536,6 +536,14 @@
         "ID7",
         "ID8"
       ]
+    },
+    {
+      "id": "cluster-render",
+      "path": "third_party/cluster-render",
+      "mguHmi": [
+        "ID7",
+        "ID8"
+      ]
     }
   ]
 }
