@@ -2669,5 +2669,7 @@
   "not available from this engine unit": "bu motor beyninden alınamıyor",
   "E85 / flex fuel": "E85 / esnek yakıt",
   "High pressure: target vs actual": "Yüksek basınç: hedef / gerçek",
-  "no target from this engine unit": "bu motor beyni hedef vermiyor"
+  "no target from this engine unit": "bu motor beyni hedef vermiyor",
+  "weeks": "hafta",
+  "hours": "saat"
 }
