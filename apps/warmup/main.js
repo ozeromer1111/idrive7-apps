@@ -310,9 +310,12 @@ mgu.run({
             const ahead = 300000;                                  // projection: up to 5 min ahead
             const lo = 0, hi = 140;
             const X = (ts) => nowX - ((now0 - ts) / span) * (gw - 90), Y = (c) => gy + gh - (G.clamp(c, lo, hi) - lo) / (hi - lo) * gh;
-            cv.fillRect(gx, gy - 20, 22, 4, t.oil || t.accent); cv.text('OIL', gx + 30, gy - 11, 20, t.dim, { font: 'bold' });
-            cv.fillRect(gx + 100, gy - 20, 22, 4, t.cold); cv.text('COOLANT', gx + 130, gy - 11, 20, t.dim, { font: 'bold' });
-            if (hasGb) { cv.fillRect(gx + 250, gy - 20, 22, 4, GEAR_C); cv.text('GEARBOX', gx + 280, gy - 11, 20, t.dim, { font: 'bold' }); }
+            // the legend: each entry follows the one before by its drawn width (translated names differ in length)
+            let lx = gx;
+            const legend = (name, col) => { cv.fillRect(lx, gy - 20, 22, 4, col); lx += 30 + cv.text(name, lx + 30, gy - 11, 20, t.dim, { font: 'bold' }) + 28; };
+            legend('OIL', t.oil || t.accent);
+            legend('COOLANT', t.cold);
+            if (hasGb) legend('GEARBOX', GEAR_C);
             cv.fillRect(gx, Y(warm), gw, 1, withAlpha(GO, 0.5));
             cv.text(String(Math.round(T(warm))), gx + gw + 4, Y(warm) + 7, 20, GO);
             cv.fillRect(nowX, gy, 1, gh, withAlpha(t.tick, 0.5));       // "now"
