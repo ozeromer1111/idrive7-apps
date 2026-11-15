@@ -185,15 +185,14 @@ mgu.run({
             cv.text(sub, x + 18, yb - G.MARGIN, 22, off ? col : t.dim, { spacing: 0.5 });
         }
 
-        /** Hours since the refuelling as the tile shows them: hours up to a day, then days, weeks, months. */
+        /** Hours since the refuelling as the tile shows them: hours up to a day, then whole days and the hours left over. */
         function since(hrs) {
+            const sub = "engine unit's counter";
             if (!G.isNum(hrs)) return { value: null, unit: 'h' };
-            const days = hrs / 24, whole = Math.floor(days), rest = Math.round(hrs - whole * 24);
-            if (hrs < 24) return { value: hrs, unit: 'h', sub: "engine unit's counter" };
-            const detail = whole + ' days' + (rest ? ' ' + rest + ' hours' : '');
-            if (days < 7) return { value: days, unit: 'days', sub: detail };
-            if (days < 30) return { value: days / 7, unit: 'weeks', sub: detail };
-            return { value: days / 30, unit: 'months', sub: detail };
+            if (hrs < 24) return { value: hrs, unit: 'h', decimals: 1, sub };
+            let whole = Math.floor(hrs / 24), rest = Math.round(hrs - whole * 24);
+            if (rest === 24) { whole++; rest = 0; }
+            return { value: whole, unit: 'days ' + rest + ' hours', decimals: 0, sub };
         }
 
         /** Eight tiles, four a row. */

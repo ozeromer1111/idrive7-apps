@@ -2,7 +2,7 @@
   "id": "fuel_analysis",
   "title": "Fuel Analysis",
   "description": "Fuel in the tank, consumption now, ethanol, octane, fuel temperature and fuel pressures",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "vendor": "custom",
   "loggingId": "OAA6",
   "iconGlyph": "fuel",
