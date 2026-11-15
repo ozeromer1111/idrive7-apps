@@ -78,9 +78,9 @@ Software	Yazılım
 Screen layout	Ekran düzeni
 Full screen	Tam ekran
 Standard	Standart
-Peak hold	Tepe tutma
-Peak hold (0 = until reset)	Tepe tutma (0 = sıfırlanana dek)
-Show peak markers	Tepe işaretlerini göster
+Peak hold	Maks. değer gösterme
+Peak hold (0 = until reset)	Maks. değer gösterme (0 = sıfırlanana dek)
+Show peak markers	Maks. değer işaretlerini göster
 Max power (100% on sport display)	Maks. güç (spor ekranda 100%)
 Power from	Güç kaynağı
 Sport display	Spor ekran
@@ -193,7 +193,7 @@ RPM	DEVİR
 SPEED	HIZ
 POWER	GÜÇ
 TORQUE	TORK
-PEAK	TEPE
+PEAK	MAKS
 PEAK POWER	MAKS. GÜÇ
 PEAK TORQUE	MAKS. TORK
 PEAK DECEL	MAKS. YAVAŞLAMA
@@ -323,7 +323,7 @@ ECU TORQUE	ECU TORKU
 POWER NOW	ANLIK GÜÇ
 SETUP	AYAR
 SPEED RANGE	HIZ ARALIĞI
-Peak	Tepe
+Peak	Maks.
 estimate at the crank	krank milinde tahmin
 waiting for a pull	ölçüm bekleniyor
 keep it pinned...	tam gazda tutun...
@@ -372,7 +372,7 @@ error	hata
 All-time records	Tüm zaman rekorları
 Records	Rekorlar
 Now	Şimdi
-Session peaks	Oturum tepeleri
+Session peaks	Oturum maks. değerleri
 Hardest launch	En sert kalkış
 Hardest stop	En sert duruş
 Left-hander	Sol viraj
@@ -835,7 +835,7 @@ on (est.)	açık (tahmini)
 electric	elektrik
 charged	şarj edildi
 uses	harcama
-peak	tepe
+peak	maks.
 ambient	dış ortam
 power distribution	güç dağılımı
 s (cell core), else the car	s (hücre çekirdeği), yoksa araç
@@ -1231,7 +1231,7 @@ xDrive returns when the ignition is switched off	Kontak kapanınca xDrive geri d
 Front axle torque · the transfer case does not report it	Ön aks torku · transfer kutusu bildirmiyor
 Front axle	Ön aks
 actual	gerçek
-peak requested while moving	sürüşte istenen tepe değer
+peak requested while moving	sürüşte istenen maks. değer
 Front axle torque shows with the engine running	Ön aks torku motor çalışırken görünür
 Confirm xDrive off	xDrive kapatmayı onayla
 xDrive off	xDrive'ı kapat
@@ -2224,7 +2224,7 @@ Passenger rear door pocket	Yolcu arka kapı cebi
 Passenger seat back	Yolcu koltuk arkası
 Passive standby	Pasif bekleme
 Pattern	Desen
-Peak marker	Tepe işareti
+Peak marker	Maks. değer işareti
 Pedestrian-protection bonnet struts	Yaya koruma kaput amortisörleri
 Per gear, learned (experimental)	Vites başına, öğrenilmiş (deneysel)
 Petrol car	Benzinli araç
@@ -2643,12 +2643,12 @@ Water	Su
 12 V battery voltage	12 V akü gerilimi
 UDS candidate decoding: not certified for this car. Native HMI date/distance take precedence.	UDS aday çözümleme: bu araç için sertifikalı değil. Yerleşik HMI tarih/mesafe önceliklidir.
 Any colour on the ambient light, animations, and a look for each driving mode	Ambiyans ışığında her renk, animasyonlar ve her sürüş modu için bir görünüm
-100-0 and 200-0 braking distance, peak decel and brake-fade tracking	100-0 ve 200-0 fren mesafesi, tepe yavaşlama ve fren yorulması takibi
+100-0 and 200-0 braking distance, peak decel and brake-fade tracking	100-0 ve 200-0 fren mesafesi, maks. yavaşlama ve fren yorulması takibi
 Live engine, thermal, intake / fuel / ignition, tyre and chassis gauges	Canlı motor, ısı, emme / yakıt / ateşleme, lastik ve şasi göstergeleri
 0-100, 100-200 and 1/4 mile timer with best times	0-100, 100-200 ve 1/4 mil sayacı, en iyi derecelerle
 Read and clear fault memory of every control unit, plus active Check Control messages	Her ünitenin arıza belleğini oku ve sil, ayrıca aktif Tarama Sonucu mesajları
 Power and torque curves from a full-throttle pull, saved and compared	Tam gaz çekişten güç ve tork eğrileri, kaydedilir ve karşılaştırılır
-Friction circle with grip envelope, peak g per direction and session records	Tutuş zarflı sürtünme dairesi, yöne göre tepe g ve oturum rekorları
+Friction circle with grip envelope, peak g per direction and session records	Tutuş zarflı sürtünme dairesi, yöne göre maks. g ve oturum rekorları
 Real electric range, live battery power, cells and climate power, HV battery health (SOH) and energy, last charge, charge log, the 12 V battery (charge, voltage, what it does, regen, history) and a home-screen widget; on a 48 V mild hybrid its 48 V battery and DC/DC converter	Gerçek elektrik menzili, canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi
 Read-only live values from the car and its control units, a trip computer with fuel cost, and gauge screens of your own, one of them as the home-screen widget	Araçtan ve ünitelerinden salt okunur canlı değerler, yakıt maliyetli yol bilgisayarı ve kendi gösterge ekranların, biri ana ekran widget'ı olarak
 Full-screen rev tach with shift lights, gear, shift scoring and cold-engine rev guard; HUD by @biscotit	Vites ışıkları, vites, vites puanı ve soğuk motor devir koruması olan tam ekran devir göstergesi; HUD @biscotit tarafından
