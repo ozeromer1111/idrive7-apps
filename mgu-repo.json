@@ -1,36 +1,541 @@
 {
   "schema": 1,
+  "components": [
+    {
+      "id": "ambient_config",
+      "kind": "app",
+      "path": "apps/ambient_config",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Ambiyans Işık",
+      "description": "Ambiyans ışığında her renk, animasyonlar ve her sürüş modu için bir görünüm",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "brake_test",
+      "kind": "app",
+      "path": "apps/brake_test",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Fren Testi",
+      "description": "100-0 ve 200-0 fren mesafesi, maks. yavaşlama ve fren yorulması takibi",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "car_vitals",
+      "kind": "app",
+      "path": "apps/car_vitals",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "M Göstergeler",
+      "description": "Canlı motor, ısı, emme / yakıt / ateşleme, lastik ve şasi göstergeleri",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "draggy",
+      "kind": "app",
+      "path": "apps/draggy",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Drag Sayacı",
+      "description": "0-100, 100-200 ve 1/4 mil sayacı, en iyi derecelerle",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "dtc_scanner",
+      "kind": "app",
+      "path": "apps/dtc_scanner",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Arıza Tarayıcı",
+      "description": "Her ünitenin arıza belleğini oku ve sil, ayrıca aktif Tarama Sonucu mesajları",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "dyno",
+      "kind": "app",
+      "path": "apps/dyno",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Sanal Dyno",
+      "description": "Tam gaz çekişten güç ve tork eğrileri, kaydedilir ve karşılaştırılır",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "edrive",
+      "kind": "app",
+      "path": "apps/edrive",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "eDrive",
+      "description": "Gerçek elektrik menzili, canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "fuel_analysis",
+      "kind": "app",
+      "path": "apps/fuel_analysis",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Yakıt Analizi",
+      "description": "Depodaki yakıt, anlık tüketim, etanol, oktan, yakıt sıcaklığı ve yakıt basınçları",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "gforce",
+      "kind": "app",
+      "path": "apps/gforce",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "G Kuvveti",
+      "description": "Tutuş zarflı sürtünme dairesi, yöne göre maks. g ve oturum rekorları",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "live_adjustments",
+      "kind": "app",
+      "path": "apps/live_adjustments",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Motor Ayarı",
+      "description": "BMW MGU ID7 için Motor Ayarı. Egzoz Klapesi: OEM, AÇ ve KAPAT aracın kendi teşhis bağlantısıyla ya da sürüş moduna göre (Sport açık, Eco Pro kapalı); DME zaman aşımına karşı tutulur, Kapat belirli devir üstünde geri verilir. Ayarlar'da BM3 veya MHD seçilince: yazılım seçimi, POP & BANG, ASD ve Maks. Soğutma. Deneysel: kontak çevrimine kadar xDrive kapalı (DSC LMV_FUNKTION), kendi ayarının arkasında",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "live_data",
+      "kind": "app",
+      "path": "apps/live_data",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Canlı Veri",
+      "description": "Araçtan ve ünitelerinden salt okunur canlı değerler, yakıt maliyetli yol bilgisayarı ve kendi gösterge ekranların, biri ana ekran widget'ı olarak",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "redline",
+      "kind": "app",
+      "path": "apps/redline",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Devir sınırı",
+      "description": "Vites ışıkları, vites, vites puanı ve soğuk motor devir koruması olan tam ekran devir göstergesi; HUD @biscotit tarafından",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "service",
+      "kind": "app",
+      "path": "apps/service",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Servis",
+      "description": "Gösterge panelinden servis gereksinimleri: yağ, frenler, fren hidroliği, araç kontrolü, muayene - mesafe, tarih, ayrıntılar; fren hidroliği ve araç kontrolü sıfırlama",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "warmup",
+      "kind": "app",
+      "path": "apps/warmup",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Isınma",
+      "description": "Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı ve turbo soğutma",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    },
+    {
+      "id": "zf8hp",
+      "kind": "app",
+      "path": "apps/zf8hp",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Şanzıman Ayarı",
+      "description": "Şanzıman Ayarı, deneysel ZF 8HP izleme: canlı veri, kavrama dolum adaptasyonları, vites haritaları ve sıcaklık geçmişi",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      }
+    }
+  ],
   "apps": {
     "path": "apps/*",
     "manifest": "app.json",
     "icon": "icon.png",
     "build": {
       "python": "kit/tools/build.py",
-      "args": ["--language", "tr", "{id}"],
+      "args": [
+        "--language",
+        "tr",
+        "{id}"
+      ],
       "sdk": "oap-sdk",
       "output": "dist/{id}@{version}.tgz",
       "network": [],
-      "shared": ["kit/runtime", "kit/platform", "kit/localization", "kit/tools/build.py", "kit/tools/pack_data.py",
-        "kit/tools/localize.py", "kit/tools/locale-revisions.json", "kit/tools/oapgen", "oap-sdk"]
-    }
+      "shared": [
+        "kit/runtime",
+        "kit/platform",
+        "kit/localization",
+        "kit/tools/build.py",
+        "kit/tools/pack_data.py",
+        "kit/tools/localize.py",
+        "kit/tools/locale-revisions.json",
+        "kit/tools/oapgen",
+        "oap-sdk"
+      ]
+    },
+    "exclude": [
+      "ambient_config",
+      "brake_test",
+      "car_vitals",
+      "draggy",
+      "dtc_scanner",
+      "dyno",
+      "edrive",
+      "fuel_analysis",
+      "gforce",
+      "live_adjustments",
+      "live_data",
+      "redline",
+      "service",
+      "warmup",
+      "zf8hp"
+    ]
   },
   "tools": [
     {
       "id": "idrive7-renderd",
       "path": "kit/renderd/prebuilt",
-      "title": "GPU renderer",
-      "description": "The apps' own GPU renderer (mgu-render): draws them at 60 fps, beside the MGU Store's Renderer; installed with the apps (iDrive 7 and iDrive 8)",
-      "mguHmi": ["ID7", "ID8"]
+      "title": "GPU çizim motoru",
+      "description": "Uygulamaların kendi GPU çizim motoru: ekranları 60 fps çizer (iDrive 7 ve iDrive 8)",
+      "mguHmi": [
+        "ID7",
+        "ID8"
+      ]
     },
     {
       "id": "mgu-inputgate",
       "path": "kit/renderd/inputgate/tool",
-      "title": "Controller gate",
-      "description": "Lets the apps have the iDrive controller (tabs, page buttons, settings, Doom); loads into the HMI at the next start (iDrive 7 and iDrive 8)",
-      "needs": ["renderer"],
+      "title": "Kumanda geçidi",
+      "description": "Uygulamaların iDrive kumandasını kullanmasını sağlar (sekmeler, sayfa düğmeleri, ayarlar); bir sonraki açılışta devreye girer",
+      "needs": [
+        "renderer"
+      ],
       "optional": false,
       "uninstallable": true,
-      "mguHmi": ["ID7", "ID8"]
+      "mguHmi": [
+        "ID7",
+        "ID8"
+      ]
     }
   ]
 }
