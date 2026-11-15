@@ -23,7 +23,7 @@ const { DidReader } = require('./kit/dids');
 const W = 1600, H = 520;
 const GO = '#2fd27a';
 const FAST = ['flow', 'hpfp', 'hpfpTarget', 'lpfp'];
-const SLOW = ['ethanol', 'ron', 'fuelTemp', 'sinceFill'];
+const SLOW = ['fuelInOil', 'ethanol', 'ron', 'fuelTemp', 'sinceFill'];
 const TANK = ['tank', 'tankL', 'tankR'];
 const HIST_MS = 5 * 60000;
 const CONS = { VERBRAUCH_IN_L_S_100KM: 'l/100 km', VERBRAUCH_IN_MPG_UK: 'mpg', VERBRAUCH_IN_MPG_US: 'mpg US', VERBRAUCH_IN_KM_S_L: 'km/l', 1: 'l/100 km', 2: 'mpg', 3: 'mpg US', 4: 'km/l' };
@@ -119,7 +119,7 @@ mgu.run({
             const d = {
                 tank: Math.round(size * 0.6), tankL: Math.round(size * 0.29), tankR: Math.round(size * 0.31), range: 452,
                 speed: 40 + pull * 120, flow: 1.2 + pull * 46, ethanol: 9.4, ron: 96.4, fuelTemp: 31 + 4 * Math.sin(s / 60),
-                hpfp: 60 + pull * 280, hpfpTarget: 62 + pull * 285 + (pull > 0.9 ? 30 : 0), avg: 9.8, avgUnit: 'l/100 km', lpfp: 5.6 - pull * 0.8, sinceFill: 26.5 + 24 * 8,
+                fuelInOil: 38.4, hpfp: 60 + pull * 280, hpfpTarget: 62 + pull * 285 + (pull > 0.9 ? 30 : 0), avg: 9.8, avgUnit: 'l/100 km', lpfp: 5.6 - pull * 0.8, sinceFill: 26.5 + 24 * 8,
             };
             Object.keys(demoHist).forEach((k) => { const h = demoHist[k]; if (!h.length || Date.now() - h[h.length - 1][0] >= 2000) h.push([Date.now(), d[k]]); if (h.length > 150) h.shift(); });
             return d;
@@ -195,6 +195,9 @@ mgu.run({
             return { value: whole, unit: 'days ' + rest + ' hours', decimals: 0, sub };
         }
 
+        /** The engine unit refused the ethanol value three times and never gave one: this engine has none. */
+        const ethanolGone = () => !usingDemo() && !G.isNum(live.ethanol) && (fail.ethanol || 0) >= 3;
+
         /** Eight tiles, four a row. */
         function grid(n) {
             const per = 4, rows = Math.ceil(n / per), gap = 16, out = [];
@@ -227,8 +230,13 @@ mgu.run({
                 { label: 'Consumption now', value: d.flow, unit: 'l/h', decimals: 1, history: trace(h.flow, id),
                     sub: G.isNum(d.flow) ? [per100, G.isNum(d.avg) ? 'AVG ' + G.fmt(d.avg, 1) + (per100 && d.avgUnit === 'l/100 km' ? '' : ' ' + d.avgUnit) : ''].filter(id).join('  ·  ') || mm(h.flow, id, 1)
                         : G.isNum(d.avg) ? 'AVG ' + G.fmt(d.avg, 1) + ' ' + d.avgUnit : none('flow') },
-                { label: 'Ethanol in the fuel', value: eth, unit: '%', decimals: 1,
-                    sub: G.isNum(eth) ? ethName : none('ethanol') },
+                // ethanol: only engines with a fuel composition value answer it; where it never does, the tile gives
+                // way to the fuel diluted in the engine oil (the same engine unit, and it does tell about the fuel)
+                ethanolGone() && (G.isNum(d.fuelInOil) || (fail.fuelInOil || 0) < 3)
+                    ? { label: 'Fuel in the oil', value: d.fuelInOil, unit: 'g', decimals: 0,
+                        sub: G.isNum(d.fuelInOil) ? 'this engine gives no ethanol value' : none('fuelInOil') }
+                    : { label: 'Ethanol in the fuel', value: eth, unit: '%', decimals: 1,
+                        sub: G.isNum(eth) ? ethName : none('ethanol') },
                 { label: 'Octane (adapted)', value: d.ron, unit: 'RON', decimals: 1, valueColor: G.isNum(d.ron) && d.ron >= 97 ? GO : null,
                     zones: [{ from: 0, to: 93, color: 'crit' }, { from: 93, to: 95, color: 'warn' }],
                     sub: G.isNum(d.ron) ? "engine's knock adaptation, 91-98" : none('ron') },

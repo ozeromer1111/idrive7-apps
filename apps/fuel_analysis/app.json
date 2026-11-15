@@ -2,7 +2,7 @@
   "id": "fuel_analysis",
   "title": "Fuel Analysis",
   "description": "Fuel in the tank, consumption now, ethanol, octane, fuel temperature and fuel pressures",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "vendor": "custom",
   "loggingId": "OAA6",
   "iconGlyph": "fuel",
@@ -34,6 +34,9 @@
       "ethanol": [
         {"did": "550D", "bytes": 1, "at": 0, "factor": 0.39215686, "min": 0, "max": 100},
         {"obd": "52", "bytes": 1, "at": 0, "factor": 0.39215686, "min": 0, "max": 100, "note": "OBD PID 0x52 ethanol fuel %"}
+      ],
+      "fuelInOil": [
+        {"did": "593A", "bytes": 2, "at": 0, "factor": 0.02133333, "min": 0, "max": 1400, "note": "fuel + alcohol mass in the engine oil, g"}
       ],
       "ron": [
         {"did": "5776", "bytes": 1, "at": 0, "factor": -0.02734375, "offset": 98, "min": 90.9, "max": 98.1}
