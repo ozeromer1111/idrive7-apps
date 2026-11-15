@@ -1,0 +1,96 @@
+{
+  "id": "fuel_analysis",
+  "title": "Fuel Analysis",
+  "description": "Fuel in the tank, consumption now, ethanol, octane, fuel temperature and fuel pressures",
+  "version": "0.1.0",
+  "vendor": "custom",
+  "loggingId": "OAA6",
+  "iconGlyph": "fuel",
+  "mguHmi": ["ID7", "ID8"],
+  "requires": { "idrive7-renderd": "2.1.15" },
+  "signals": {
+    "de.bmw.infotainment.KombiIF": {
+      "_optional": "fuel in the tank and range; the engine unit is asked when the car sends none",
+      "statusRangeTankStatus": "rs"
+    },
+    "de.bmw.infotainment.vehicle.Vehicle2": {
+      "statusCarSpeed2": "rs"
+    },
+    "com.harman.infotainment.systemfunctions.tasu.tasu.InternalTasu": {
+      "_instances": "SystemFunctionsInternalTasuInst1",
+      "_methods": ["sendTasuRequest"],
+      "_broadcasts": ["sendTasuResponse"]
+    }
+  },
+  "config": {
+    "dme": {
+      "comment": "Fuel values from the engine unit (DME, ecu 18 = 0x12) with UDS 0x22, read-only. Candidates are tried in order; the first plausible one wins. value = raw * factor + offset. Scalings from the DME8 / MG1 description (Live Data's DME8FF_R). flow: ml/s -> l/h; pressures -> bar; ron: adapted fuel quality factor 0 = RON 98, 1 = RON 91 (knock adaptation, not a lab octane number).",
+      "ecu": 18,
+      "flow": [
+        {"did": "5656", "bytes": 2, "at": 0, "factor": 0.004291524, "min": 0, "max": 250, "note": "fuel volume flow, 0.00119209 ml/s per bit x 3.6"},
+        {"obd": "5E", "bytes": 2, "at": 0, "factor": 0.05, "min": 0, "max": 250, "note": "OBD PID 0x5E engine fuel rate, l/h"}
+      ],
+      "ethanol": [
+        {"did": "550D", "bytes": 1, "at": 0, "factor": 0.39215686, "min": 0, "max": 100},
+        {"obd": "52", "bytes": 1, "at": 0, "factor": 0.39215686, "min": 0, "max": 100, "note": "OBD PID 0x52 ethanol fuel %"}
+      ],
+      "ron": [
+        {"did": "5776", "bytes": 1, "at": 0, "factor": -0.02734375, "offset": 98, "min": 90.9, "max": 98.1}
+      ],
+      "fuelTemp": [
+        {"did": "4AD5", "bytes": 1, "at": 0, "factor": 0.75, "offset": -48, "min": -40, "max": 120}
+      ],
+      "hpfp": [
+        {"did": "58EF", "bytes": 2, "at": 0, "factor": 0.005, "min": 0, "max": 500, "note": "rail pressure (absolute, filtered), 0.0005 MPa per bit"},
+        {"did": "5658", "bytes": 2, "at": 0, "factor": 0.02, "min": 0, "max": 500},
+        {"did": "F423", "bytes": 2, "at": 0, "factor": 0.1, "min": 0, "max": 500},
+        {"obd": "23", "bytes": 2, "at": 0, "factor": 0.1, "min": 0, "max": 500}
+      ],
+      "hpfpTarget": [
+        {"did": "5837", "bytes": 2, "at": 0, "factor": 0.005, "min": 0, "max": 500},
+        {"did": "56C1", "bytes": 2, "at": 0, "factor": 0.02, "min": 0, "max": 500}
+      ],
+      "lpfp": [
+        {"did": "58F3", "bytes": 2, "at": 0, "factor": 0.001, "min": 0.5, "max": 15, "note": "low pressure raw value, 0.1 kPa per bit"},
+        {"did": "5463", "bytes": 2, "at": 0, "factor": 0.001, "signed": true, "min": 0.5, "max": 15, "note": "hPa"},
+        {"did": "F40A", "bytes": 1, "at": 0, "factor": 0.03, "min": 0.5, "max": 8},
+        {"obd": "0A", "bytes": 1, "at": 0, "factor": 0.03, "min": 0.5, "max": 8}
+      ],
+      "sinceFill": [
+        {"did": "57E3", "bytes": 2, "at": 0, "factor": 0.016666667, "min": 0, "max": 1093, "note": "minutes since the last refuelling -> hours"}
+      ],
+      "tank": [
+        {"did": "583B", "bytes": 1, "at": 0, "factor": 1, "min": 0, "max": 200}
+      ],
+      "tankL": [
+        {"did": "5949", "bytes": 1, "at": 0, "factor": 0.5, "min": 0, "max": 120}
+      ],
+      "tankR": [
+        {"did": "594A", "bytes": 1, "at": 0, "factor": 0.5, "min": 0, "max": 120}
+      ]
+    }
+  },
+  "screens": [
+    {
+      "name": "MAIN",
+      "kind": "canvas",
+      "title": "Fuel Analysis",
+      "buttons": [
+        ["BTN_SETTINGS", "Settings"]
+      ]
+    }
+  ],
+  "settings": [
+    {"key": "tankSize", "label": "Tank size", "type": "number", "unit": "l", "default": 68, "steps": [40, 45, 50, 52, 55, 59, 60, 65, 68, 70, 75, 78, 80, 83, 85, 90, 100]},
+    {"key": "tempUnit", "label": "Temperature unit", "type": "choice", "default": "c", "options": [["c", "Celsius"], ["f", "Fahrenheit"]]},
+    {"key": "pressUnit", "label": "Pressure unit", "type": "choice", "default": "bar", "options": [["bar", "bar"], ["psi", "psi"]]},
+    {"key": "theme", "label": "Colour theme", "type": "choice", "default": "m_tricolour",
+     "options": [["m_red", "M Red"], ["m_tricolour", "M Tricolour"], ["ice", "Ice White"], ["amber", "Night Amber"]]},
+    {"key": "layout", "label": "Screen layout", "type": "choice", "default": "full",
+     "options": [["full", "Full screen"], ["standard", "Standard"]]},
+    {"key": "renderer", "label": "Renderer", "type": "choice", "default": "auto",
+     "options": [["auto", "GPU 60 fps (default)"], ["software", "Software"]]},
+    {"key": "demo", "label": "Demo data", "type": "choice", "default": "auto",
+     "options": [["auto", "Auto"], ["on", "Always"], ["off", "Never"]]}
+  ]
+}

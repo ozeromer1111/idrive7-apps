@@ -1,0 +1,15 @@
+<!-- accent: #ffb020 -->
+<defs>
+  <linearGradient id="fa-body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd35a"/><stop offset="0.5" stop-color="#ffa51a"/><stop offset="1" stop-color="#c46a00"/></linearGradient>
+  <linearGradient id="fa-screen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d2a3a"/><stop offset="1" stop-color="#06131c"/></linearGradient>
+  <linearGradient id="fa-metal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8edf2"/><stop offset="0.5" stop-color="#9aa6b2"/><stop offset="1" stop-color="#5a6570"/></linearGradient>
+  <radialGradient id="fa-drop" cx="0.38" cy="0.35" r="0.75"><stop offset="0" stop-color="#fff2c0"/><stop offset="0.4" stop-color="#ffb020"/><stop offset="1" stop-color="#b85c00"/></radialGradient>
+</defs>
+<rect x="26" y="112" width="62" height="10" rx="3" fill="url(#fa-metal)"/>
+<rect x="32" y="22" width="50" height="92" rx="8" fill="url(#fa-body)"/>
+<rect x="32" y="22" width="50" height="92" rx="8" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5"/>
+<rect x="40" y="31" width="34" height="26" rx="4" fill="url(#fa-screen)"/>
+<polyline points="44,50 51,44 57,47 63,38 70,41" fill="none" stroke="#39d98a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M57 68 C57 68 46 82 46 90 a11 11 0 0 0 22 0 C68 82 57 68 57 68 Z" fill="url(#fa-drop)" stroke="#7a3d00" stroke-width="1.2"/>
+<path d="M82 46 h10 a8 8 0 0 1 8 8 v40 a7 7 0 0 0 14 0 V58 l-10 -12" fill="none" stroke="url(#fa-metal)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="100" y="34" width="16" height="14" rx="3" transform="rotate(38 108 41)" fill="url(#fa-metal)"/>
