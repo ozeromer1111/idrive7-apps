@@ -47,7 +47,8 @@ def text(value, words):
 
 def package_version(version, language):
     revisions = json.loads((Path(__file__).parent / 'locale-revisions.json').read_text(encoding='utf-8'))
-    return version if language == 'en' else version + '-' + language.lower().replace('-', '.') + '.' + str(revisions.get(language, 1))
+    # tr: MGU Store derlemesi dist/{id}@{version}.tgz bekler (manifest surumu), ek yok
+    return version if language in ('en', 'tr') else version + '-' + language.lower().replace('-', '.') + '.' + str(revisions.get(language, 1))
 
 
 def localize_spec(spec, language):
