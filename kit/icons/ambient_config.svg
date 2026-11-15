@@ -10,10 +10,10 @@
   <linearGradient id="a-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
   <filter id="a-glow" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
 </defs>
-<rect x="16" y="24" width="108" height="92" rx="14" fill="url(#a-rim)"/>
-<rect x="20" y="28" width="100" height="84" rx="11" fill="#07090c"/>
-<rect x="22" y="30" width="96" height="80" rx="10" fill="url(#a-screen)"/>
-<rect x="22" y="30" width="96" height="80" rx="10" fill="url(#a-wash)"/>
+
+
+
+
 <!-- the dashboard's light line, with its glow -->
 <path d="M28 60 C44 46 58 43 70 43 C82 43 96 46 112 60" fill="none" stroke="url(#a-light)" stroke-width="10" stroke-linecap="round" filter="url(#a-glow)"/>
 <path d="M28 60 C44 46 58 43 70 43 C82 43 96 46 112 60" fill="none" stroke="url(#a-light)" stroke-width="5" stroke-linecap="round"/>
