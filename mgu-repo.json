@@ -194,7 +194,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "eDrive",
-      "description": "Gerçek elektrik menzili, canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi",
+      "description": "Gerçek elektrik menzili (şarjlı hibritler ve iX3 gibi tam elektrikli araçlar), canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -411,7 +411,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "Isınma",
-      "description": "Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı ve turbo soğutma",
+      "description": "Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı, turbo soğutma ve soğuk çalıştırma sayacı",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
