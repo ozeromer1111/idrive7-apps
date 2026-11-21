@@ -7,8 +7,8 @@
       "path": "apps/ambient_config",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Ambiyans Işık",
-      "description": "Ambiyans ışığında her renk, animasyonlar ve her sürüş modu için bir görünüm",
+      "title": "Ambiyans Isik",
+      "description": "Ambiyans isiginda her renk, animasyonlar ve her surus modu icin bir gorunum",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -30,6 +30,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Ambiyans Işık",
+          "description": "Ambiyans ışığında her renk, animasyonlar ve her sürüş modu için bir görünüm"
+        }
       }
     },
     {
@@ -39,7 +45,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "Fren Testi",
-      "description": "100-0 ve 200-0 fren mesafesi, maks. yavaşlama ve fren yorulması takibi",
+      "description": "100-0 ve 200-0 fren mesafesi, maks. yavaslama ve fren yorulmasi takibi",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -61,6 +67,11 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "description": "100-0 ve 200-0 fren mesafesi, maks. yavaşlama ve fren yorulması takibi"
+        }
       }
     },
     {
@@ -69,8 +80,8 @@
       "path": "apps/car_vitals",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "M Göstergeler",
-      "description": "Canlı motor, ısı, emme / yakıt / ateşleme, lastik ve şasi göstergeleri",
+      "title": "M Gostergeler",
+      "description": "Canli motor, isi, emme / yakit / atesleme, lastik ve sasi gostergeleri",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -92,6 +103,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "M Göstergeler",
+          "description": "Canlı motor, ısı, emme / yakıt / ateşleme, lastik ve şasi göstergeleri"
+        }
       }
     },
     {
@@ -100,8 +117,8 @@
       "path": "apps/draggy",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Drag Sayacı",
-      "description": "0-100, 100-200 ve 1/4 mil sayacı, en iyi derecelerle",
+      "title": "Drag Sayaci",
+      "description": "0-100, 100-200 ve 1/4 mil sayaci, en iyi derecelerle",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -123,6 +140,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Drag Sayacı",
+          "description": "0-100, 100-200 ve 1/4 mil sayacı, en iyi derecelerle"
+        }
       }
     },
     {
@@ -131,8 +154,8 @@
       "path": "apps/dtc_scanner",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Arıza Tarayıcı",
-      "description": "Her ünitenin arıza belleğini oku ve sil, ayrıca aktif Tarama Sonucu mesajları",
+      "title": "Ariza Tarayici",
+      "description": "Her unitenin ariza bellegini oku ve sil, ayrica aktif Tarama Sonucu mesajlari",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -154,6 +177,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Arıza Tarayıcı",
+          "description": "Her ünitenin arıza belleğini oku ve sil, ayrıca aktif Tarama Sonucu mesajları"
+        }
       }
     },
     {
@@ -163,7 +192,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "Sanal Dyno",
-      "description": "Tam gaz çekişten güç ve tork eğrileri, kaydedilir ve karşılaştırılır",
+      "description": "Tam gaz cekisten guc ve tork egrileri, kaydedilir ve karsilastirilir",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -185,6 +214,11 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "description": "Tam gaz çekişten güç ve tork eğrileri, kaydedilir ve karşılaştırılır"
+        }
       }
     },
     {
@@ -194,7 +228,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "eDrive",
-      "description": "Gerçek elektrik menzili (şarjlı hibritler ve iX3 gibi tam elektrikli araçlar), canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi",
+      "description": "Gercek elektrik menzili (sarjli hibritler ve iX3 gibi tam elektrikli araclar), canli aku gucu, hucreler ve klima gucu, HV aku sagligi (SOH) ve enerjisi, son sarj, sarj kaydi, 12 V aku (sarj, gerilim, gorevi, rejen, gecmis) ve bir ana ekran widget'i; 48 V hafif hibritte 48 V akusu ve DC/DC ceviricisi",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -216,6 +250,11 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "description": "Gerçek elektrik menzili (şarjlı hibritler ve iX3 gibi tam elektrikli araçlar), canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi"
+        }
       }
     },
     {
@@ -224,8 +263,8 @@
       "path": "apps/fuel_analysis",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Yakıt Analizi",
-      "description": "Depodaki yakıt, anlık tüketim, etanol, oktan, yakıt sıcaklığı ve yakıt basınçları",
+      "title": "Yakit Analizi",
+      "description": "Depodaki yakit, anlik tuketim, etanol, oktan, yakit sicakligi ve yakit basinclari",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -247,6 +286,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Yakıt Analizi",
+          "description": "Depodaki yakıt, anlık tüketim, etanol, oktan, yakıt sıcaklığı ve yakıt basınçları"
+        }
       }
     },
     {
@@ -256,7 +301,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "G Kuvveti",
-      "description": "Tutuş zarflı sürtünme dairesi, yöne göre maks. g ve oturum rekorları",
+      "description": "Tutus zarfli surtunme dairesi, yone gore maks. g ve oturum rekorlari",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -278,6 +323,11 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "description": "Tutuş zarflı sürtünme dairesi, yöne göre maks. g ve oturum rekorları"
+        }
       }
     },
     {
@@ -286,8 +336,8 @@
       "path": "apps/live_adjustments",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Motor Ayarı",
-      "description": "BMW MGU ID7 için Motor Ayarı. Egzoz Klapesi: OEM, AÇ ve KAPAT aracın kendi teşhis bağlantısıyla ya da sürüş moduna göre (Sport açık, Eco Pro kapalı); DME zaman aşımına karşı tutulur, Kapat belirli devir üstünde geri verilir. Ayarlar'da BM3 veya MHD seçilince: yazılım seçimi, POP & BANG, ASD ve Maks. Soğutma. Deneysel: kontak çevrimine kadar xDrive kapalı (DSC LMV_FUNKTION), kendi ayarının arkasında",
+      "title": "Motor Ayari",
+      "description": "BMW MGU ID7 icin Motor Ayari. Egzoz Klapesi: OEM, AC ve KAPAT aracin kendi teshis baglantisiyla ya da surus moduna gore (Sport acik, Eco Pro kapali); DME zaman asimina karsi tutulur, Kapat belirli devir ustunde geri verilir. Ayarlar'da BM3 veya MHD secilince: yazilim secimi, POP & BANG, ASD ve Maks. Sogutma. Deneysel: kontak cevrimine kadar xDrive kapali (DSC LMV_FUNKTION), kendi ayarinin arkasinda",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -309,6 +359,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Motor Ayarı",
+          "description": "BMW MGU ID7 için Motor Ayarı. Egzoz Klapesi: OEM, AÇ ve KAPAT aracın kendi teşhis bağlantısıyla ya da sürüş moduna göre (Sport açık, Eco Pro kapalı); DME zaman aşımına karşı tutulur, Kapat belirli devir üstünde geri verilir. Ayarlar'da BM3 veya MHD seçilince: yazılım seçimi, POP & BANG, ASD ve Maks. Soğutma. Deneysel: kontak çevrimine kadar xDrive kapalı (DSC LMV_FUNKTION), kendi ayarının arkasında"
+        }
       }
     },
     {
@@ -317,8 +373,8 @@
       "path": "apps/live_data",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Canlı Veri",
-      "description": "Araçtan ve ünitelerinden salt okunur canlı değerler, yakıt maliyetli yol bilgisayarı ve kendi gösterge ekranların, biri ana ekran widget'ı olarak",
+      "title": "Canli Veri",
+      "description": "Aractan ve unitelerinden salt okunur canli degerler, yakit maliyetli yol bilgisayari ve kendi gosterge ekranlarin, biri ana ekran widget'i olarak",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -340,6 +396,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Canlı Veri",
+          "description": "Araçtan ve ünitelerinden salt okunur canlı değerler, yakıt maliyetli yol bilgisayarı ve kendi gösterge ekranların, biri ana ekran widget'ı olarak"
+        }
       }
     },
     {
@@ -348,8 +410,8 @@
       "path": "apps/redline",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Devir sınırı",
-      "description": "Vites ışıkları, vites, vites puanı ve soğuk motor devir koruması olan tam ekran devir göstergesi; HUD @biscotit tarafından",
+      "title": "Devir siniri",
+      "description": "Vites isiklari, vites, vites puani ve soguk motor devir korumasi olan tam ekran devir gostergesi; HUD @biscotit tarafindan",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -371,6 +433,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Devir sınırı",
+          "description": "Vites ışıkları, vites, vites puanı ve soğuk motor devir koruması olan tam ekran devir göstergesi; HUD @biscotit tarafından"
+        }
       }
     },
     {
@@ -380,7 +448,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "Servis",
-      "description": "Gösterge panelinden servis gereksinimleri: yağ, frenler, fren hidroliği, araç kontrolü, muayene - mesafe, tarih, ayrıntılar; fren hidroliği ve araç kontrolü sıfırlama",
+      "description": "Gosterge panelinden servis gereksinimleri: yag, frenler, fren hidroligi, arac kontrolu, muayene - mesafe, tarih, ayrintilar; fren hidroligi ve arac kontrolu sifirlama",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -402,6 +470,11 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "description": "Gösterge panelinden servis gereksinimleri: yağ, frenler, fren hidroliği, araç kontrolü, muayene - mesafe, tarih, ayrıntılar; fren hidroliği ve araç kontrolü sıfırlama"
+        }
       }
     },
     {
@@ -410,8 +483,8 @@
       "path": "apps/warmup",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Isınma",
-      "description": "Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı, turbo soğutma ve soğuk çalıştırma sayacı",
+      "title": "Isinma",
+      "description": "Yag ve sogutma suyu isinma hesaplayici (hazir olma suresi), guvenli devir siniri, turbo sogutma ve soguk calistirma sayaci",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -433,6 +506,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Isınma",
+          "description": "Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı, turbo soğutma ve soğuk çalıştırma sayacı"
+        }
       }
     },
     {
@@ -441,8 +520,8 @@
       "path": "apps/zf8hp",
       "manifest": "app.json",
       "icon": "icon.png",
-      "title": "Şanzıman Ayarı",
-      "description": "Şanzıman Ayarı, deneysel ZF 8HP izleme: canlı veri, kavrama dolum adaptasyonları, vites haritaları ve sıcaklık geçmişi",
+      "title": "Sanziman Ayari",
+      "description": "Sanziman Ayari, deneysel ZF 8HP izleme: canli veri, kavrama dolum adaptasyonlari, vites haritalari ve sicaklik gecmisi",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -464,6 +543,12 @@
           "kit/tools/oapgen",
           "oap-sdk"
         ]
+      },
+      "texts": {
+        "tr": {
+          "title": "Şanzıman Ayarı",
+          "description": "Şanzıman Ayarı, deneysel ZF 8HP izleme: canlı veri, kavrama dolum adaptasyonları, vites haritaları ve sıcaklık geçmişi"
+        }
       }
     }
   ],
