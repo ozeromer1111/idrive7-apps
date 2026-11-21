@@ -722,6 +722,11 @@ def build(app_id, language='en', preview_only=False):
     if language == 'tr':
         shutil.copy(os.path.join(KIT, 'localization', 'fonts', 'latin-tr.json'),
                     os.path.join(src, 'javascript', 'kit', 'fonts', 'turkish.json'))
+    if app_id == 'car_vitals':
+        # the car photo and tyre tread (kit/runtime/carimage.js): only M Vitals draws them, others don't carry the atlases
+        for name in ('car.json', 'tyre.json'):
+            shutil.copy(os.path.join(KIT, 'localization', 'fonts', name),
+                        os.path.join(src, 'javascript', 'kit', 'fonts', name))
     if credit(language):
         # The translation credit in the installed entry code, as plain comments.
         entry = os.path.join(src, 'javascript', 'app.js')

@@ -7,7 +7,7 @@ working size, then stored as glyphs drawn at the same spot (kit/runtime/carimage
   U+E020  the tyre's outline (drawn black)
   U+E021  the tread's brightness, right-hand tyre (drawn white over it)
   U+E022  the same, mirrored, for the left-hand tyres (the outer shoulder outwards)
-Bake at the size the app draws, so it is never rescaled. Output: kit/runtime/fonts/tyre.json.
+Bake at the size the app draws, so it is never rescaled. Output: kit/localization/fonts/tyre.json.
 """
 import argparse
 import base64
@@ -51,7 +51,7 @@ def main():
     size = {'size': th, 'ascent': th, 'descent': 0, 'atlasW': tw, 'atlasH': atlas.height,
             'alpha': base64.b64encode(zlib.compress(atlas.tobytes(), 9)).decode(), 'glyphs': glyphs}
     key = hashlib.sha256(json.dumps(size, separators=(',', ':')).encode()).hexdigest()[:16]
-    out = ROOT / 'kit/runtime/fonts/tyre.json'
+    out = ROOT / 'kit/localization/fonts/tyre.json'
     out.write_text(json.dumps({'family': 'tyre', 'source': Path(a.tread).name, 'cacheKey': key, 'sizes': [size]},
                               separators=(',', ':')) + '\n', encoding='utf-8')
     print('tyre tread:', tw, 'x', th, '->', out, out.stat().st_size, 'bytes')

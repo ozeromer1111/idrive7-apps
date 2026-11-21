@@ -11,7 +11,7 @@ The background must be near-white; it is cut away from the edges in, on a 4x ups
 smoothed and then scaled down, so the outline is anti-aliased instead of stair-stepped. Each
 --length is a baked size (the car's height in px); bake the sizes the app draws, so it is never
 rescaled when drawn. --rotate turns the photo so the front points up.
-kit/runtime/carimage.js draws it. Output: kit/runtime/fonts/car.json.
+kit/runtime/carimage.js draws it. Output: kit/localization/fonts/car.json.
 """
 import argparse
 import base64
@@ -96,7 +96,7 @@ def main():
                       'alpha': base64.b64encode(zlib.compress(atlas.tobytes(), 9)).decode(), 'glyphs': glyphs})
         print('car image:', w, 'x', h)
     key = hashlib.sha256(json.dumps(sizes, separators=(',', ':')).encode()).hexdigest()[:16]
-    out = ROOT / 'kit/runtime/fonts/car.json'
+    out = ROOT / 'kit/localization/fonts/car.json'
     out.write_text(json.dumps({'family': 'car', 'source': Path(a.photo).name, 'cacheKey': key, 'sizes': sizes},
                               separators=(',', ':')) + '\n', encoding='utf-8')
     print('->', out, out.stat().st_size, 'bytes')
