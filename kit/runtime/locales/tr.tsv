@@ -2733,3 +2733,15 @@ Passenger front door line 2	Yolcu ön kapı çizgi 2
 Passenger rear door line 2	Yolcu arka kapı çizgi 2
 Real electric range (plug-in hybrids and fully electric cars such as the iX3), live battery power, cells and climate power, HV battery health (SOH) and energy, last charge, charge log, the 12 V battery (charge, voltage, what it does, regen, history) and a home-screen widget; on a 48 V mild hybrid its 48 V battery and DC/DC converter	Gerçek elektrik menzili (şarjlı hibritler ve iX3 gibi tam elektrikli araçlar), canlı akü gücü, hücreler ve klima gücü, HV akü sağlığı (SOH) ve enerjisi, son şarj, şarj kaydı, 12 V akü (şarj, gerilim, görevi, rejen, geçmiş) ve bir ana ekran widget'ı; 48 V hafif hibritte 48 V aküsü ve DC/DC çeviricisi
 Oil and coolant warm-up calculator (time to ready), safe rev limit, turbo cool-down and a cold start counter	Yağ ve soğutma suyu ısınma hesaplayıcı (hazır olma süresi), güvenli devir sınırı, turbo soğutma ve soğuk çalıştırma sayacı
+Decor lights (dash, under the door trim) with	Dekor ışıkları (torpido, kapı çıtası altı) şununla birlikte
+Lower lights (like BMW)	Alt ışıklar (BMW'deki gibi)
+Open door: the car's own warning (G20 / G26)	Açık kapı: aracın kendi uyarısı (G20 / G26)
+M-Track (or similar) module: S while S / M flickers	M-Track (veya benzeri) modül: S / M titrerken S göster
+one colour on all lights	tüm ışıklarda tek renk
+All lights, bus	Tüm ışıklar, hat
+IterioDev's Comfort tool has its ambient colour on and changes the same lights, so Ambient config has stopped changing them. Turn its colour and its drive-mode colours off in IterioDev's Ambient Light app (the seats keep working), or uninstall Comfort in the Store (Installed, Head-unit tools, Comfort).	IterioDev'in Comfort aracında ambiyans rengi açık ve aynı ışıkları değiştiriyor; bu yüzden Ambiyans Işık ışıklara dokunmayı bıraktı. IterioDev'in Ambient Light uygulamasında rengi ve sürüş modu renklerini kapatın (koltuklar çalışmaya devam eder) ya da Comfort'u Store'dan kaldırın (Yüklü, Kafa ünitesi araçları, Comfort).
+Electric flap (MG1 / V8)	Elektrikli klape (MG1 / V8)
+Not set	Ayarlanmadı
+Knob	Kadran
+press: keep	bas: tut
+this trip, and trips that had no price, follow it; the others keep theirs	bu yolculuk ve fiyatı olmayan yolculuklar bunu izler; diğerleri kendi fiyatını tutar
