@@ -1,0 +1,27 @@
+{
+  "id": "koltuklar",
+  "title": "Koltuklar",
+  "description": "Ön koltukları ekrandan ayarla: her koltuğun ileri/geri, yükseklik, sırt, oturak eğimi ve başlık kontrolü, koltuk başına 3 hafıza ve yolcu için Yer Aç. Comfort aracı gerekir.",
+  "version": "1.0.0",
+  "vendor": "custom",
+  "loggingId": "KLTK",
+  "iconGlyph": "seat",
+  "mguHmi": ["ID7", "ID8"],
+  "requires": { "idrive7-renderd": "2.1.15" },
+  "screens": [
+    {
+      "name": "MAIN",
+      "kind": "canvas",
+      "title": "Koltuklar",
+      "buttons": [
+        ["BTN_DUR", "Durdur"],
+        ["BTN_KAYDET", "Kaydet"]
+      ]
+    }
+  ],
+  "settings": [
+    {"key": "theme", "label": "Renk teması", "type": "choice", "default": "m_red",
+     "options": [["m_red", "M Kırmızı"], ["m_tricolour", "M Üç Renk"], ["ice", "Buz Beyazı"], ["amber", "Gece Kehribar"]]},
+    {"key": "rhd", "label": "Direksiyon sağda", "type": "bool", "default": false}
+  ]
+}

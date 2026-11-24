@@ -587,6 +587,42 @@
           "description": "Araca uzaktan ECUHARD bağlantısı: aç/kapat, yetki ve yapılan her komutun canlı günlüğü"
         }
       }
+    },
+    {
+      "id": "koltuklar",
+      "kind": "app",
+      "path": "apps/koltuklar",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "Koltuklar",
+      "description": "On koltuklari ekrandan ayarla: ileri/geri, yukseklik, sirt, egim, baslik; 3 hafiza ve Yer Ac. Comfort araci gerekir.",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      },
+      "texts": {
+        "tr": {
+          "description": "Ön koltukları ekrandan ayarla: ileri/geri, yükseklik, sırt, eğim, başlık; 3 hafıza ve Yer Aç. Comfort aracı gerekir."
+        }
+      }
     }
   ],
   "apps": {
@@ -626,6 +662,7 @@
       "edrive",
       "fuel_analysis",
       "gforce",
+      "koltuklar",
       "live_adjustments",
       "live_data",
       "redline",

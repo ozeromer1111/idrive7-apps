@@ -1,0 +1,27 @@
+<!-- accent: #e0a24a -->
+<defs>
+  <radialGradient id="k-halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffcf7a" stop-opacity="0.75"/><stop offset="0.6" stop-color="#c9801f" stop-opacity="0.2"/><stop offset="1" stop-color="#c9801f" stop-opacity="0"/></radialGradient>
+  <linearGradient id="k-seat" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9c4"/><stop offset="0.4" stop-color="#e7ad5c"/><stop offset="0.75" stop-color="#c8842e"/><stop offset="1" stop-color="#8a560f"/></linearGradient>
+  <linearGradient id="k-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff4e0"/><stop offset="1" stop-color="#f0c98f"/></linearGradient>
+  <linearGradient id="k-rail" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9aa5b1"/><stop offset="0.5" stop-color="#eef2f6"/><stop offset="1" stop-color="#5b6672"/></linearGradient>
+  <filter id="k-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+</defs>
+<circle cx="70" cy="70" r="58" fill="url(#k-halo)"/>
+<!-- base rail -->
+<rect x="34" y="108" width="74" height="7" rx="3.5" fill="url(#k-rail)"/>
+<circle cx="42" cy="118" r="4.5" fill="#3b434c"/><circle cx="100" cy="118" r="4.5" fill="#3b434c"/>
+<!-- seat glow -->
+<g filter="url(#k-glow)" opacity="0.65">
+  <path d="M44 104 q-3 -34 6 -58 q4 -10 16 -10 q11 0 12 12 l3 40 q24 2 24 16 l0 10 q0 6 -7 6 l-56 0 q-6 0 -6 -6 z" fill="#f0a84e"/>
+</g>
+<!-- seat base (cushion) -->
+<path d="M44 108 q-2 -16 10 -18 l44 0 q10 0 10 10 l0 2 q0 6 -7 6 l-50 0 q-7 0 -7 -0 z" fill="url(#k-seat)" stroke="url(#k-edge)" stroke-width="2" stroke-linejoin="round"/>
+<!-- backrest, slightly reclined -->
+<path d="M50 104 q-5 -36 4 -58 q4 -11 15 -11 q11 0 12 12 l4 50 q0 6 -6 7 l-17 0 q-6 0 -6 -0 z" fill="url(#k-seat)" stroke="url(#k-edge)" stroke-width="2" stroke-linejoin="round"/>
+<!-- headrest -->
+<rect x="58" y="24" width="26" height="18" rx="8" fill="url(#k-seat)" stroke="url(#k-edge)" stroke-width="2"/>
+<rect x="68" y="40" width="6" height="8" fill="#b07a2c"/>
+<!-- stitch lines -->
+<path d="M62 46 q-3 26 0 52" fill="none" stroke="#7a4e12" stroke-width="2" opacity="0.5"/>
+<path d="M74 44 q-2 26 0 52" fill="none" stroke="#7a4e12" stroke-width="2" opacity="0.5"/>
+<path d="M58 102 l40 0" fill="none" stroke="#7a4e12" stroke-width="2" opacity="0.45"/>
