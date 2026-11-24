@@ -2,28 +2,75 @@
   "id": "ecuhard_link",
   "title": "ECUHARD Link",
   "description": "Araca uzaktan ECUHARD baglantisi: ac/kapat, yetki ve yapilan her komutun canli gunlugu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "vendor": "custom",
   "loggingId": "EHLK",
   "iconGlyph": "link",
   "autostart": true,
-  "mguHmi": ["ID7", "ID8"],
-  "requires": { "idrive7-renderd": "2.1.15" },
+  "mguHmi": [
+    "ID7",
+    "ID8"
+  ],
+  "requires": {
+    "idrive7-renderd": "2.1.15"
+  },
   "screens": [
     {
       "name": "MAIN",
       "kind": "canvas",
       "title": "ECUHARD Bağlantı",
       "buttons": [
-        ["BTN_TOGGLE", "Aç/Kapat"],
-        ["BTN_MODE", "Yetki"]
+        [
+          "BTN_TOGGLE",
+          "İzin Ver"
+        ],
+        [
+          "BTN_MODE",
+          "Yetki"
+        ]
       ]
     }
   ],
   "settings": [
-    {"key": "theme", "label": "Renk teması", "type": "choice", "default": "m_red",
-     "options": [["m_red", "M Kırmızı"], ["m_tricolour", "M Üç Renk"], ["ice", "Buz Beyazı"], ["amber", "Gece Kehribar"]]},
-    {"key": "layout", "label": "Ekran düzeni", "type": "choice", "default": "full",
-     "options": [["full", "Tam ekran"], ["standard", "Standart"]]}
+    {
+      "key": "theme",
+      "label": "Renk teması",
+      "type": "choice",
+      "default": "m_red",
+      "options": [
+        [
+          "m_red",
+          "M Kırmızı"
+        ],
+        [
+          "m_tricolour",
+          "M Üç Renk"
+        ],
+        [
+          "ice",
+          "Buz Beyazı"
+        ],
+        [
+          "amber",
+          "Gece Kehribar"
+        ]
+      ]
+    },
+    {
+      "key": "layout",
+      "label": "Ekran düzeni",
+      "type": "choice",
+      "default": "full",
+      "options": [
+        [
+          "full",
+          "Tam ekran"
+        ],
+        [
+          "standard",
+          "Standart"
+        ]
+      ]
+    }
   ]
 }
