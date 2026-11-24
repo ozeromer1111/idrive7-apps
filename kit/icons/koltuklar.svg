@@ -1,27 +1,45 @@
-<!-- accent: #e0a24a -->
+<!-- accent: #e60012 -->
 <defs>
-  <radialGradient id="k-halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffcf7a" stop-opacity="0.75"/><stop offset="0.6" stop-color="#c9801f" stop-opacity="0.2"/><stop offset="1" stop-color="#c9801f" stop-opacity="0"/></radialGradient>
-  <linearGradient id="k-seat" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9c4"/><stop offset="0.4" stop-color="#e7ad5c"/><stop offset="0.75" stop-color="#c8842e"/><stop offset="1" stop-color="#8a560f"/></linearGradient>
-  <linearGradient id="k-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff4e0"/><stop offset="1" stop-color="#f0c98f"/></linearGradient>
-  <linearGradient id="k-rail" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9aa5b1"/><stop offset="0.5" stop-color="#eef2f6"/><stop offset="1" stop-color="#5b6672"/></linearGradient>
-  <filter id="k-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4"/></filter>
+  <radialGradient id="k-halo" cx="0.5" cy="0.42" r="0.55"><stop offset="0" stop-color="#ff5a5a" stop-opacity="0.5"/><stop offset="0.6" stop-color="#c00" stop-opacity="0.14"/><stop offset="1" stop-color="#c00" stop-opacity="0"/></radialGradient>
+  <linearGradient id="k-shell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b323b"/><stop offset="1" stop-color="#0c0e12"/></linearGradient>
+  <linearGradient id="k-bolL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#434d59"/><stop offset="0.6" stop-color="#262c34"/><stop offset="1" stop-color="#161a1f"/></linearGradient>
+  <linearGradient id="k-bolR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#434d59"/><stop offset="0.6" stop-color="#262c34"/><stop offset="1" stop-color="#161a1f"/></linearGradient>
+  <linearGradient id="k-center" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20262e"/><stop offset="1" stop-color="#10141a"/></linearGradient>
+  <linearGradient id="k-seat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a313a"/><stop offset="1" stop-color="#10141a"/></linearGradient>
+  <radialGradient id="k-mglow" cx="0.5" cy="0.5" r="0.6"><stop offset="0" stop-color="#eaf4ff"/><stop offset="0.7" stop-color="#9fd0ff" stop-opacity="0.5"/><stop offset="1" stop-color="#9fd0ff" stop-opacity="0"/></radialGradient>
 </defs>
-<circle cx="70" cy="70" r="58" fill="url(#k-halo)"/>
-<!-- base rail -->
-<rect x="34" y="108" width="74" height="7" rx="3.5" fill="url(#k-rail)"/>
-<circle cx="42" cy="118" r="4.5" fill="#3b434c"/><circle cx="100" cy="118" r="4.5" fill="#3b434c"/>
-<!-- seat glow -->
-<g filter="url(#k-glow)" opacity="0.65">
-  <path d="M44 104 q-3 -34 6 -58 q4 -10 16 -10 q11 0 12 12 l3 40 q24 2 24 16 l0 10 q0 6 -7 6 l-56 0 q-6 0 -6 -6 z" fill="#f0a84e"/>
+<circle cx="70" cy="62" r="56" fill="url(#k-halo)"/>
+
+<!-- carbon shell outline (sirt + entegre baslik) -->
+<path d="M70 14
+         c-10 0 -15 4 -16 14
+         c-19 3 -26 12 -26 30
+         l0 34 c0 7 4 10 11 10 l62 0 c7 0 11 -3 11 -10 l0 -34
+         c0 -18 -7 -27 -26 -30
+         c-1 -10 -6 -14 -16 -14 z"
+      fill="url(#k-shell)" stroke="#525c69" stroke-width="2"/>
+
+<!-- yan destekler (kanatlar) -->
+<path d="M44 54 c-10 2 -14 9 -14 22 l0 22 c0 5 3 7 8 7 l10 0 l0 -51 z" fill="url(#k-bolL)"/>
+<path d="M96 54 c10 2 14 9 14 22 l0 22 c0 5 -3 7 -8 7 l-10 0 l0 -51 z" fill="url(#k-bolR)"/>
+
+<!-- orta kanal panel -->
+<rect x="52" y="48" width="36" height="57" rx="7" fill="url(#k-center)"/>
+<path d="M60 52 l0 50 M70 52 l0 50 M80 52 l0 50" stroke="#070a0d" stroke-width="2"/>
+<path d="M56 50 l0 54 M84 50 l0 54" stroke="#e10a1a" stroke-width="1.4" opacity="0.55"/>
+
+<!-- isikli M logosu (baslik yuvasi) -->
+<ellipse cx="70" cy="33" rx="22" ry="12" fill="url(#k-mglow)"/>
+<rect x="53" y="27" width="34" height="13" rx="3" fill="#05070a" stroke="#3a434e" stroke-width="1.2"/>
+<g>
+  <rect x="56.5" y="29" width="27" height="9" fill="#f2f6fb"/>
+  <polygon points="57,38 60.5,29 63.5,29 60,38" fill="#18a0dd"/>
+  <polygon points="61.5,38 65,29 68,29 64.5,38" fill="#0b2f74"/>
+  <polygon points="66,38 69.5,29 72.5,29 69,38" fill="#e2231a"/>
+  <text x="76" y="37" font-family="Arial, sans-serif" font-weight="bold" font-size="10" fill="#0a1020">M</text>
 </g>
-<!-- seat base (cushion) -->
-<path d="M44 108 q-2 -16 10 -18 l44 0 q10 0 10 10 l0 2 q0 6 -7 6 l-50 0 q-7 0 -7 -0 z" fill="url(#k-seat)" stroke="url(#k-edge)" stroke-width="2" stroke-linejoin="round"/>
-<!-- backrest, slightly reclined -->
-<path d="M50 104 q-5 -36 4 -58 q4 -11 15 -11 q11 0 12 12 l4 50 q0 6 -6 7 l-17 0 q-6 0 -6 -0 z" fill="url(#k-seat)" stroke="url(#k-edge)" stroke-width="2" stroke-linejoin="round"/>
-<!-- headrest -->
-<rect x="58" y="24" width="26" height="18" rx="8" fill="url(#k-seat)" stroke="url(#k-edge)" stroke-width="2"/>
-<rect x="68" y="40" width="6" height="8" fill="#b07a2c"/>
-<!-- stitch lines -->
-<path d="M62 46 q-3 26 0 52" fill="none" stroke="#7a4e12" stroke-width="2" opacity="0.5"/>
-<path d="M74 44 q-2 26 0 52" fill="none" stroke="#7a4e12" stroke-width="2" opacity="0.5"/>
-<path d="M58 102 l40 0" fill="none" stroke="#7a4e12" stroke-width="2" opacity="0.45"/>
+
+<!-- oturak: iki minder + karbon orta ayirici -->
+<path d="M34 104 l72 0 c6 0 9 4 9 10 l0 6 c0 6 -4 9 -10 9 l-70 0 c-6 0 -10 -3 -10 -9 l0 -6 c0 -6 3 -10 9 -10 z" fill="url(#k-seat)" stroke="#525c69" stroke-width="2"/>
+<rect x="64" y="104" width="12" height="35" rx="5" fill="#2c333c" stroke="#070a0d" stroke-width="1.5"/>
+<path d="M44 112 l14 0 M82 112 l14 0" stroke="#e10a1a" stroke-width="1.4" opacity="0.5"/>
