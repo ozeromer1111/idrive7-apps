@@ -1,0 +1,30 @@
+{
+  "id": "ecuhard-link",
+  "kind": "tool",
+  "version": "1.0.0",
+  "title": "ECUHARD Baglanti Servisi",
+  "description": "Araca uzaktan ECUHARD baglantisi (ECUHARD Baglanti uygulamasinin arka plan servisi); yalniz uygulamadan Izin Ver acikken baglanir",
+  "texts": {
+    "tr": {
+      "title": "ECUHARD Bağlantı Servisi",
+      "description": "Araca uzaktan ECUHARD bağlantısı (ECUHARD Bağlantı uygulamasının arka plan servisi); yalnız uygulamadan İzin Ver açıkken bağlanır"
+    }
+  },
+  "mguHmi": ["ID7", "ID8"],
+  "requires": { "mgu-deploy": "0.4.0" },
+  "uninstallable": true,
+  "internet": true,
+  "uids": "internet-uids",
+  "files": [
+    { "path": "agent.js", "mode": "0644" },
+    { "path": "ecuhard-link-postinstall.sh", "mode": "0755" }
+  ],
+  "units": [
+    { "name": "ecuhard-link.service" }
+  ],
+  "enable": [
+    { "unit": "ecuhard-link.service", "target": "multi-user.target" }
+  ],
+  "postInstall": ["ecuhard-link-postinstall.sh"],
+  "restart": ["ecuhard-link.service"]
+}

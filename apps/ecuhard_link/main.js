@@ -1,34 +1,50 @@
 'use strict';
 /**
- * ECUHARD Bağlantı - araca uzaktan bağlantı (agent uygulamanın İÇİNDE; ayrı servis/exe YOK).
+ * ECUHARD Bağlantı - araçtaki uzaktan bağlantı servisinin (ecuhard-link araci) ekran kumandası.
  *
- * "İZİN VER" düğmesi bağlantıyı açar (varsayılan KAPALI). Açıkken araç röleye (VPS) bağlanır,
- * operatör komutlarını yapar ve her komutu bu ekranda gösterir. "İZNİ KAPAT" ile anında kesilir.
- * "TAM YETKİ / YALNIZ OKU" yazma iznini kontrol eder.
+ * Asıl bağlantıyı root SERVİS yapar (Store aracı "ECUHARD Bağlantı Servisi"): röleye yalnız o çıkabilir
+ * (araçta internet uid-kapılı; uygulama çıkamaz). Servis durumu /var/opt/ecuhard-link/status.json'a yazar;
+ * bu uygulama onu okuyup gösterir. "İZİN VER" düğmesi /var/opt/ecuhard-link/control.json'a {armed} yazar;
+ * servis 1 sn içinde uygular (armed=false -> röleden tamamen kopar). "TAM YETKİ/YALNIZ OKU" yazma iznidir.
  *
- * Güvenlik: gömülü ayarda yalnız araç anahtarı (akey) + röle sertifika parmak izi var; komut
- * çalıştırma yetkisi veren operatör anahtarı (okey) burada DEĞİL. Uygulama içinde çalıştığı için
- * erişim ekran/uygulama seviyesindedir (root değil).
+ * Servis kurulu değilse (klasör yok) bu uygulama "Servisi Store'dan kur" der.
+ * Yollar ECUHARD_LINK_DIR ile değişir (emülatör testi için).
  */
+const fs = require('fs');
+const path = require('path');
 const mgu = require('./kit/mgu');
 const G = require('./kit/gauges');
-const { createAgent } = require('./agent-core');
 
 const W = 1600, H = 520;
 const GREEN = '#2fd27a', AMBER = '#ffb020';
+const DIR = process.env.ECUHARD_LINK_DIR || '/var/opt/ecuhard-link';
+const STATUS = path.join(DIR, 'status.json');
+const CONTROL = path.join(DIR, 'control.json');
 
 mgu.run({
     async start(ctx) {
         const { ui, log } = ctx;
         let page = 0;
         let st = { armed: false, readonly: false, connected: false, since: 0, op: '', last_cmd: '', log: [] };
+        let stMtime = 0, serviceSeen = false, writeFail = false;
 
-        const agent = createAgent({ onState: (s) => { st = s; } });
-        agent.start();
-        st = agent.getState();
-
-        function setArmed(v) { agent.setArmed(v); st = agent.getState(); }
-        function setReadonly(v) { agent.setReadonly(v); st = agent.getState(); }
+        function readStatus() {
+            try {
+                const m = fs.statSync(STATUS).mtimeMs;
+                serviceSeen = true;
+                if (m === stMtime) return;
+                stMtime = m;
+                const j = JSON.parse(fs.readFileSync(STATUS, 'utf8'));
+                if (j && typeof j === 'object') st = j;
+            } catch (e) { /* servis henüz yazmadıysa / kurulu değilse */ }
+        }
+        function writeControl(armed, readonly) {
+            try {
+                fs.writeFileSync(CONTROL + '.new', JSON.stringify({ armed: armed, readonly: readonly }));
+                fs.renameSync(CONTROL + '.new', CONTROL);
+                st.armed = armed; st.readonly = readonly; writeFail = false;
+            } catch (e) { writeFail = true; log.warn('control yazılamadı: ' + e); }
+        }
 
         function fmtDur(sinceSec) {
             if (!sinceSec) return '';
@@ -42,21 +58,23 @@ mgu.run({
             const d = new Date((tsSec || 0) * 1000), p = (n) => String(n).padStart(2, '0');
             return p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds());
         }
-
         function statusWord(t) {
+            if (!serviceSeen) return { w: 'SERVİS YOK', c: t.crit };
             if (!st.armed) return { w: 'KAPALI', c: t.dim };
             if (st.connected) return { w: 'BAĞLI', c: GREEN };
             return { w: 'BAĞLANIYOR', c: AMBER };
         }
 
-        /* ---------- Durum sayfası ---------- */
         function drawMain(cv, t) {
             G.panel(cv, t, 24, 44, 760, 468, 'Bağlantı');
             const sw = statusWord(t);
             cv.circle(84, 150, 16, sw.c);
-            cv.text(sw.w, 120, 168, 60, sw.c, { font: 'bold', spacing: 1 });
+            cv.text(sw.w, 120, 168, 56, sw.c, { font: 'bold', spacing: 1 });
             let y = 232;
-            if (st.armed && st.connected) {
+            if (!serviceSeen) {
+                cv.text('Bağlantı servisi kurulu değil.', 48, y, 24, t.dim); y += 40;
+                cv.text('Store > araçlar > "ECUHARD Bağlantı Servisi" → Kur.', 48, y, 23, t.dim); y += 40;
+            } else if (st.armed && st.connected) {
                 cv.text('Süre', 48, y, 24, t.dim); cv.text(fmtDur(st.since), 240, y, 24, t.text, { font: 'num' }); y += 44;
                 cv.text('Operatör', 48, y, 24, t.dim); cv.text(st.op || '-', 240, y, 24, t.text); y += 44;
                 cv.text('Son komut', 48, y, 24, t.dim);
@@ -64,20 +82,20 @@ mgu.run({
             } else if (st.armed) {
                 cv.text('Araç röleye bağlanmaya çalışıyor…', 48, y, 24, t.dim); y += 44;
             } else {
-                cv.text('Uzaktan bağlantı kapalı. Kimse araca giremez.', 48, y, 24, t.dim); y += 44;
-                cv.text('Bağlanmak için İZİN VER.', 48, y, 24, t.dim); y += 44;
+                cv.text('Uzaktan bağlantı kapalı. Kimse araca giremez.', 48, y, 24, t.dim); y += 40;
+                cv.text('Bağlanmak için İZİN VER.', 48, y, 24, t.dim); y += 40;
             }
+            if (writeFail) { cv.text('Not: servis kurulmadan açıp kapatılamaz.', 48, y, 22, AMBER); y += 40; }
+
             const on = st.armed;
-            G.button(cv, t, 48, 400, 340, 76, on ? 'İZNİ KAPAT' : 'İZİN VER', () => { setArmed(!st.armed); return render(); },
+            G.button(cv, t, 48, 400, 340, 76, on ? 'İZNİ KAPAT' : 'İZİN VER', () => { writeControl(!st.armed, st.readonly); return render(); },
                 { key: 'toggle', color: on ? t.crit : GREEN, primary: true });
-            G.button(cv, t, 410, 400, 326, 76, st.readonly ? 'YALNIZ OKU' : 'TAM YETKİ', () => { setReadonly(!st.readonly); return render(); },
+            G.button(cv, t, 410, 400, 326, 76, st.readonly ? 'YALNIZ OKU' : 'TAM YETKİ', () => { writeControl(st.armed, !st.readonly); return render(); },
                 { key: 'mode', color: st.readonly ? AMBER : null });
 
             G.panel(cv, t, 808, 44, 768, 468, 'Son komutlar');
             drawLog(cv, t, 832, 116, 8);
         }
-
-        /* ---------- Günlük sayfası ---------- */
         function drawLogPage(cv, t) {
             G.panel(cv, t, 24, 44, 1552, 468, 'Komut günlüğü');
             drawLog(cv, t, 48, 116, 15);
@@ -92,14 +110,15 @@ mgu.run({
                 cv.text(String(e.cmd || '').slice(0, 72), x + 232, y, 22, t.text, { font: 'mono' });
             }
         }
-
         function header(cv, t) {
-            const badge = st.armed ? (st.connected ? { text: 'BAĞLI', color: GREEN } : { text: 'AÇIK', color: AMBER })
-                                   : { text: 'KAPALI' };
+            const badge = !serviceSeen ? { text: 'SERVİS YOK' }
+                : st.armed ? (st.connected ? { text: 'BAĞLI', color: GREEN } : { text: 'AÇIK', color: AMBER })
+                : { text: 'KAPALI' };
             G.frame(cv, t, ['Durum', 'Günlük'], page, [badge]);
         }
 
         async function render() {
+            readStatus();
             const t = ctx.theme(), cv = ctx.canvas(W, H).clear(t.bg);
             (page === 0 ? drawMain : drawLogPage)(cv, t);
             header(cv, t);
@@ -110,8 +129,8 @@ mgu.run({
         ui.onClick('BTN_PAGE', flip);
         ui.onClick('BTN_PREV', flip);
         ctx.onTab((i) => i !== page && flip());
-        ui.onClick('BTN_TOGGLE', () => { setArmed(!st.armed); return render(); });
-        ui.onClick('BTN_MODE', () => { setReadonly(!st.readonly); return render(); });
+        ui.onClick('BTN_TOGGLE', () => { writeControl(!st.armed, st.readonly); return render(); });
+        ui.onClick('BTN_MODE', () => { writeControl(st.armed, !st.readonly); return render(); });
 
         ctx.loop('MAIN', 4, render);
         render().then(() => log.info('ilk kare çizildi')).catch((e) => log.warn('ilk render: ' + e));

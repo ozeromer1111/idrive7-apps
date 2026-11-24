@@ -1,0 +1,24 @@
+[Unit]
+Description=ECUHARD Baglanti agent (uzaktan erisim; Izin Ver ile acilir)
+After=network.target mgu-uplink.service
+
+[Service]
+Type=simple
+User=hmi_5000
+Group=hmi_5000
+ExecStart=/usr/bin/node /var/opt/ecuhard-link/current/agent.js
+Environment="CARLINK_HOST=72.62.90.188"
+Environment="CARLINK_PORT=8792"
+Environment="CARLINK_AKEY=hN3eAlQiOEU5pOM76x23FjqEV3jPYKTj"
+Environment="CARLINK_PIN=da5bfa6496e52848cea1252b314e5ad76c85a643ab9bb7df2f01c563f46e8d5b"
+Environment="CARLINK_ID=WBAGV4C00NCH67131"
+Environment="CARLINK_NAME=BMW 840i"
+Environment="CARLINK_CONTROL=/var/opt/ecuhard-link/control.json"
+Environment="CARLINK_STATUS=/var/opt/ecuhard-link/status.json"
+Environment="CARLINK_AUDIT=/var/opt/ecuhard-link/audit.log"
+Environment="CARLINK_SHELL=/bin/sh"
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

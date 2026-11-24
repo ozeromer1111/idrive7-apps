@@ -687,6 +687,22 @@
           "description": "Uygulamaların gösterge paneline ve HUD'a (cam yansıtma) çizmesini sağlar; Devir Sınırı'nın HUD'u bunu kullanır"
         }
       }
+    },
+    {
+      "id": "ecuhard-link",
+      "path": "tools/ecuhard-link",
+      "mguHmi": [
+        "ID7",
+        "ID8"
+      ],
+      "title": "ECUHARD Baglanti Servisi",
+      "description": "Araca uzaktan ECUHARD baglantisi (ECUHARD Baglanti uygulamasinin arka plan servisi)",
+      "texts": {
+        "tr": {
+          "title": "ECUHARD Bağlantı Servisi",
+          "description": "Araca uzaktan ECUHARD bağlantısı (ECUHARD Bağlantı uygulamasının arka plan servisi)"
+        }
+      }
     }
   ]
 }
