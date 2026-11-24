@@ -600,18 +600,24 @@
     {
       "id": "idrive7-renderd",
       "path": "kit/renderd/prebuilt",
-      "title": "GPU çizim motoru",
-      "description": "Uygulamaların kendi GPU çizim motoru: ekranları 60 fps çizer (iDrive 7 ve iDrive 8)",
+      "title": "GPU cizim motoru",
+      "description": "Uygulamalarin kendi GPU cizim motoru: ekranlari 60 fps cizer (iDrive 7 ve iDrive 8)",
       "mguHmi": [
         "ID7",
         "ID8"
-      ]
+      ],
+      "texts": {
+        "tr": {
+          "title": "GPU çizim motoru",
+          "description": "Uygulamaların kendi GPU çizim motoru: ekranları 60 fps çizer (iDrive 7 ve iDrive 8)"
+        }
+      }
     },
     {
       "id": "mgu-inputgate",
       "path": "kit/renderd/inputgate/tool",
-      "title": "Kumanda geçidi",
-      "description": "Uygulamaların iDrive kumandasını kullanmasını sağlar (sekmeler, sayfa düğmeleri, ayarlar); bir sonraki açılışta devreye girer",
+      "title": "Kumanda gecidi",
+      "description": "Uygulamalarin iDrive kumandasini kullanmasini saglar (sekmeler, sayfa dugmeleri, ayarlar); bir sonraki acilista devreye girer",
       "needs": [
         "renderer"
       ],
@@ -620,7 +626,13 @@
       "mguHmi": [
         "ID7",
         "ID8"
-      ]
+      ],
+      "texts": {
+        "tr": {
+          "title": "Kumanda geçidi",
+          "description": "Uygulamaların iDrive kumandasını kullanmasını sağlar (sekmeler, sayfa düğmeleri, ayarlar); bir sonraki açılışta devreye girer"
+        }
+      }
     },
     {
       "id": "cluster-render",
@@ -628,7 +640,15 @@
       "mguHmi": [
         "ID7",
         "ID8"
-      ]
+      ],
+      "title": "Gosterge / HUD cizim motoru",
+      "description": "Uygulamalarin gosterge paneline ve HUD'a (cam yansitma) cizmesini saglar; Devir Siniri'nin HUD'u bunu kullanir",
+      "texts": {
+        "tr": {
+          "title": "Gösterge / HUD çizim motoru",
+          "description": "Uygulamaların gösterge paneline ve HUD'a (cam yansıtma) çizmesini sağlar; Devir Sınırı'nın HUD'u bunu kullanır"
+        }
+      }
     }
   ]
 }
