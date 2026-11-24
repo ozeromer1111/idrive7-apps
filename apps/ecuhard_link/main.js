@@ -25,7 +25,7 @@ mgu.run({
     async start(ctx) {
         const { ui, log } = ctx;
         let page = 0;
-        let st = { armed: false, readonly: false, connected: false, since: 0, op: '', last_cmd: '', log: [] };
+        let st = { armed: false, readonly: false, connected: false, online: false, since: 0, op: '', last_cmd: '', log: [] };
         let stMtime = 0, serviceSeen = false, writeFail = false;
 
         function readStatus() {
@@ -111,10 +111,11 @@ mgu.run({
             }
         }
         function header(cv, t) {
-            const badge = !serviceSeen ? { text: 'SERVİS YOK' }
+            const net = st.online ? { text: 'ÇEVRİMİÇİ', color: GREEN } : { text: 'ÇEVRİMDIŞI', color: t.crit };
+            const link = !serviceSeen ? { text: 'SERVİS YOK' }
                 : st.armed ? (st.connected ? { text: 'BAĞLI', color: GREEN } : { text: 'AÇIK', color: AMBER })
                 : { text: 'KAPALI' };
-            G.frame(cv, t, ['Durum', 'Günlük'], page, [badge]);
+            G.frame(cv, t, ['Durum', 'Günlük'], page, [net, link]);
         }
 
         async function render() {

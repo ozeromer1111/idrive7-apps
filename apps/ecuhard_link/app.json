@@ -2,7 +2,7 @@
   "id": "ecuhard_link",
   "title": "ECUHARD Link",
   "description": "Araca uzaktan ECUHARD baglantisi: ac/kapat, yetki ve yapilan her komutun canli gunlugu",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "vendor": "custom",
   "loggingId": "EHLK",
   "iconGlyph": "link",

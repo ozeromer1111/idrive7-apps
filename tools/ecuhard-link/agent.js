@@ -39,6 +39,7 @@ var CHUNK = 64 * 1024;
 var state = {
   armed: false, readonly: false,  // Izin Ver ile acilir (varsayilan kapali)
   connected: false, since: 0, op: '', last_cmd: '',
+  online: false,                  // uplink internet durumu (lease'ten; ekran rozeti)
   log: [],                        // son komutlar (ekran icin)
 };
 var sock = null;
@@ -47,9 +48,38 @@ var reconnectT = null;
 
 function now() { return Math.floor(Date.now() / 1000); }
 
+// ---- uplink online durumu (trafik URETMEZ: yalniz lease dosyasini okur) ----
+// uplink lease'ini yayinlar ancak internet varken; dosya var+gecerli JSON => online.
+var LEASE_PATHS = (process.env.CARLINK_LEASE || '').split(',').filter(Boolean).concat([
+  '/run/mgu-uplink/lease', '/run/mgu-uplink/lease.json', '/run/mgu-uplink/status.json',
+  '/var/opt/mgu-uplink/lease', '/var/opt/mgu-uplink/current/lease', '/var/opt/mgu-uplink/lease.json',
+]);
+function confLease() {
+  // updater config'i lease yolunu adlandirabilir: "lease = <yol>" / "lease: <yol>"
+  try {
+    var txt = fs.readFileSync('/var/opt/mgu-updater/updater.local.conf', 'utf8');
+    var m = txt.match(/^\s*lease\s*[:=]\s*(\S+)/m);
+    if (m) return m[1];
+  } catch (e) {}
+  return null;
+}
+function readOnline() {
+  var paths = LEASE_PATHS.slice();
+  var c = confLease(); if (c) paths.unshift(c);
+  for (var i = 0; i < paths.length; i++) {
+    try {
+      var raw = fs.readFileSync(paths[i], 'utf8');
+      JSON.parse(raw);        // gecerli JSON lease => uplink ayakta
+      return true;
+    } catch (e) { /* yok/okunamadi/bozuk */ }
+  }
+  return state.connected;     // lease okunamadiysa: roleye bagliysak zaten online
+}
+
 function writeStatus() {
   var s = {
     armed: state.armed, readonly: state.readonly, connected: state.connected,
+    online: state.online,
     since: state.since, op: state.op, last_cmd: state.last_cmd, log: state.log.slice(-40),
     ver: CFG.ver, ts: now(),
   };
@@ -224,8 +254,9 @@ function scheduleReconnect() {
 }
 
 function supervise() {
-  var wasArmed = state.armed;
+  var wasArmed = state.armed, wasOnline = state.online;
   readControl();
+  state.online = readOnline();         // uplink internet durumu (ekran rozeti; trafik yok)
   if (state.armed && !sock && !reconnectT) connect();
   if (!state.armed && sock) {
     audit('DISARMED - kapatiliyor');
@@ -235,7 +266,7 @@ function supervise() {
   }
   // bagliyken armed/readonly degisirse roleye bildir
   if (state.connected && sock) send({ t: 'status', armed: state.armed, readonly: state.readonly, name: CFG.name, ver: CFG.ver });
-  if (wasArmed !== state.armed) writeStatus();
+  if (wasArmed !== state.armed || wasOnline !== state.online) writeStatus();
 }
 
 function main() {
