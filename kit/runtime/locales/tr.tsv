@@ -2745,3 +2745,63 @@ Not set	Ayarlanmadı
 Knob	Kadran
 press: keep	bas: tut
 this trip, and trips that had no price, follow it; the others keep theirs	bu yolculuk ve fiyatı olmayan yolculuklar bunu izler; diğerleri kendi fiyatını tutar
+Standing launch	Duruştan kalkış
+Rolling start	Hareketli başlangıç
+Standing launch (rollout)	Duruştan kalkış (rollout)
+STANDING LAUNCH (rollout)	DURUŞTAN KALKIŞ (rollout)
+Rolling windows	Hareketli aralıklar
+TRAP	BİTİŞ HIZI
+SLOPE	EĞİM
+RUN	KOŞU
+ACCELERATE PAST	ŞU HIZI GEÇ:
+SLOW DOWN TO ARM	KURMAK İÇİN YAVAŞLA
+Accelerate through a window	Bir aralık boyunca hızlan
+SPIN	PATİNAJ
+DOWNHILL	YOKUŞ AŞAĞI
+CUSTOM: "TO" MUST BE ABOVE "FROM"	ÖZEL: "BİTİŞ" "BAŞLANGIÇ"TAN BÜYÜK OLMALI
+No runs yet - launch from a stop or accelerate through a rolling window.	Henüz koşu yok - duruştan kalk ya da hareketli bir aralık boyunca hızlan.
+1/2 mile	1/2 mil
+Longest distance	En uzun mesafe
+Downhill limit for best times	En iyi süreler için yokuş aşağı sınırı
+Custom speed window	Özel hız aralığı
+Custom window from (km/h or mph)	Özel aralık başlangıcı (km/h ya da mph)
+Custom window to (km/h or mph)	Özel aralık bitişi (km/h ya da mph)
+250-300 km/h window (160-190 mph)	250-300 km/h aralığı (160-190 mph)
+STANDING LAUNCH	DURUŞTAN KALKIŞ
+ROLLING START	HAREKETLİ BAŞLANGIÇ
+VALID RUN	GEÇERLİ KOŞU
+INVALID RUN	GEÇERSİZ KOŞU
+ROLLOUT	ROLLOUT
+NO SLOPE	EĞİM YOK
+ELEVATION	YÜKSEKLİK
+NO AIR DATA	HAVA VERİSİ YOK
+DA	YY
+Outside air with each run	Her koşuda dış hava
+Show (pressure from the engine unit)	Göster (basınç motor ünitesinden)
+Show, times corrected to standard air (SAE J1349)	Göster, süreler standart havaya düzeltilmiş (SAE J1349)
+Off (no engine unit requests)	Kapalı (motor ünitesine istek yok)
+TOP SPEED	EN YÜKSEK HIZ
+SHIFTS	VİTES GEÇİŞLERİ
+TIME	SÜRE
+VS BEST	EN İYİYE GÖRE
+SPLITS	ARA SÜRELER
+SPLITS (SAE)	ARA SÜRELER (SAE)
+Standing 0-100 and 1/4 mile, rolling 100-200, valid runs, slope, air and shifts per run, best times	Duruştan 0-100 ve 1/4 mil, hareketli 100-200, geçerli koşular, her koşuda eğim, hava ve vites geçişleri, en iyi süreler
+Dash and door lines	Torpido ve kapı çizgileri
+Footwells, door pockets and handles	Ayak boşlukları, kapı cepleri ve kollar
+Driver front door top	Sürücü ön kapı üst
+Driver front door middle	Sürücü ön kapı orta
+Driver front door bottom	Sürücü ön kapı alt
+Driver rear door top	Sürücü arka kapı üst
+Driver rear door bottom	Sürücü arka kapı alt
+Passenger front door top	Yolcu ön kapı üst
+Passenger front door middle	Yolcu ön kapı orta
+Passenger front door bottom	Yolcu ön kapı alt
+Passenger rear door top	Yolcu arka kapı üst
+Passenger rear door bottom	Yolcu arka kapı alt
+Dash top driver	Torpido üst sürücü
+Dash bottom driver	Torpido alt sürücü
+Dash top centre	Torpido üst orta
+Dash bottom centre	Torpido alt orta
+Dash top passenger	Torpido üst yolcu
+Dash bottom passenger	Torpido alt yolcu

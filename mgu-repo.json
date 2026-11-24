@@ -118,7 +118,7 @@
       "manifest": "app.json",
       "icon": "icon.png",
       "title": "Drag Sayaci",
-      "description": "0-100, 100-200 ve 1/4 mil sayaci, en iyi derecelerle",
+      "description": "Durustan 0-100 ve 1/4 mil, hareketli 100-200, gecerli kosular, egim, hava ve vites gecisleri, en iyi sureler",
       "build": {
         "python": "kit/tools/build.py",
         "args": [
@@ -144,7 +144,7 @@
       "texts": {
         "tr": {
           "title": "Drag Sayacı",
-          "description": "0-100, 100-200 ve 1/4 mil sayacı, en iyi derecelerle"
+          "description": "Duruştan 0-100 ve 1/4 mil, hareketli 100-200, geçerli koşular, her koşuda eğim, hava ve vites geçişleri, en iyi süreler"
         }
       }
     },
