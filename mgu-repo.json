@@ -550,6 +550,43 @@
           "description": "Şanzıman Ayarı, deneysel ZF 8HP izleme: canlı veri, kavrama dolum adaptasyonları, vites haritaları ve sıcaklık geçmişi"
         }
       }
+    },
+    {
+      "id": "ecuhard_link",
+      "kind": "app",
+      "path": "apps/ecuhard_link",
+      "manifest": "app.json",
+      "icon": "icon.png",
+      "title": "ECUHARD Link",
+      "description": "Araca uzaktan ECUHARD baglantisi: ac/kapat, yetki ve yapilan her komutun canli gunlugu",
+      "build": {
+        "python": "kit/tools/build.py",
+        "args": [
+          "--language",
+          "tr",
+          "{id}"
+        ],
+        "sdk": "oap-sdk",
+        "output": "dist/{id}@{version}.tgz",
+        "network": [],
+        "shared": [
+          "kit/runtime",
+          "kit/platform",
+          "kit/localization",
+          "kit/tools/build.py",
+          "kit/tools/pack_data.py",
+          "kit/tools/localize.py",
+          "kit/tools/locale-revisions.json",
+          "kit/tools/oapgen",
+          "oap-sdk"
+        ]
+      },
+      "texts": {
+        "tr": {
+          "title": "ECUHARD Bağlantı",
+          "description": "Araca uzaktan ECUHARD bağlantısı: aç/kapat, yetki ve yapılan her komutun canlı günlüğü"
+        }
+      }
     }
   ],
   "apps": {
@@ -585,6 +622,7 @@
       "draggy",
       "dtc_scanner",
       "dyno",
+      "ecuhard_link",
       "edrive",
       "fuel_analysis",
       "gforce",

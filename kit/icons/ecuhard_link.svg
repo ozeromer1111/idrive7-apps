@@ -1,0 +1,20 @@
+<!-- accent: #ff2e2e -->
+<defs>
+  <radialGradient id="l-halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff4a4a" stop-opacity="0.8"/><stop offset="0.6" stop-color="#d11414" stop-opacity="0.22"/><stop offset="1" stop-color="#d11414" stop-opacity="0"/></radialGradient>
+  <linearGradient id="l-link" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0f0"/><stop offset="0.35" stop-color="#ff6a6a"/><stop offset="0.7" stop-color="#e51818"/><stop offset="1" stop-color="#8c0606"/></linearGradient>
+  <linearGradient id="l-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffb0b0"/></linearGradient>
+  <filter id="l-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="4.5"/></filter>
+</defs>
+<circle cx="70" cy="70" r="58" fill="url(#l-halo)"/>
+<g filter="url(#l-glow)" opacity="0.8">
+  <rect x="24" y="52" width="58" height="36" rx="18" fill="none" stroke="#ff3a3a" stroke-width="11"/>
+  <rect x="58" y="52" width="58" height="36" rx="18" fill="none" stroke="#ff3a3a" stroke-width="11"/>
+</g>
+<rect x="24" y="52" width="58" height="36" rx="18" fill="none" stroke="url(#l-link)" stroke-width="11"/>
+<rect x="24" y="52" width="58" height="36" rx="18" fill="none" stroke="url(#l-edge)" stroke-width="2.2"/>
+<rect x="58" y="52" width="58" height="36" rx="18" fill="none" stroke="url(#l-link)" stroke-width="11"/>
+<rect x="58" y="52" width="58" height="36" rx="18" fill="none" stroke="url(#l-edge)" stroke-width="2.2"/>
+<rect x="63" y="56.5" width="20" height="27" rx="13" fill="#140202"/>
+<rect x="24" y="52" width="58" height="36" rx="18" fill="none" stroke="url(#l-link)" stroke-width="11"/>
+<rect x="24" y="52" width="58" height="36" rx="18" fill="none" stroke="url(#l-edge)" stroke-width="2.2"/>
+<path d="M36 60 q-5 10 0 20" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
